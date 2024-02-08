@@ -1,4 +1,4 @@
-import datetime
+from datetime import *
 import pickle
 import click
 import uuid
@@ -45,7 +45,7 @@ class Todo:
         if self.completed:
             return f"Toudou {self.task} has been completed"
         elif not self.completed and self.date:
-            return f"Toudou {self.task} has to be completed before {self.date}"
+            return f"Toudou {self.task} has to be completed before {self.date.strftime('%d/%m/%Y')}"
         else:
             return f"Toudou {self.task} has not been completed"
 
@@ -57,15 +57,24 @@ def cli():
 
 @cli.command()
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
-#TODO : date à mettre
 def create(task: str):
-    todo = Todo(uuid.uuid4(), task)
+    task_date = None
+    date_bool = click.prompt("Does your task have a deadline? (y/n)")
+    date_bool = date_bool.lower()
+    if date_bool == 'y' or date_bool == 'yes':
+        date = click.prompt("The deadline (DD/MM/YYYY)")
+        try:
+            task_date = datetime.strptime(date, "%d/%m/%Y")
+        except ValueError:
+            print("The deadline format is invalid")
+            exit(0)
+    todo = Todo(id=uuid.uuid4(), task=task, date=task_date)
     todo.store()
 
 
 @cli.command()
 @click.option("-i", "--id", prompt="ID", help="Search a stored toudou")
-def show(id: uuid):
+def display(id: uuid):
     try:
         file = f"{PATH}/{id}.p"
         if path.isfile(file):
@@ -74,15 +83,16 @@ def show(id: uuid):
                 click.echo(todo)
     except:
         click.echo("This toudou does not exist")
+        exit(0)
 
 @cli.command()
-def display():
+def display_all():
     files = Todo.getAllFiles()
     for file in files:
         click.echo(Todo.getByFileName(file))
 
 @cli.command()
-@click.option("-t", "--task", prompt="Your task", help="Complete a toudou")
+@click.option("-t", "--task", prompt="ID", help="Complete a toudou")
 def complete(task: Todo):
     todo = None
     files = Todo.getAllFiles()
@@ -96,3 +106,8 @@ def complete(task: Todo):
         click.echo("Your toudou has been changed successfully")
     else:
         click.echo("This toudou does not exist")
+
+@cli.command()
+@click.option("-t", "--task", prompt="Your task", help="Create a new toudou stored inside a csv file")
+def create_csv(task :str):
+    pass
