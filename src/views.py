@@ -1,9 +1,5 @@
 from datetime import datetime
-from os import path
-import pickle
 import uuid
-
-
 import click
 
 import models as models
@@ -15,36 +11,39 @@ def cli():
 
 @cli.command()
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
-@click.option("-d", "--due", type=click.DateTime(), default=None, help="Due date of the task.")
+@click.option("-d", "--due", type=click.DateTime(formats=["%d/%m/%Y"]), default=None, help="Due date of the task.")
 def create(task: str, due: datetime):
     models.create_todo(task, due, models.getConn())
-
-
 
 
 @cli.command()
 @click.option("-i", "--id", prompt="ID", help="Search a stored toudou")
 def display(id: uuid):
-    todo = models.display(id)
-    if todo:
+    toudou = models.Todo.getToudou(id, models.getConn())
+    if toudou:
+        id, task, date, completed = toudou
+        todo = models.Todo(id=id, task=task, date=datetime.strptime(date, '%Y-%m-%d %H:%M:%S'), completed=completed)
         click.echo(todo)
     else:
         click.echo("This toudou does not exist")
-        exit(0)
+
 
 @cli.command()
 def display_all():
-    files = models.Todo.getAllFiles()
-    for file in files:
-        click.echo(models.Todo.getByFileName(file))
+    toudous = models.Todo.getToudous(models.getConn())
+    if len(toudous) > 0:
+        for toudou in toudous:
+            id, task, date, completed = toudou
+            todo = models.Todo(id=id, task=task, date=datetime.strptime(date, '%Y-%m-%d %H:%M:%S'), completed=completed)
+            click.echo(todo)
+    else:
+        click.echo("You don't have any toudous stored yet")
 
 @cli.command()
-@click.option("-t", "--task", prompt="ID", help="Complete a toudou")
-def complete(task: models.Todo):
-    todo = models.complete(task)
+@click.option("-i", "--id", prompt="ID", help="Complete a toudou")
+def complete(id: uuid):
+    todo = models.complete_task(id, models.getConn())
     if todo:
-        todo.changeStateCompleted()
-        todo.store()
         click.echo("Your toudou has been changed successfully")
     else:
         click.echo("This toudou does not exist")

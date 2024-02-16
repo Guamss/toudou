@@ -3,11 +3,7 @@ import datetime
 
 import sqlite3
 
-from os import listdir, mkdir, path
-import pickle
 import uuid
-
-PATH = "./toudou_files"
 
 @dataclass
 class Todo:
@@ -16,26 +12,29 @@ class Todo:
     date: datetime.date = None
     completed: bool = False
 
-    def changeStateCompleted(self):
-        self.completed = not self.completed
-
     @staticmethod
-    def getAllFiles():
-        return [f for f in listdir(PATH) if f[-2:] == ".p"]
-
-    @staticmethod
-    def getByFileName(file: str):
+    def getToudou(id: uuid, arg_con : sqlite3.Connection):
+        con = arg_con
+        cur = con.cursor()
         try:
-            with open(f'{PATH}/{file}', 'rb') as f:
-                return pickle.load(f)
-        except:
-            print("This file does not exist !")
+            cur.execute("SELECT * FROM toudou WHERE id = ?", (str(id),))
+            result = cur.fetchone()
+            cur.close()
+            return result
+        except sqlite3.Error as e:
+            print("Selection error : ", e)
 
-    def store(self):
-        if not path.exists(PATH):
-            mkdir(f"{PATH}")
-        with open(f'{PATH}/{self.id}.p', 'wb') as f:
-            pickle.dump(self, f)
+    @staticmethod
+    def getToudous(arg_con : sqlite3.Connection):
+        con = arg_con
+        cur = con.cursor()
+        try:
+            cur.execute("SELECT * FROM  toudou")
+            result = cur.fetchall()
+            cur.close()
+            return result
+        except sqlite3.Error as e:
+            print("Selection error : ", e)
 
     def __str__(self):
         if self.completed:
@@ -46,39 +45,40 @@ class Todo:
             return f"Toudou {self.task} has not been completed"
 
 
-def complete(task: Todo):
-    todo = None
-    files = Todo.getAllFiles()
-    for file in files:
-        actual_todo = file[:-2]
-        if actual_todo == task:
-            todo = Todo.getByFileName(file)
-    return todo
-
-def display(id: uuid):
-    todo = None
-    file = f"{PATH}/{id}.p"
-    if path.isfile(file):
-        with open(file, 'rb') as f:
-            todo = pickle.load(f)
-    return todo
-
-def create_todo(task: str, due: datetime, arg_con):
+def complete_task(id: uuid, arg_con : sqlite3.Connection):
     con = arg_con
     cur = con.cursor()
     try:
-        cur.execute("INSERT INTO toudou (id, task, date, completed) VALUES (?, ?, ?, ?)", (uuid.uuid4(), task, due, False))
+        cur.execute("UPDATE toudou SET completed = 1 WHERE id = ?", (str(id),))
+        cur.close()
+        con.commit()
+        return cur.rowcount == 1
     except sqlite3.Error as e:
-        print("Erreur : ", e)
+        print("An error occured while updating the datas : ", e)
+
+
+def create_todo(task: str, due: datetime, arg_con : sqlite3.Connection):
+    con = arg_con
+    cur = con.cursor()
+    try:
+        cur.execute("INSERT INTO toudou (id, task, date, completed) VALUES (?, ?, ?, ?)", (str(uuid.uuid4()), task, due, False))
+        cur.close()
+        con.commit()
+    except sqlite3.Error as e:
+        print("An error occured while inserting datas : ", e)
 
 def init_db():
     con = getConn()
     cur = con.cursor()
     try:
-        cur.execute("CREATE TABLE IF NOT EXISTS toudou(id INTEGER UNIQUE, task TEXT, date DATE, completed BOOLEAN)")
-
+        cur.execute("""CREATE TABLE IF NOT EXISTS toudou(
+                    id BLOB NOT NULL UNIQUE, 
+                    task VARCHAR(500) NOT NULL, 
+                    date DATE, 
+                    completed BOOLEAN NOT NULL)""")
+        cur.close()
     except sqlite3.Error as e:
-        print("Erreur :", e)
+        print("An error occured while creating the table:", e)
 
 def getConn():
     return sqlite3.connect("toudou.db")
