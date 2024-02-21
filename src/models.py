@@ -1,9 +1,18 @@
 from dataclasses import dataclass
+from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
+from sqlalchemy.exc import OperationalError
+
+from os import makedirs, listdir
+
 import datetime
 
 import sqlite3
 
 import uuid
+
+TODO_FOLDER = "database"
+DATABASE ="toudou.db"
+TABLE_NAME = "TOUDOU"
 
 @dataclass
 class Todo:
@@ -57,28 +66,36 @@ def complete_task(id: uuid, arg_con : sqlite3.Connection):
         print("An error occured while updating the datas : ", e)
 
 
-def create_todo(task: str, due: datetime, arg_con : sqlite3.Connection):
-    con = arg_con
-    cur = con.cursor()
+def create_todo(task: str, due: datetime):
+    engine, metadata, toudou = initConn()
     try:
-        cur.execute("INSERT INTO toudou (id, task, date, completed) VALUES (?, ?, ?, ?)", (str(uuid.uuid4()), task, due, False))
-        cur.close()
-        con.commit()
-    except sqlite3.Error as e:
+        ins = toudou.insert().values(task = task, date = due, completed = False)
+        with engine.begin() as conn:
+            result = conn.execute(ins)
+    except OperationalError as e:
         print("An error occured while inserting datas : ", e)
 
-def init_db():
-    con = getConn()
-    cur = con.cursor()
-    try:
-        cur.execute("""CREATE TABLE IF NOT EXISTS toudou(
-                    id BLOB NOT NULL UNIQUE, 
-                    task VARCHAR(500) NOT NULL, 
-                    date DATE, 
-                    completed BOOLEAN NOT NULL)""")
-        cur.close()
-    except sqlite3.Error as e:
-        print("An error occured while creating the table:", e)
+def createTable():
+    engine, metadata_obj, toudou = initConn()
+    makedirs(TODO_FOLDER, exist_ok=True)
+    
+    inspector = inspect(engine)
+    if not inspector.has_table(DATABASE): 
+        print("Creating toudou table...")
+        metadata_obj.create_all(engine)
+        return True
+    return False
 
-def getConn():
-    return sqlite3.connect("toudou.db")
+def initConn():
+    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
+    metadata_obj = MetaData()
+
+    toudouTable = Table(
+        TABLE_NAME,
+        metadata_obj,
+        Column("id", Uuid, primary_key=True, default=uuid.uuid4()),
+        Column("task", String, nullable=False),
+        Column("date", DateTime, nullable=True),
+        Column("completed", Boolean, nullable=False)
+    )
+    return engine,metadata_obj,toudouTable 
