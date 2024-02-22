@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
-from sqlalchemy.exc import OperationalError
+from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 
 from os import makedirs, listdir
 
@@ -22,28 +22,26 @@ class Todo:
     completed: bool = False
 
     @staticmethod
-    def getToudou(id: uuid, arg_con : sqlite3.Connection):
-        con = arg_con
-        cur = con.cursor()
+    def getToudou(id: uuid):
+        engine, metadata, toudou = initConn()
         try:
-            cur.execute("SELECT * FROM toudou WHERE id = ?", (str(id),))
-            result = cur.fetchone()
-            cur.close()
-            return result
-        except sqlite3.Error as e:
+            stmt = select(toudou).where(toudou.c.id == id)
+            with engine.connect() as conn:
+                result = conn.execute(stmt)
+            return result.fetchone()
+        except StatementError as e:
             print("Selection error : ", e)
 
     @staticmethod
-    def getToudous(arg_con : sqlite3.Connection):
-        con = arg_con
-        cur = con.cursor()
-        try:
-            cur.execute("SELECT * FROM  toudou")
-            result = cur.fetchall()
-            cur.close()
-            return result
-        except sqlite3.Error as e:
-            print("Selection error : ", e)
+    def getToudous():
+       engine, metadata, toudou = initConn()
+       try:
+        stmt = select(toudou)
+        with engine.connect() as conn:
+            result = conn.execute(stmt)
+        return result.fetchall()
+       except StatementError as e:
+           print("Selection error : ", e)
 
     def __str__(self):
         if self.completed:
@@ -54,15 +52,14 @@ class Todo:
             return f"Toudou {self.task} has not been completed"
 
 
-def complete_task(id: uuid, arg_con : sqlite3.Connection):
-    con = arg_con
-    cur = con.cursor()
+def complete_task(id: uuid):
+    engine, metadata, toudou = initConn()
     try:
-        cur.execute("UPDATE toudou SET completed = 1 WHERE id = ?", (str(id),))
-        cur.close()
-        con.commit()
-        return cur.rowcount == 1
-    except sqlite3.Error as e:
+        stmt = update(toudou).where(toudou.c.id == id).values(completed=True)
+        with engine.begin() as conn:
+            result = conn.execute(stmt)
+        return result.rowcount == 1
+    except ArgumentError as e:
         print("An error occured while updating the datas : ", e)
 
 
@@ -81,10 +78,7 @@ def createTable():
     
     inspector = inspect(engine)
     if not inspector.has_table(DATABASE): 
-        print("Creating toudou table...")
         metadata_obj.create_all(engine)
-        return True
-    return False
 
 def initConn():
     engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)

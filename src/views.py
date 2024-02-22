@@ -6,8 +6,7 @@ import models as models
 
 @click.group()
 def cli():
-    if models.createTable():
-        print(f"{models.DATABASE} created successfully")
+    pass
 
 @cli.command()
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
@@ -17,36 +16,34 @@ def create(task: str, due: datetime):
 
 
 @cli.command()
-@click.option("-i", "--id", prompt="ID", help="Search a stored toudou")
+@click.option("-i", "--id", type=click.UUID, prompt="ID", help="Search a stored toudou")
 def display(id: uuid):
-    pass
-    #toudou = models.Todo.getToudou(id, models.getConn())
-    #if toudou:
-    #    id, task, date, completed = toudou
-    #    todo = models.Todo(id=id, task=task, date=datetime.strptime(date, '%Y-%m-%d %H:%M:%S'), completed=completed)
-    #    click.echo(todo)
-    #else:
-    #    click.echo("This toudou does not exist")
+    toudou = models.Todo.getToudou(id)
+    if toudou:
+        id, task, date, completed = toudou
+        todo = models.Todo(id=id, task=task, date=date, completed=completed)
+        click.echo(todo)
+    else:
+        click.echo("This toudou does not exist")
 
 
 @cli.command()
 def display_all():
     pass
-    #toudous = models.Todo.getToudous(models.getConn())
-    #if len(toudous) > 0:
-    #    for toudou in toudous:
-    #        id, task, date, completed = toudou
-    #        todo = models.Todo(id=id, task=task, date=datetime.strptime(date, '%Y-%m-%d %H:%M:%S'), completed=completed)
-    #        click.echo(todo)
-    #else:
-    #    click.echo("You don't have any toudous stored yet")
+    toudous = models.Todo.getToudous()
+    if len(toudous) > 0:
+        for toudou in toudous:
+            id, task, date, completed = toudou
+            todo = models.Todo(id=id, task=task, date=date, completed=completed)
+            click.echo(todo)
+    else:
+        click.echo("You don't have any toudous stored yet")
 
 @cli.command()
-@click.option("-i", "--id", prompt="ID", help="Complete a toudou")
+@click.option("-i", "--id", type=click.UUID, prompt="ID", help="Complete a toudou")
 def complete(id: uuid):
-    pass
-    #todo = models.complete_task(id, models.getConn())
-    #if todo:
-    #    click.echo("Your toudou has been changed successfully")
-    #else:
-    #    click.echo("This toudou does not exist")
+    todo = models.complete_task(id)
+    if todo:
+        click.echo("Your toudou has been changed successfully")
+    else:
+        click.echo("This toudou does not exist")
