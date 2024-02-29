@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, inspect
+from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 
 from os import makedirs
@@ -67,6 +67,7 @@ def create_todo(task: str, due: datetime):
         ins = toudou.insert().values(task = task, date = due, completed = False)
         with engine.begin() as conn:
             result = conn.execute(ins)
+        return result.rowcount == 1
     except OperationalError as e:
         print("An error occured while inserting datas : ", e)
 
@@ -77,6 +78,17 @@ def createTable():
     inspector = inspect(engine)
     if not inspector.has_table(DATABASE): 
         metadata_obj.create_all(engine)
+
+def delete_task(id: uuid):
+    engine, metadata, toudou = initConn()
+    try:
+        stmt = delete(toudou).where(toudou.c.id == id)
+        with engine.begin() as conn:
+            result = conn.execute(stmt)
+        return result.rowcount == 1
+    except OperationalError as e:
+        print("An error occured while deleting datas : ", e)
+
 
 def initConn():
     engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
