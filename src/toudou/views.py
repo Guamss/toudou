@@ -2,7 +2,7 @@ from datetime import datetime
 import uuid
 import click
 
-import models as models
+import toudou.models as models
 
 @click.group()
 def cli():

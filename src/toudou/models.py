@@ -1,12 +1,10 @@
 from dataclasses import dataclass
-from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
+from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 
-from os import makedirs, listdir
+from os import makedirs
 
 import datetime
-
-import sqlite3
 
 import uuid
 
