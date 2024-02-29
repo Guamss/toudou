@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 
@@ -14,8 +14,8 @@ TABLE_NAME = "TOUDOU"
 
 @dataclass
 class Todo:
-    id: uuid.UUID
     task: str
+    id: uuid.UUID = field(default_factory=uuid.uuid4())
     date: datetime.date = None
     completed: bool = False
 
@@ -37,7 +37,12 @@ class Todo:
         stmt = select(toudou)
         with engine.connect() as conn:
             result = conn.execute(stmt)
-        return result.fetchall()
+        toudous = []
+        for toudou in  result.fetchall():
+            id, task, date, completed = toudou
+            todo = Todo(id=id, task=task, date=date, completed=completed)
+            toudous.append(todo)
+        return toudous
        except StatementError as e:
            print("Selection error : ", e)
 

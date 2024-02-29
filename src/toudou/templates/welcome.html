@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script>
+        window.onload = init;
+        function init()
+        {
+            document.getElementById("due").checked = false;
+        } 
+        function check() {
+            radio = document.getElementById("due");
+            if (radio.checked)
+            {
+                document.getElementById("due_t").removeAttribute('hidden');
+                document.getElementById("due_i").removeAttribute('hidden');
+            }
+          }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+</head>
+<body>
+    <h1>Toudou app</h1>
+    <p>Hello, welcome to toudou app!</p>
+    <form action="/create" method="POST">
+        <label for="tname">Your toudou's name :</label><br>
+        <input type="text" id="tname" name="tname">
+        <input type="submit" value="Submit"><br><br>
+        <label for="due">Does your toudou have a deadline?</input>
+        <input type="radio" id="due" onClick="check()" name="due"><br><br>
+        <label hidden id="due_t"for="tname">Due :</label><br>
+        <input hidden type="date" id="due_i" name="due">
+      </form> 
+</body>
+</html>
