@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Delete</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,20 +30,25 @@
         </div>
       </nav>
     <div class="jumbotron text-center">
-        <h1>Toudou app</h1>
-        <p>Here you can create, delete, modify todos</p>
+        <h1>Delete a toudou</h1>
+        <p>Here you can delete the toudous you have created.</p>
     </div>
     <div class="container">
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            <div class="alert alert-success">
-                <h4 class="alert-heading">Success</h4>
-                {% for message in messages %}
-                <p>{{ message }}</p>
-                {% endfor %}
+        <form class="row" action="/delete" method="POST">
+            <div class="form-group col-md-12">
+                <label for="id">Your toudou's ID :</label>
+                <input type="text" class="form-control" id="id" name="id" required>
             </div>
-            {% endif %}
-        {% endwith %}
+            <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form> 
+        {% if error%}
+        <div class="alert alert-danger">
+            <h4 class="alert-heading">Error</h4>
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>

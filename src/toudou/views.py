@@ -1,16 +1,17 @@
 from datetime import datetime
 import uuid
 import click
-from flask import Flask, render_template
+from flask import Flask, render_template, request, url_for, redirect, flash
 
 import toudou.services as services
 import toudou.models as models
 
 app = Flask(__name__)
+app.secret_key = 'azerty'
 
 @click.group()
 def cli():
-    pass
+    models.createTable
 
 @cli.command()
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
@@ -74,12 +75,77 @@ def delete(id: uuid):
 
 @app.route('/')
 def welcome():
+    models.createTable()
     return render_template('welcome.html')
 
-@app.route('/create')
-def create(task):
-    pass
+@app.route('/create', methods= ['POST', 'GET'])
+def create():
+    error = None
+    if request.method == 'POST':
+        task = request.form['tname']
+        due = request.form['due']
+        try:
+            due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
+        except ValueError as e:                
+            error = e
+            return render_template('formCreation.html', error = error)
+        if task != "":
+            todo = models.create_todo(task, due)
+            if todo:
+                flash("Your toudou has been created successfully")
+                return redirect(url_for('welcome'))
+            else:
+                error = "An error has occured"
+                return render_template('formCreation.html', error = error)
+    else:
+        return render_template('formCreation.html')
 
+@app.route('/delete', methods= ['POST', 'GET'])
+def delete():
+    error = None
+    if request.method == 'POST':
+        id = request.form['id']
+        if id != "":
+            try:
+                todo = models.delete_task(uuid.UUID(id))
+            except ValueError as e:
+                error = e
+                return render_template('formDelete.html', error = error)
+            if todo:
+                flash("Your toudou has been deleted successfully")
+                return redirect(url_for('welcome'))
+            else:
+                error = "An error has occured"
+                return render_template('formDelete.html', error = error)
+    else:
+        return render_template("formDelete.html")
+    
+@app.route('/complete', methods= ['POST', 'GET'])
+def complete():
+    error = None
+    if request.method == 'POST':
+        id = request.form['id']
+        if id != "":
+            try:
+                todo = models.complete_task(uuid.UUID(id))
+            except ValueError as e:
+                error = e
+                return render_template('formComplete.html', error = error)
+            if todo:
+                flash("Your toudou has been deleted successfully")
+                return redirect(url_for('welcome'))
+            else:
+                error = "An error has occured"
+                return render_template('formComplete.html', error = error)
+    else:
+        return render_template("formComplete.html")
+
+@app.route('/display')
+def display():
+    todos = models.Todo.getToudous()
+    if todos == None : todos = []
+    return render_template('display.html', todos = todos)
+    
 
 if __name__ == '__main__':
     app.run()

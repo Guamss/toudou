@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Your toudous</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,20 +30,39 @@
         </div>
       </nav>
     <div class="jumbotron text-center">
-        <h1>Toudou app</h1>
-        <p>Here you can create, delete, modify todos</p>
+        <h1>Your toudous</h1>
+        <p>Here you can every toudous you've created.</p>
     </div>
     <div class="container">
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            <div class="alert alert-success">
-                <h4 class="alert-heading">Success</h4>
-                {% for message in messages %}
-                <p>{{ message }}</p>
+        {% if todos|length > 0 %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Task</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Completed</th>
+                        <th scope="col">Toudou</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for todo in todos %}
+                    <tr>
+                        <td>{{ todo.id }}</td>
+                        <td>{{ todo.task }}</td>
+                        <td>{% if todo.date %} {{todo.changeDateFormat() }} {% else %}No deadline{% endif%}</td>
+                        <td>{% if todo.completed %}Yes{% else %}No{% endif %}</td>
+                        <td>{{ todo.__str__() }}</td>
+                    </tr>
                 {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <div class="alert alert-info" role="alert">
+              <h4 class="alert-heading">Nothing</h4>
+              <p>There is nothing to see here, you can create toudous in the "create" section.</p>
             </div>
-            {% endif %}
-        {% endwith %}
+          {% endif %}
     </div>
 </body>
 </html>

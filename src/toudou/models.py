@@ -46,6 +46,9 @@ class Todo:
        except StatementError as e:
            print("Selection error : ", e)
 
+    def changeDateFormat(self):
+        return self.date.strftime('%d/%m/%Y')
+    
     def __str__(self):
         if self.completed:
             return f"Toudou {self.task} has been completed"
