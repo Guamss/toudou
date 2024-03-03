@@ -1,19 +1,26 @@
 from dataclasses import dataclass, field
-from sqlalchemy import create_engine, MetaData, Table, Column, String, Uuid, Boolean, DateTime, select, update, delete, inspect
+from sqlalchemy import create_engine, MetaData, Table, Column, String, Boolean, DateTime, select, update, delete, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
-
 from os import makedirs
-
 import datetime
-
 import uuid
 
 TODO_FOLDER = "database"
-DATABASE ="toudou.db"
+DATABASE = "toudou.db"
 TABLE_NAME = "TOUDOU"
+
 
 @dataclass
 class Todo:
+    """
+    Class representing a to-do task.
+
+    Attributes:
+        task (str): The description of the task.
+        id (uuid.UUID): The unique identifier of the task.
+        date (datetime.date): The due date of the task (optional).
+        completed (bool): Indicates whether the task is completed or not.
+    """
     task: str
     id: uuid.UUID = field(default_factory=uuid.uuid4())
     date: datetime.date = None
@@ -21,6 +28,15 @@ class Todo:
 
     @staticmethod
     def getToudou(id: uuid):
+        """
+        Retrieve a to-do task based on its unique identifier.
+
+        Args:
+            id (uuid.UUID): The unique identifier of the task to retrieve.
+
+        Returns:
+            Todo or None: The Todo object corresponding to the found task, or None if no matching task is found.
+        """
         engine, metadata, toudou = initConn()
         try:
             stmt = select(toudou).where(toudou.c.id == id)
@@ -28,28 +44,46 @@ class Todo:
                 result = conn.execute(stmt)
             return result.fetchone()
         except StatementError as e:
-            print("Selection error : ", e)
+            print("Selection error: ", e)
 
     @staticmethod
     def getToudous():
-       engine, metadata, toudou = initConn()
-       try:
-        stmt = select(toudou)
-        with engine.connect() as conn:
-            result = conn.execute(stmt)
-        toudous = []
-        for toudou in  result.fetchall():
-            id, task, date, completed = toudou
-            todo = Todo(id=id, task=task, date=date, completed=completed)
-            toudous.append(todo)
-        return toudous
-       except StatementError as e:
-           print("Selection error : ", e)
+        """
+        Retrieve all to-do tasks from the database.
+
+        Returns:
+            list: A list of Todo objects representing all to-do tasks.
+        """
+        engine, metadata, toudou = initConn()
+        try:
+            stmt = select(toudou)
+            with engine.connect() as conn:
+                result = conn.execute(stmt)
+            toudous = []
+            for toudou_row in result.fetchall():
+                id, task, date, completed = toudou_row
+                todo = Todo(id=id, task=task, date=date, completed=completed)
+                toudous.append(todo)
+            return toudous
+        except StatementError as e:
+            print("Selection error: ", e)
 
     def changeDateFormat(self):
+        """
+        Method to format the task's date in 'day/month/year' format.
+
+        Returns:
+            str: The formatted date.
+        """
         return self.date.strftime('%d/%m/%Y')
     
     def __str__(self):
+        """
+        Method to obtain a textual representation of the task.
+
+        Returns:
+            str: The textual representation of the task.
+        """
         if self.completed:
             return f"Toudou {self.task} has been completed"
         elif not self.completed and self.date:
@@ -59,6 +93,15 @@ class Todo:
 
 
 def complete_task(id: uuid):
+    """
+    Mark a task as completed.
+
+    Args:
+        id (uuid.UUID): The unique identifier of the task.
+
+    Returns:
+        bool: True if the task has been successfully marked as completed, False otherwise.
+    """
     engine, metadata, toudou = initConn()
     try:
         stmt = update(toudou).where(toudou.c.id == id).values(completed=True)
@@ -66,20 +109,39 @@ def complete_task(id: uuid):
             result = conn.execute(stmt)
         return result.rowcount == 1
     except ArgumentError as e:
-        print("An error occured while updating the datas : ", e)
+        print("An error occurred while updating the data:", e)
 
 
 def create_todo(task: str, due: datetime):
+    """
+    Create a new to-do task.
+
+    Args:
+        task (str): The description of the task.
+        due (datetime): The due date of the task.
+
+    Returns:
+        bool: True if the task has been successfully created, False otherwise.
+    """
     engine, metadata, toudou = initConn()
     try:
-        ins = toudou.insert().values(task = task, date = due, completed = False)
+        ins = toudou.insert().values(task=task, date=due, completed=False)
         with engine.begin() as conn:
             result = conn.execute(ins)
         return result.rowcount == 1
     except OperationalError as e:
-        print("An error occured while inserting datas : ", e)
+        print("An error occurred while inserting data:", e)
 
 def createTable():
+    """
+    Create the to-do tasks table in the database if it doesn't already exist.
+
+    The function creates the table using the connection information provided by the initConn() function,
+    then checks if the table already exists in the database. If the table doesn't exist, it is created.
+
+    Returns:
+        None
+    """
     engine, metadata_obj, toudou = initConn()
     makedirs(TODO_FOLDER, exist_ok=True)
     
@@ -88,6 +150,15 @@ def createTable():
         metadata_obj.create_all(engine)
 
 def delete_task(id: uuid):
+    """
+    Delete a to-do task.
+
+    Args:
+        id (uuid.UUID): The unique identifier of the task to delete.
+
+    Returns:
+        bool: True if the task has been successfully deleted, False otherwise.
+    """
     engine, metadata, toudou = initConn()
     try:
         stmt = delete(toudou).where(toudou.c.id == id)
@@ -95,17 +166,25 @@ def delete_task(id: uuid):
             result = conn.execute(stmt)
         return result.rowcount == 1
     except OperationalError as e:
-        print("An error occured while deleting datas : ", e)
+        print("An error occurred while deleting data:", e)
 
 
 def initConn():
+    """
+    Initialize the connection to the database.
+
+    Returns:
+        engine (sqlalchemy.engine.Engine): The SQLAlchemy database engine.
+        metadata_obj (sqlalchemy.MetaData): The SQLAlchemy metadata object.
+        toudouTable (sqlalchemy.Table): The table of to-do tasks in the database.
+    """
     engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
     metadata_obj = MetaData()
 
     toudouTable = Table(
         TABLE_NAME,
         metadata_obj,
-        Column("id", Uuid, primary_key=True, default=uuid.uuid4()),
+        Column("id", String, primary_key=True, default=str(uuid.uuid4())),
         Column("task", String, nullable=False),
         Column("date", DateTime, nullable=True),
         Column("completed", Boolean, nullable=False)

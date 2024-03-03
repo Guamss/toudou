@@ -1,13 +1,17 @@
 import csv
 import dataclasses
 import io
-
 from datetime import datetime
-
 import toudou.models as models
 
 
 def export_to_csv() -> io.StringIO:
+    """
+    Export the to-do tasks to a CSV file.
+
+    Returns:
+        io.StringIO: A StringIO object containing the CSV data.
+    """
     output = io.StringIO()
     csv_writer = csv.DictWriter(
         output,
@@ -19,13 +23,19 @@ def export_to_csv() -> io.StringIO:
 
 
 def import_from_csv(csv_file: io.StringIO) -> None:
+    """
+    Import to-do tasks from a CSV file.
+
+    Args:
+        csv_file (io.StringIO): The StringIO object containing the CSV data.
+    """
     csv_reader = csv.DictReader(
         csv_file,
         fieldnames=[f.name for f in dataclasses.fields(models.Todo)]
     )
     for row in csv_reader:
         models.Todo(
-                task=row["task"], 
-                date=datetime.fromisoformat(row["due"]) if row["due"] else None, 
-                completed=row["complete"] == "True"
-                )
+            task=row["task"], 
+            date=datetime.fromisoformat(row["due"]) if row["due"] else None, 
+            completed=row["complete"] == "True"
+        )
