@@ -68,6 +68,22 @@ class Todo:
         except StatementError as e:
             print("Selection error: ", e)
 
+    @staticmethod
+    def getNotCompletedToudous():
+        engine, metadata, toudou = initConn()
+        try:
+            stmt = select(toudou).where(toudou.c.completed == False)
+            with engine.connect() as conn:
+                result = conn.execute(stmt)
+            toudous = []
+            for toudou_row in result.fetchall():
+                id, task, date, completed = toudou_row
+                todo = Todo(id=id, task=task, date=date, completed=completed)
+                toudous.append(todo)
+            return toudous
+        except StatementError as e:
+            print("Selection error: ", e)
+            
     def changeDateFormat(self):
         """
         Method to format the task's date in 'day/month/year' format.
@@ -178,7 +194,7 @@ def initConn():
         metadata_obj (sqlalchemy.MetaData): The SQLAlchemy metadata object.
         toudouTable (sqlalchemy.Table): The table of to-do tasks in the database.
     """
-    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
+    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=True)
     metadata_obj = MetaData()
 
     toudouTable = Table(

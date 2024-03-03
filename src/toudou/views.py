@@ -86,7 +86,7 @@ def create():
         due = request.form['due']
         try:
             due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
-        except ValueError as e:                
+        except ValueError as e:
             error = e
             return render_template('formCreation.html', error = error)
         if task != "":
@@ -107,7 +107,7 @@ def delete():
         id = request.form['id']
         if id != "":
             try:
-                todo = models.delete_task(uuid.UUID(id))
+                todo = models.delete_task(id)
             except ValueError as e:
                 error = e
                 return render_template('formDelete.html', error = error)
@@ -118,7 +118,7 @@ def delete():
                 error = "An error has occured"
                 return render_template('formDelete.html', error = error)
     else:
-        return render_template("formDelete.html")
+        return render_template("formDelete.html", toudous = models.Todo.getToudous())
     
 @app.route('/complete', methods= ['POST', 'GET'])
 def complete():
@@ -127,7 +127,7 @@ def complete():
         id = request.form['id']
         if id != "":
             try:
-                todo = models.complete_task(uuid.UUID(id))
+                todo = models.complete_task(id)
             except ValueError as e:
                 error = e
                 return render_template('formComplete.html', error = error)
@@ -138,7 +138,7 @@ def complete():
                 error = "An error has occured"
                 return render_template('formComplete.html', error = error)
     else:
-        return render_template("formComplete.html")
+        return render_template("formComplete.html", toudous = models.Todo.getNotCompletedToudous())
 
 @app.route('/display')
 def display():
