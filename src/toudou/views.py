@@ -54,6 +54,14 @@ def display_all(as_csv: bool):
             click.echo("You don't have any toudous stored yet")
 
 @cli.command()
+@click.option("--id", required=True, type=click.UUID, help="Todo's id.")
+@click.option("-c", "--complete", required=True, type=click.BOOL, help="Todo is done or not.")
+@click.option("-t", "--task", prompt="Your task", help="The task to remember.")
+@click.option("-d", "--due",type=click.DateTime(formats=["%Y-%m-%d"]), default=None, help="Due date of the task.")
+def update(id: uuid.UUID, complete: bool, task: str, due: datetime):
+    models.update_todo(id, task, complete, due)
+
+@cli.command()
 @click.option("-i", "--id", type=click.UUID, prompt="ID", help="Complete a toudou")
 def complete(id: uuid):
     todo = models.complete_task(id)
@@ -77,6 +85,31 @@ def delete(id: uuid):
 def welcome():
     models.createTable()
     return render_template('welcome.html')
+
+@app.route('/modify', methods= ['POST', 'GET'])
+def modify():
+    error = None
+    if request.method == 'POST':
+        id = request.form['id']
+        task = request.form['tname']
+        due = request.form['due']
+        complete = bool(request.form['complete'])
+        try:
+            due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
+        except ValueError as e:
+            error = e
+            return render_template('formModify.html', error = error)
+        if task != "":
+            todo = models.update_todo(uuid.UUID(id), task, complete, due)
+            if todo:
+                flash("Your toudou has been modified successfully")
+                return redirect(url_for('welcome'))
+            else:
+                error = "An error has occured"
+                return render_template('formModify.html', error = error)
+    else:
+        return render_template('formModify.html', toudous = models.Todo.getToudous())
+
 
 @app.route('/create', methods= ['POST', 'GET'])
 def create():
@@ -107,7 +140,7 @@ def delete():
         id = request.form['id']
         if id != "":
             try:
-                todo = models.delete_task(id)
+                todo = models.delete_task(uuid.UUID(id))
             except ValueError as e:
                 error = e
                 return render_template('formDelete.html', error = error)
@@ -127,7 +160,7 @@ def complete():
         id = request.form['id']
         if id != "":
             try:
-                todo = models.complete_task(id)
+                todo = models.complete_task(uuid.UUID(id))
             except ValueError as e:
                 error = e
                 return render_template('formComplete.html', error = error)

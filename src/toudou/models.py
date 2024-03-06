@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from sqlalchemy import create_engine, MetaData, Table, Column, String, Boolean, DateTime, select, update, delete, inspect
+from sqlalchemy import create_engine, MetaData, Table, UUID, Column, String, Boolean, DateTime, select, update, delete, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 from os import makedirs
 import datetime
@@ -127,6 +127,25 @@ def complete_task(id: uuid):
     except ArgumentError as e:
         print("An error occurred while updating the data:", e)
 
+def update_todo(id : uuid.UUID, task: str, complete: bool, due: datetime.date):
+    try:
+        count_rows(id)
+    except OperationalError as e:
+        print("An error occurred while updating the data:", e)
+        return None
+    except ValueError as ve:
+        print(str(ve))
+        return None
+
+    engine, metadata_obj, todosTable = initConn()
+    if due:
+        smt = update(todosTable).where(todosTable.c.id == id).values(task=task,completed=complete, date=due)
+    else:
+        smt = update(todosTable).where(todosTable.c.id == id).values(task=task, completed=complete, date=due)
+    with engine.begin() as conn:
+        result = conn.execute(smt)
+    return result.rowcount == 1
+        
 
 def create_todo(task: str, due: datetime):
     """
@@ -200,9 +219,22 @@ def initConn():
     toudouTable = Table(
         TABLE_NAME,
         metadata_obj,
-        Column("id", String, primary_key=True, default=str(uuid.uuid4())),
+        Column("id", UUID, primary_key=True, default=uuid.uuid4()),
         Column("task", String, nullable=False),
         Column("date", DateTime, nullable=True),
         Column("completed", Boolean, nullable=False)
     )
     return engine,metadata_obj,toudouTable 
+
+def count_rows(id : uuid.UUID) -> int:
+    engine, metadata_obj, todosTable = initConn()
+    stmt = select(todosTable).where(todosTable.c.id == id)
+    try:
+        with engine.connect() as connection:
+            result = connection.execute(stmt)
+            rows = result.fetchall()
+            if not rows:
+                raise ValueError("ID Inconnu")
+            return len(rows)
+    except OperationalError as e:
+        raise e
