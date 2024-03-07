@@ -92,15 +92,16 @@ def modify():
     if request.method == 'POST':
         id = request.form['id']
         task = request.form['tname']
+        if request.form['complete'] == "False": complete = ""
+        else: complete = request.form['complete']
         due = request.form['due']
-        complete = bool(request.form['complete'])
         try:
             due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
         except ValueError as e:
             error = e
             return render_template('formModify.html', error = error)
         if task != "":
-            todo = models.update_todo(uuid.UUID(id), task, complete, due)
+            todo = models.update_todo(uuid.UUID(id), task, bool(complete), due)
             if todo:
                 flash("Your toudou has been modified successfully")
                 return redirect(url_for('welcome'))
