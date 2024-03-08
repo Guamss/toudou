@@ -195,7 +195,7 @@ def delete_task(id: uuid):
         bool: True if the task has been successfully deleted, False otherwise.
     """
     engine, metadata, toudou = initConn()
-    try:
+    try: 
         stmt = delete(toudou).where(toudou.c.id == id)
         with engine.begin() as conn:
             result = conn.execute(stmt)
@@ -213,7 +213,7 @@ def initConn():
         metadata_obj (sqlalchemy.MetaData): The SQLAlchemy metadata object.
         toudouTable (sqlalchemy.Table): The table of to-do tasks in the database.
     """
-    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=True)
+    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
     metadata_obj = MetaData()
 
     toudouTable = Table(
