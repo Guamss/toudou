@@ -9,9 +9,13 @@ import toudou.models as models
 app = Flask(__name__)
 app.secret_key = 'azerty'
 
+@app.before_request
+def before():
+    models.createTable()
+
 @click.group()
 def cli():
-    models.createTable
+    models.createTable()
 
 @cli.command()
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
