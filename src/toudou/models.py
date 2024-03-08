@@ -234,7 +234,7 @@ def count_rows(id : uuid.UUID) -> int:
             result = connection.execute(stmt)
             rows = result.fetchall()
             if not rows:
-                raise ValueError("ID Inconnu")
+                raise ValueError("Unknown ID")
             return len(rows)
     except OperationalError as e:
         raise e
