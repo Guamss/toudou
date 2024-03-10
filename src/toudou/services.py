@@ -4,6 +4,7 @@ import io
 from datetime import datetime
 import toudou.models as models
 
+DOWNLOAD_DIR = 'src/toudou'
 
 def export_to_csv() -> io.StringIO:
     """
@@ -15,27 +16,36 @@ def export_to_csv() -> io.StringIO:
     output = io.StringIO()
     csv_writer = csv.DictWriter(
         output,
-        fieldnames=[f.name for f in dataclasses.fields(models.Todo)]
+        fieldnames=[f.name for f in dataclasses.fields(models.Todo) if f.name != 'id']
     )
+    csv_writer.writeheader()
     for todo in models.Todo.getToudous():
-        csv_writer.writerow(dataclasses.asdict(todo))
+        todo_dict = {f.name: getattr(todo, f.name) for f in dataclasses.fields(models.Todo) if f.name != 'id'}
+        csv_writer.writerow(todo_dict)
     return output
 
 
 def import_from_csv(csv_file: io.StringIO) -> None:
-    """
-    Import to-do tasks from a CSV file.
-
-    Args:
-        csv_file (io.StringIO): The StringIO object containing the CSV data.
-    """
-    csv_reader = csv.DictReader(
-        csv_file,
-        fieldnames=[f.name for f in dataclasses.fields(models.Todo)]
-    )
-    for row in csv_reader:
-        models.Todo(
-            task=row["task"], 
-            date=datetime.fromisoformat(row["due"]) if row["due"] else None, 
-            completed=row["complete"] == "True"
+    try:
+        csv_reader = csv.DictReader(
+            csv_file,
+            fieldnames=["task", "date", "completed"]
         )
+        next(csv_reader)
+        for row in csv_reader:
+            models.create_todo(
+                task=row["task"],
+                due=datetime.fromisoformat(row["date"]) if row["date"] else None,
+                completed=row["completed"] == "True"
+            )
+    except csv.Error as e:
+        raise Exception( str(e))
+
+def get_string_csv():
+    csv_data = export_to_csv()
+    csv_data.seek(0)
+    csv_data = csv_data.read()
+
+    return csv_data
+ 
+    

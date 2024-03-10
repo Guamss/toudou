@@ -147,7 +147,7 @@ def update_todo(id : uuid.UUID, task: str, complete: bool, due: datetime.date):
     return result.rowcount == 1
         
 
-def create_todo(task: str, due: datetime):
+def create_todo(task: str, due: datetime, completed: bool):
     """
     Create a new to-do task.
 
@@ -160,7 +160,7 @@ def create_todo(task: str, due: datetime):
     """
     engine, metadata, toudou = initConn()
     try:
-        ins = toudou.insert().values(task=task, date=due, completed=False)
+        ins = toudou.insert().values(task=task, date=due, completed=completed)
         with engine.begin() as conn:
             result = conn.execute(ins)
         return result.rowcount == 1

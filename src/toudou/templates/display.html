@@ -29,6 +29,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/display">Your toudous</a>
               </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/upload">Import</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -38,7 +41,12 @@
     </div>
     <br>
     <div class="container">
+      <div class="mb-3">
         {% if todos|length > 0 %}
+        <a href="/download">
+          <button type="submit" class="btn btn-primary">Download as CSV</button>
+        </a>
+      </div>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>

@@ -1,7 +1,8 @@
 from datetime import datetime
+import io
 import uuid
 import click
-from flask import Flask, render_template, request, url_for, redirect, flash
+from flask import Flask, render_template, request, url_for, redirect, flash, Response
 
 import toudou.services as services
 import toudou.models as models
@@ -21,7 +22,7 @@ def cli():
 @click.option("-t", "--task", prompt="Your task", help="The task to remember.")
 @click.option("-d", "--due", type=click.DateTime(formats=["%d/%m/%Y"]), default=None, help="Due date of the task.")
 def create(task: str, due: datetime):
-    todo = models.create_todo(task, due)
+    todo = models.create_todo(task, due, False)
     if todo:
         click.echo("Your toudou has been created successfully")
     else:
@@ -128,7 +129,7 @@ def create():
             error = e
             return render_template('formCreation.html', error = error)
         if task != "":
-            todo = models.create_todo(task, due)
+            todo = models.create_todo(task, due, False)
             if todo:
                 flash("Your toudou has been created successfully")
                 return redirect(url_for('welcome'))
@@ -184,6 +185,25 @@ def display():
     if todos == None : todos = []
     return render_template('display.html', todos = todos)
     
+
+@app.route('/download')
+def download():
+    csv_data = services.get_string_csv()
+    response = Response(csv_data, content_type='text/csv')
+    response.headers["Content-Disposition"] = "attachment; filename=toudous.csv"
+    return response
+
+@app.route('/upload', methods= ['POST', 'GET'])
+def upload():
+    if request.method == "POST":
+        file = request.files['file']
+        if file:
+            services.import_from_csv(io.StringIO(file.stream.read().decode("UTF8")))
+            return redirect(url_for('display'))
+        else:
+            return redirect(url_for('welcome'))
+    else:
+        return render_template('upload.html')
 
 if __name__ == '__main__':
     app.run()
