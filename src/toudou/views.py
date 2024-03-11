@@ -1,6 +1,7 @@
 from datetime import datetime
 import io
 import uuid
+from toudou import config
 import click
 from flask import Flask, render_template, request, url_for, redirect, flash, Response
 
@@ -8,7 +9,7 @@ import toudou.services as services
 import toudou.models as models
 
 app = Flask(__name__)
-app.secret_key = 'azerty'
+app.secret_key = config['FLASK_SECRET_KEY']
 
 @app.before_request
 def before():

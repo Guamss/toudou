@@ -1,14 +1,10 @@
 from dataclasses import dataclass, field
+from toudou import config, DATABASE, TODO_FOLDER, TABLE_NAME
 from sqlalchemy import create_engine, MetaData, Table, UUID, Column, String, Boolean, DateTime, select, update, delete, inspect
 from sqlalchemy.exc import OperationalError, StatementError, ArgumentError
 from os import makedirs
 import datetime
 import uuid
-
-TODO_FOLDER = "database"
-DATABASE = "toudou.db"
-TABLE_NAME = "TOUDOU"
-
 
 @dataclass
 class Todo:
@@ -213,7 +209,7 @@ def initConn():
         metadata_obj (sqlalchemy.MetaData): The SQLAlchemy metadata object.
         toudouTable (sqlalchemy.Table): The table of to-do tasks in the database.
     """
-    engine = create_engine(f"sqlite:///{TODO_FOLDER}/{DATABASE}", echo=False)
+    engine = create_engine(config['DATABASE_URL'], echo=config['DEBUG'])
     metadata_obj = MetaData()
 
     toudouTable = Table(
