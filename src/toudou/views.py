@@ -3,15 +3,14 @@ import io
 import uuid
 from toudou import config
 import click
-from flask import Flask, render_template, request, url_for, redirect, flash, Response
+from flask import Blueprint, Flask, render_template, request, url_for, redirect, flash, Response
 
 import toudou.services as services
 import toudou.models as models
 
-app = Flask(__name__)
-app.secret_key = config['FLASK_SECRET_KEY']
+web_ui = Blueprint("web_ui", __name__, url_prefix="/")
 
-@app.before_request
+@web_ui.before_request
 def before():
     models.createTable()
 
@@ -87,12 +86,12 @@ def delete(id: uuid):
         click.echo("An error has occured")
 
 
-@app.route('/')
+@web_ui.route('/')
 def welcome():
     models.createTable()
     return render_template('welcome.html')
 
-@app.route('/modify', methods= ['POST', 'GET'])
+@web_ui.route('/modify', methods= ['POST', 'GET'])
 def modify():
     error = None
     if request.method == 'POST':
@@ -110,7 +109,7 @@ def modify():
             todo = models.update_todo(uuid.UUID(id), task, bool(complete), due)
             if todo:
                 flash("Your toudou has been modified successfully")
-                return redirect(url_for('welcome'))
+                return redirect(url_for('web_ui.welcome'))
             else:
                 error = "An error has occured"
                 return render_template('formModify.html', error = error)
@@ -118,7 +117,7 @@ def modify():
         return render_template('formModify.html', toudous = models.Todo.getToudous())
 
 
-@app.route('/create', methods= ['POST', 'GET'])
+@web_ui.route('/create', methods= ['POST', 'GET'])
 def create():
     error = None
     if request.method == 'POST':
@@ -133,14 +132,14 @@ def create():
             todo = models.create_todo(task, due, False)
             if todo:
                 flash("Your toudou has been created successfully")
-                return redirect(url_for('welcome'))
+                return redirect(url_for('web_ui.welcome'))
             else:
                 error = "An error has occured"
                 return render_template('formCreation.html', error = error)
     else:
         return render_template('formCreation.html')
 
-@app.route('/delete', methods= ['POST', 'GET'])
+@web_ui.route('/delete', methods= ['POST', 'GET'])
 def delete():
     error = None
     if request.method == 'POST':
@@ -153,14 +152,14 @@ def delete():
                 return render_template('formDelete.html', error = error)
             if todo:
                 flash("Your toudou has been deleted successfully")
-                return redirect(url_for('welcome'))
+                return redirect(url_for('web_ui.welcome'))
             else:
                 error = "An error has occured"
                 return render_template('formDelete.html', error = error)
     else:
         return render_template("formDelete.html", toudous = models.Todo.getToudous())
     
-@app.route('/complete', methods= ['POST', 'GET'])
+@web_ui.route('/complete', methods= ['POST', 'GET'])
 def complete():
     error = None
     if request.method == 'POST':
@@ -173,38 +172,35 @@ def complete():
                 return render_template('formComplete.html', error = error)
             if todo:
                 flash("Your toudou has been deleted successfully")
-                return redirect(url_for('welcome'))
+                return redirect(url_for('web_ui.welcome'))
             else:
                 error = "An error has occured"
                 return render_template('formComplete.html', error = error)
     else:
         return render_template("formComplete.html", toudous = models.Todo.getNotCompletedToudous())
 
-@app.route('/display')
+@web_ui.route('/display')
 def display():
     todos = models.Todo.getToudous()
     if todos == None : todos = []
     return render_template('display.html', todos = todos)
     
 
-@app.route('/download')
+@web_ui.route('/download')
 def download():
     csv_data = services.get_string_csv()
     response = Response(csv_data, content_type='text/csv')
     response.headers["Content-Disposition"] = "attachment; filename=toudous.csv"
     return response
 
-@app.route('/upload', methods= ['POST', 'GET'])
+@web_ui.route('/upload', methods= ['POST', 'GET'])
 def upload():
     if request.method == "POST":
         file = request.files['file']
         if file:
             services.import_from_csv(io.StringIO(file.stream.read().decode("UTF8")))
-            return redirect(url_for('display'))
+            return redirect(url_for('web_ui.display'))
         else:
-            return redirect(url_for('welcome'))
+            return redirect(url_for('web_ui.welcome'))
     else:
         return render_template('upload.html')
-
-if __name__ == '__main__':
-    app.run()

@@ -7,6 +7,7 @@ dependencies = [
     "click>=8.1.7",
     "sqlalchemy>=2.0.27",
     "flask>=3.0.2",
+    "flask-wtf>=1.2.1",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -20,3 +21,6 @@ toudou = "toudou.views:cli"
 requires = ["pdm-pep517"]
 build-backend = "pdm.pep517.api"
 
+[tool.pdm.scripts]
+_.env_file = "envvar/dev.env"
+start = "flask --app toudou.app --debug run"

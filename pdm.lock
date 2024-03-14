@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:7453e77118b362e3bd771d0529b8854ef87030941c9109fcf83360fb56867c0f"
+content_hash = "sha256:832b2483a230adbf3127e9ea2d5d2686192c6f17ad9c8a570418dee8587d0f9a"
 
 [[package]]
 name = "blinker"
@@ -60,6 +60,22 @@ dependencies = [
 files = [
     {file = "flask-3.0.2-py3-none-any.whl", hash = "sha256:3232e0e9c850d781933cf0207523d1ece087eb8d87b23777ae38456e2fbe7c6e"},
     {file = "flask-3.0.2.tar.gz", hash = "sha256:822c03f4b799204250a7ee84b1eddc40665395333973dfb9deebfe425fefcb7d"},
+]
+
+[[package]]
+name = "flask-wtf"
+version = "1.2.1"
+requires_python = ">=3.8"
+summary = "Form rendering, validation, and CSRF protection for Flask with WTForms."
+groups = ["default"]
+dependencies = [
+    "flask",
+    "itsdangerous",
+    "wtforms",
+]
+files = [
+    {file = "flask_wtf-1.2.1-py3-none-any.whl", hash = "sha256:fa6793f2fb7e812e0fe9743b282118e581fb1b6c45d414b8af05e659bd653287"},
+    {file = "flask_wtf-1.2.1.tar.gz", hash = "sha256:8bb269eb9bb46b87e7c8233d7e7debdf1f8b74bf90cc1789988c29b37a97b695"},
 ]
 
 [[package]]
@@ -227,4 +243,18 @@ dependencies = [
 files = [
     {file = "werkzeug-3.0.1-py3-none-any.whl", hash = "sha256:90a285dc0e42ad56b34e696398b8122ee4c681833fb35b8334a095d82c56da10"},
     {file = "werkzeug-3.0.1.tar.gz", hash = "sha256:507e811ecea72b18a404947aded4b3390e1db8f826b494d76550ef45bb3b1dcc"},
+]
+
+[[package]]
+name = "wtforms"
+version = "3.1.2"
+requires_python = ">=3.8"
+summary = "Form validation and rendering for Python web development."
+groups = ["default"]
+dependencies = [
+    "markupsafe",
+]
+files = [
+    {file = "wtforms-3.1.2-py3-none-any.whl", hash = "sha256:bf831c042829c8cdbad74c27575098d541d039b1faa74c771545ecac916f2c07"},
+    {file = "wtforms-3.1.2.tar.gz", hash = "sha256:f8d76180d7239c94c6322f7990ae1216dae3659b7aa1cee94b6318bdffb474b9"},
 ]
