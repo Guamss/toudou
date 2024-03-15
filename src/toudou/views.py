@@ -1,9 +1,9 @@
 from datetime import datetime
 import io
 import uuid
-from toudou import config
+from toudou import logging
 import click
-from flask import Blueprint, Flask, render_template, request, url_for, redirect, flash, Response
+from flask import Blueprint, Flask, abort, jsonify, render_template, request, url_for, redirect, flash, Response
 
 import toudou.services as services
 import toudou.models as models
@@ -94,24 +94,28 @@ def welcome():
 def modify():
     error = None
     if request.method == 'POST':
-        id = request.form['id']
-        task = request.form['tname']
-        if request.form['complete'] == "False": complete = ""
-        else: complete = request.form['complete']
-        due = request.form['due']
+        try:
+            id = request.form['id']
+            task = request.form['tname']
+            if request.form['complete'] == "False": complete = ""
+            else: complete = request.form['complete']
+            due = request.form['due']
+        except Exception as e:
+            error = e
+            abort(500, error)
         try:
             due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
         except ValueError as e:
             error = e
-            return render_template('formModify.html', error = error)
+            abort(500, error)
         if task != "":
             todo = models.update_todo(uuid.UUID(id), task, bool(complete), due)
             if todo:
                 flash("Your toudou has been modified successfully")
-                return redirect(url_for('web_ui.welcome'))
+                return redirect(url_for('web_ui.display'))
             else:
                 error = "An error has occured"
-                return render_template('formModify.html', error = error)
+                abort(500, error)
     else:
         return render_template('formModify.html', toudous = models.Todo.getToudous())
 
@@ -120,21 +124,25 @@ def modify():
 def create():
     error = None
     if request.method == 'POST':
-        task = request.form['tname']
-        due = request.form['due']
+        try:
+            task = request.form['tname']
+            due = request.form['due']
+        except Exception as e:
+            error = e
+            abort(500, error)
         try:
             due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
         except ValueError as e:
             error = e
-            return render_template('formCreation.html', error = error)
+            abort(500, error)
         if task != "":
             todo = models.create_todo(task, due, False)
             if todo:
                 flash("Your toudou has been created successfully")
-                return redirect(url_for('web_ui.welcome'))
+                return redirect(url_for('web_ui.display'))
             else:
                 error = "An error has occured"
-                return render_template('formCreation.html', error = error)
+                abort(500, error)
     else:
         return render_template('formCreation.html')
 
@@ -142,19 +150,23 @@ def create():
 def delete():
     error = None
     if request.method == 'POST':
-        id = request.form['id']
+        try:
+            id = request.form['id']
+        except Exception as e:
+            error = e
+            abort(500, error)
         if id != "":
             try:
                 todo = models.delete_task(uuid.UUID(id))
             except ValueError as e:
                 error = e
-                return render_template('formDelete.html', error = error)
+                abort(500, error)
             if todo:
                 flash("Your toudou has been deleted successfully")
-                return redirect(url_for('web_ui.welcome'))
+                return redirect(url_for('web_ui.display'))
             else:
                 error = "An error has occured"
-                return render_template('formDelete.html', error = error)
+                abort(500, error)
     else:
         return render_template("formDelete.html", toudous = models.Todo.getToudous())
     
@@ -162,19 +174,23 @@ def delete():
 def complete():
     error = None
     if request.method == 'POST':
-        id = request.form['id']
+        try:
+            id = request.form['id']
+        except Exception as e:
+            error = e
+            abort(500, error)
         if id != "":
             try:
                 todo = models.complete_task(uuid.UUID(id))
             except ValueError as e:
                 error = e
-                return render_template('formComplete.html', error = error)
+                abort(500, error)
             if todo:
                 flash("Your toudou has been deleted successfully")
                 return redirect(url_for('web_ui.welcome'))
             else:
                 error = "An error has occured"
-                return render_template('formComplete.html', error = error)
+                abort(500, error)
     else:
         return render_template("formComplete.html", toudous = models.Todo.getNotCompletedToudous())
 
@@ -194,8 +210,13 @@ def download():
 
 @web_ui.route('/upload', methods= ['POST', 'GET'])
 def upload():
+    error = None
     if request.method == "POST":
-        file = request.files['file']
+        try:
+            file = request.files['file']
+        except Exception as e:
+            error = e
+            abort(500, error) 
         if file:
             services.import_from_csv(io.StringIO(file.stream.read().decode("UTF8")))
             return redirect(url_for('web_ui.display'))
@@ -204,7 +225,9 @@ def upload():
     else:
         return render_template('upload.html')
     
+
 @web_ui.errorhandler(500)
-def handle_internal_error(error):
-    flash ("Internal error ", error)
+def handle_internal_error(error : Exception):
+    flash(str(error))
+    logging.exception(str(error))
     return redirect(url_for("web_ui.welcome"))

@@ -1,0 +1,193 @@
+2024-03-15 17:45:40,709 [WARNING]  * Debugger is active!
+2024-03-15 17:45:40,717 [INFO]  * Debugger PIN: 440-112-358
+2024-03-15 17:46:00,068 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\__init__.py', reloading
+2024-03-15 17:46:00,632 [WARNING]  * Debugger is active!
+2024-03-15 17:46:00,639 [INFO]  * Debugger PIN: 440-112-358
+2024-03-15 17:46:21,013 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views.py', reloading
+2024-03-15 17:46:21,552 [WARNING]  * Debugger is active!
+2024-03-15 17:46:21,559 [INFO]  * Debugger PIN: 440-112-358
+2024-03-15 17:46:56,168 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views.py', reloading
+2024-03-15 17:46:56,510 [WARNING]  * Debugger is active!
+2024-03-15 17:46:56,519 [INFO]  * Debugger PIN: 776-214-579
+2024-03-15 17:46:58,569 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views.py', reloading
+2024-03-15 17:46:59,112 [WARNING]  * Debugger is active!
+2024-03-15 17:46:59,119 [INFO]  * Debugger PIN: 440-112-358
+2024-03-15 17:47:26,197 [INFO] BEGIN (implicit)
+2024-03-15 17:47:26,198 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:26,198 [INFO] [raw sql] ()
+2024-03-15 17:47:26,199 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:26,199 [INFO] [raw sql] ()
+2024-03-15 17:47:26,200 [INFO] ROLLBACK
+2024-03-15 17:47:26,200 [INFO] BEGIN (implicit)
+2024-03-15 17:47:26,200 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:26,200 [INFO] [raw sql] ()
+2024-03-15 17:47:26,201 [INFO] COMMIT
+2024-03-15 17:47:26,203 [INFO] BEGIN (implicit)
+2024-03-15 17:47:26,203 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-03-15 17:47:26,204 [INFO] [generated in 0.00087s] ()
+2024-03-15 17:47:26,204 [INFO] ROLLBACK
+2024-03-15 17:47:26,210 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:26] "GET /display HTTP/1.1" 200 -
+2024-03-15 17:47:35,200 [INFO] BEGIN (implicit)
+2024-03-15 17:47:35,200 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:35,200 [INFO] [raw sql] ()
+2024-03-15 17:47:35,201 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:35,201 [INFO] [raw sql] ()
+2024-03-15 17:47:35,202 [INFO] ROLLBACK
+2024-03-15 17:47:35,202 [INFO] BEGIN (implicit)
+2024-03-15 17:47:35,202 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:35,203 [INFO] [raw sql] ()
+2024-03-15 17:47:35,203 [INFO] COMMIT
+2024-03-15 17:47:35,205 [INFO] BEGIN (implicit)
+2024-03-15 17:47:35,205 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-03-15 17:47:35,205 [INFO] [generated in 0.00066s] ()
+2024-03-15 17:47:35,206 [INFO] ROLLBACK
+2024-03-15 17:47:35,209 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:35] "GET /delete HTTP/1.1" 200 -
+2024-03-15 17:47:42,687 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,688 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:42,688 [INFO] [raw sql] ()
+2024-03-15 17:47:42,689 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:42,689 [INFO] [raw sql] ()
+2024-03-15 17:47:42,690 [INFO] ROLLBACK
+2024-03-15 17:47:42,690 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,690 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:42,691 [INFO] [raw sql] ()
+2024-03-15 17:47:42,691 [INFO] COMMIT
+2024-03-15 17:47:42,694 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,695 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-03-15 17:47:42,696 [INFO] [generated in 0.00041s] ('68d4f3aab0894675aedddc00d1b99b59',)
+2024-03-15 17:47:42,698 [INFO] COMMIT
+2024-03-15 17:47:42,709 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:42] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2024-03-15 17:47:42,717 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,718 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:42,718 [INFO] [raw sql] ()
+2024-03-15 17:47:42,719 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:42,719 [INFO] [raw sql] ()
+2024-03-15 17:47:42,720 [INFO] ROLLBACK
+2024-03-15 17:47:42,720 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,720 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:42,720 [INFO] [raw sql] ()
+2024-03-15 17:47:42,721 [INFO] COMMIT
+2024-03-15 17:47:42,723 [INFO] BEGIN (implicit)
+2024-03-15 17:47:42,723 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-03-15 17:47:42,724 [INFO] [generated in 0.00083s] ()
+2024-03-15 17:47:42,725 [INFO] ROLLBACK
+2024-03-15 17:47:42,726 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:42] "GET /display HTTP/1.1" 200 -
+2024-03-15 17:47:58,699 [INFO] BEGIN (implicit)
+2024-03-15 17:47:58,700 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:58,700 [INFO] [raw sql] ()
+2024-03-15 17:47:58,701 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:58,701 [INFO] [raw sql] ()
+2024-03-15 17:47:58,701 [INFO] ROLLBACK
+2024-03-15 17:47:58,702 [INFO] BEGIN (implicit)
+2024-03-15 17:47:58,702 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:58,702 [INFO] [raw sql] ()
+2024-03-15 17:47:58,702 [INFO] COMMIT
+2024-03-15 17:47:58,703 [ERROR] 500 Internal Server Error: badly formed hexadecimal UUID string
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views.py", line 160, in delete
+    todo = models.delete_task(uuid.UUID(id))
+                              ^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views.py", line 163, in delete
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: badly formed hexadecimal UUID string
+2024-03-15 17:47:58,707 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:58] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2024-03-15 17:47:58,715 [INFO] BEGIN (implicit)
+2024-03-15 17:47:58,716 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:47:58,716 [INFO] [raw sql] ()
+2024-03-15 17:47:58,717 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:47:58,717 [INFO] [raw sql] ()
+2024-03-15 17:47:58,718 [INFO] ROLLBACK
+2024-03-15 17:47:58,718 [INFO] BEGIN (implicit)
+2024-03-15 17:47:58,718 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:47:58,719 [INFO] [raw sql] ()
+2024-03-15 17:47:58,719 [INFO] COMMIT
+2024-03-15 17:47:58,722 [INFO] 127.0.0.1 - - [15/Mar/2024 17:47:58] "GET / HTTP/1.1" 200 -
+2024-03-15 17:48:03,114 [INFO] BEGIN (implicit)
+2024-03-15 17:48:03,114 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:48:03,114 [INFO] [raw sql] ()
+2024-03-15 17:48:03,115 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:48:03,116 [INFO] [raw sql] ()
+2024-03-15 17:48:03,116 [INFO] ROLLBACK
+2024-03-15 17:48:03,117 [INFO] BEGIN (implicit)
+2024-03-15 17:48:03,117 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:48:03,117 [INFO] [raw sql] ()
+2024-03-15 17:48:03,118 [INFO] COMMIT
+2024-03-15 17:48:03,118 [ERROR] 500 Internal Server Error: badly formed hexadecimal UUID string
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views.py", line 160, in delete
+    todo = models.delete_task(uuid.UUID(id))
+                              ^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views.py", line 163, in delete
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: badly formed hexadecimal UUID string
+2024-03-15 17:48:03,122 [INFO] 127.0.0.1 - - [15/Mar/2024 17:48:03] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2024-03-15 17:48:03,135 [INFO] BEGIN (implicit)
+2024-03-15 17:48:03,136 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:48:03,136 [INFO] [raw sql] ()
+2024-03-15 17:48:03,137 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:48:03,137 [INFO] [raw sql] ()
+2024-03-15 17:48:03,137 [INFO] ROLLBACK
+2024-03-15 17:48:03,138 [INFO] BEGIN (implicit)
+2024-03-15 17:48:03,138 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:48:03,139 [INFO] [raw sql] ()
+2024-03-15 17:48:03,139 [INFO] COMMIT
+2024-03-15 17:48:03,140 [INFO] 127.0.0.1 - - [15/Mar/2024 17:48:03] "GET / HTTP/1.1" 200 -
+2024-03-15 17:51:08,279 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-15 17:51:08,279 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-15 17:51:08,281 [INFO]  * Restarting with stat
+2024-03-15 17:51:08,746 [WARNING]  * Debugger is active!
+2024-03-15 17:51:08,753 [INFO]  * Debugger PIN: 440-112-358
+2024-03-15 17:51:30,483 [INFO] BEGIN (implicit)
+2024-03-15 17:51:30,484 [INFO] PRAGMA main.table_info("toudou.db")
+2024-03-15 17:51:30,484 [INFO] [raw sql] ()
+2024-03-15 17:51:30,485 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-03-15 17:51:30,485 [INFO] [raw sql] ()
+2024-03-15 17:51:30,486 [INFO] ROLLBACK
+2024-03-15 17:51:30,486 [INFO] BEGIN (implicit)
+2024-03-15 17:51:30,486 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-03-15 17:51:30,487 [INFO] [raw sql] ()
+2024-03-15 17:51:30,487 [INFO] COMMIT
+2024-03-15 17:51:30,490 [INFO] BEGIN (implicit)
+2024-03-15 17:51:30,490 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-03-15 17:51:30,491 [INFO] [generated in 0.00095s] ()
+2024-03-15 17:51:30,491 [INFO] ROLLBACK
+2024-03-15 17:51:30,498 [INFO] 127.0.0.1 - - [15/Mar/2024 17:51:30] "GET /display HTTP/1.1" 200 -

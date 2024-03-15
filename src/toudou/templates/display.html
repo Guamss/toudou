@@ -41,6 +41,18 @@
     </div>
     <br>
     <div class="container">
+      <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="alert alert-success">
+                <h4 class="alert-heading">Success</h4>
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+    </div>
       <div class="mb-3">
         {% if todos|length > 0 %}
         <a href="/download">
