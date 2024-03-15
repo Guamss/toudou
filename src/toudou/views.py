@@ -88,7 +88,6 @@ def delete(id: uuid):
 
 @web_ui.route('/')
 def welcome():
-    models.createTable()
     return render_template('welcome.html')
 
 @web_ui.route('/modify', methods= ['POST', 'GET'])
@@ -204,3 +203,8 @@ def upload():
             return redirect(url_for('web_ui.welcome'))
     else:
         return render_template('upload.html')
+    
+@web_ui.errorhandler(500)
+def handle_internal_error(error):
+    flash ("Internal error ", error)
+    return redirect(url_for("web_ui.welcome"))
