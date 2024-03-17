@@ -18,9 +18,6 @@
               <a class="nav-link" href="/create">Create</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/delete">Delete</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/complete">Complete</a>
             </li>
             <li class="nav-item">
@@ -42,30 +39,24 @@
     <br>
     <div class="container">
         <form class="mb-3" action="/create" method="POST">
+            {{ form.csrf_token }}
             <div class="mb-3">
-                <label for="tname">Your toudou's name :</label>
-                <input type="text" class="form-control" id="tname" name="tname" required>
+                {{ form.name.label }} {{ form.name(class="form-control") }}
             </div>
             <div class="mb-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="due" onclick="check()">
-                    <label class="form-check-label" for="due">Does your toudou have a deadline?</label>
+                    {{ form.due_checkbox(class="form-check-input", onclick="check()") }}
+                    {{ form.due_checkbox.label }}
+                </div>
+                <div id="dueSection" class="mb-3" style="display:none;">
+                    {{ form.due.label }}
+                    {{ form.due(class="form-control") }}
                 </div>
             </div>
-            <div class="mb-3" id="dueSection" style="display:none;">
-                <label for="due">Due :</label>
-                <input type="date" class="form-control" id="dueDate" name="due">
-            </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                {{ form.submit(class="btn btn-primary")}}
             </div>
-        </form> 
-        {% if error%}
-        <div class="alert alert-danger">
-            <h4 class="alert-heading">Error</h4>
-            <p>{{ error }}</p>
-        </div>
-        {% endif %}
+        </form>
     </div>
     <script>
     window.onload = function() {
@@ -73,7 +64,7 @@
     };
 
     function check() {
-        var checkBox = document.getElementById("due");
+        var checkBox = document.getElementById("due_checkbox");
         var dueSection = document.getElementById("dueSection");
         if (checkBox.checked) {
             dueSection.style.display = "block";

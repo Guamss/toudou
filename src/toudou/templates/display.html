@@ -18,9 +18,6 @@
               <a class="nav-link" href="/create">Create</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/delete">Delete</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/complete">Complete</a>
             </li>
             <li class="nav-item">
@@ -62,21 +59,27 @@
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
                         <th scope="col">Task</th>
                         <th scope="col">Date</th>
                         <th scope="col">Completed</th>
                         <th scope="col">Toudou</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                 {% for todo in todos %}
                     <tr>
-                        <td>{{ todo.id }}</td>
                         <td>{{ todo.task }}</td>
                         <td>{% if todo.date %} {{todo.changeDateFormat() }} {% else %}No deadline{% endif%}</td>
                         <td>{% if todo.completed %}Yes{% else %}No{% endif %}</td>
                         <td>{{ todo.__str__() }}</td>
+                        <td>
+                          <form action="/display" method="post">
+                              {{ form.csrf_token }}
+                              {{ form.toudou_ID(value=todo.id) }}
+                              {{ form.submit(class="btn btn-danger") }}
+                          </form>
+                      </td>
                     </tr>
                 {% endfor %}
                 </tbody>
