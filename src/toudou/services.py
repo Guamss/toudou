@@ -19,7 +19,7 @@ def export_to_csv() -> io.StringIO:
         fieldnames=[f.name for f in dataclasses.fields(models.Todo) if f.name != 'id']
     )
     csv_writer.writeheader()
-    for todo in models.Todo.getToudous():
+    for todo in models.getToudous():
         todo_dict = {f.name: getattr(todo, f.name) for f in dataclasses.fields(models.Todo) if f.name != 'id'}
         csv_writer.writerow(todo_dict)
     return output

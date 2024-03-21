@@ -6,7 +6,7 @@ def create_app():
 
     app.secret_key = config['FLASK_SECRET_KEY']
 
-    from toudou.views import web_ui
+    from toudou.views.web import web_ui
     app.register_blueprint(web_ui)
 
     return app

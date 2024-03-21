@@ -1,92 +1,16 @@
-from datetime import datetime
 import io
-import uuid
-from toudou import config
-import click
-from flask import Blueprint, Flask, abort, jsonify, render_template, request, url_for, redirect, flash, Response
-from toudou.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm
 
+from toudou import config
+
+import uuid
+
+from flask import Blueprint, abort, render_template, request, url_for, redirect, flash, Response
+from toudou.views.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm
 
 import toudou.services as services
 import toudou.models as models
 
 web_ui = Blueprint("web_ui", __name__, url_prefix="/")
-
-@web_ui.before_request
-def before():
-    models.createTable()
-
-@click.group()
-def cli():
-    models.createTable()
-
-@cli.command()
-@click.option("-t", "--task", prompt="Your task", help="The task to remember.")
-@click.option("-d", "--due", type=click.DateTime(formats=["%d/%m/%Y"]), default=None, help="Due date of the task.")
-def create(task: str, due: datetime):
-    todo = models.create_todo(task, due, False)
-    if todo:
-        click.echo("Your toudou has been created successfully")
-    else:
-        click.echo("An error has occured")
-
-@cli.command()
-@click.argument("csv_file", type=click.File("r"))
-def import_csv(csv_file):
-    services.import_from_csv(csv_file)
-
-@cli.command()
-@click.option("-i", "--id", type=click.UUID, prompt="ID", help="Search a stored toudou")
-def display(id: uuid):
-    toudou = models.Todo.getToudou(id)
-    if toudou:
-        id, task, date, completed = toudou
-        todo = models.Todo(id=id, task=task, date=date, completed=completed)
-        click.echo(todo)
-    else:
-        click.echo("This toudou does not exist")
-
-
-@cli.command()
-@click.option("--as-csv", is_flag=True)
-def display_all(as_csv: bool):
-    if as_csv:
-        click.echo(services.export_to_csv().getvalue())
-    else:
-        toudous = models.Todo.getToudous()
-        if len(toudous) > 0:
-            for toudou in toudous:
-                click.echo(toudou)
-        else:
-            click.echo("You don't have any toudous stored yet")
-
-@cli.command()
-@click.option("--id", required=True, type=click.UUID, help="Todo's id.")
-@click.option("-c", "--complete", required=True, type=click.BOOL, help="Todo is done or not.")
-@click.option("-t", "--task", prompt="Your task", help="The task to remember.")
-@click.option("-d", "--due",type=click.DateTime(formats=["%Y-%m-%d"]), default=None, help="Due date of the task.")
-def update(id: uuid.UUID, complete: bool, task: str, due: datetime):
-    models.update_todo(id, task, complete, due)
-
-@cli.command()
-@click.option("-i", "--id", type=click.UUID, prompt="ID", help="Complete a toudou")
-def complete(id: uuid):
-    todo = models.complete_task(id)
-    if todo:
-        click.echo("Your toudou has been changed successfully")
-    else:
-        click.echo("This toudou does not exist")
-
-
-@cli.command()
-@click.option("-i", "--id", type=click.UUID, prompt="ID", help="Delete a already existing toudou")
-def delete(id: uuid):
-    todo = models.delete_task(id)
-    if todo:
-        click.echo("Your toudou has been deleted successfully")
-    else:
-        click.echo("An error has occured")
-
 
 @web_ui.route('/')
 def welcome():
@@ -106,11 +30,6 @@ def modify():
         except Exception as e:
             error = e
             abort(500, error)
-        #try:
-        #    due = None if due == "" else datetime.strptime(due, '%Y-%m-%d')
-        #except ValueError as e:
-            #error = e
-        #    abort(500, error)
         if task != "":
             todo = models.update_todo(uuid.UUID(id), task, bool(complete), due)
             if todo:
@@ -120,7 +39,7 @@ def modify():
                 error = "An error has occured"
                 abort(500, error)
     
-    return render_template('formModify.html', toudous = models.Todo.getToudous(), form = form)
+    return render_template('formModify.html', toudous = models.getToudous(), form = form)
 
 
 @web_ui.route('/create', methods= ['POST', 'GET'])
@@ -166,7 +85,7 @@ def complete():
                 error = "An error has occured"
                 abort(500, error)
     else:
-        return render_template("formComplete.html", toudous = models.Todo.getNotCompletedToudous())
+        return render_template("formComplete.html", toudous = models.getNotCompletedToudous())
 
 @web_ui.route('/display', methods=['GET', 'POST'])
 def display():
@@ -190,7 +109,7 @@ def display():
             error = "An error has occured"
             abort(500, error)
 
-    todos = models.Todo.getToudous()
+    todos = models.getToudous()
     if todos == None : todos = []
     return render_template('display.html', todos = todos, form = form)
     
