@@ -14,19 +14,12 @@
     <br>
     <div class="container">
         <form class="mb-3" action="/complete" method="POST">
+            {{ form.csrf_token }}
             <div class="mb-3">
-                <label for="id">Your toudou :</label>
-                <select name="id" id="id" class="form-select" required>
-                  <option selected disabled>Select a toudou</option>
-                  {% if toudous %}
-                    {% for toudou in toudous %}
-                      <option value="{{ toudou.id }}">{{ toudou.__str__() }}</option>
-                    {% endfor %}
-                  {% endif %}
-                </select>
+                {{ form.id.label }} {{ form.id(class_="form-select", required=True) }}
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                {{ form.submit(class_="btn btn-primary") }}
             </div>
         </form> 
         {% if error%}

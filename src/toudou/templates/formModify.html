@@ -4,7 +4,7 @@
 <html lang="fr">
 <head>
     {% include "base.html" %}
-    <title>Delete</title>
+    <title>Modify</title>
 </head>
 <body>
       <div class="container-fluid bg-light p-5 text-center">
@@ -14,13 +14,9 @@
     <br>
     <div class="container">
       <form class="mb-3" action="{{ url_for('web_ui.modify') }}" method="POST">
-          {{ form.hidden_tag() }}
+          {{ form.csrf_token }}
           <div class="mb-3">
-              {{ form.id.label }} {{ form.id(class_="form-select", onchange="change()", required=True) }}
-              <option selected disabled>Select a toudou</option>
-              {% for toudou in toudous %}
-                  <option value="{{ toudou.id }}">{{ toudou.__str__() }}</option>
-              {% endfor %}
+              {{ form.id.label }} {{ form.id(class_="form-select", required=True) }}
           </div>
           <div id="params">
               <div class="mb-3">
@@ -45,19 +41,4 @@
         </div>
         {% endif %}
 </body>
-<script>
-    function change()
-    {
-        params_div = document.getElementById('params');
-        id_select = document.getElementById("id");
-        if (id_select.selectedIndex != 0)
-        {
-            params_div.style.display = 'block';
-        }
-        else
-        {
-            params_div.style.display = 'none';
-        }
-    }
-</script>
 {% endblock %}

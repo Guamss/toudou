@@ -127,6 +127,12 @@ def getNotCompletedToudous():
     except StatementError as e:
         print("Selection error: ", e)
 
+def convert_to_tuple_list(todo_list):
+    tuple_list = []
+    for todo in todo_list:
+        tuple_list.append((str(todo.id), str(todo)))
+    return tuple_list
+
 def getToudou(id: uuid):
     """
     Retrieve a to-do task based on its unique identifier.

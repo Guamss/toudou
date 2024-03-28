@@ -4,8 +4,6 @@ import uuid
 from toudou import config
 import click
 
-
-
 import toudou.services as services
 import toudou.models as models
 

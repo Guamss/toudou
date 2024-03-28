@@ -5,7 +5,7 @@ from toudou import config
 import uuid
 
 from flask import Blueprint, abort, render_template, request, url_for, redirect, flash, Response
-from toudou.views.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm
+from toudou.views.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm, CompleteToudouForm
 
 import toudou.services as services
 import toudou.models as models
@@ -20,6 +20,7 @@ def welcome():
 def modify():
     error = None
     form = ModifyToudouForm()
+    form.id.choices = models.convert_to_tuple_list(models.getToudous())
     if form.validate_on_submit():
         try:
             id = form.id.data
@@ -31,15 +32,14 @@ def modify():
             error = e
             abort(500, error)
         if task != "":
-            todo = models.update_todo(uuid.UUID(id), task, bool(complete), due)
+            todo = models.update_todo(id, task, bool(complete), due)
             if todo:
                 flash("Your toudou has been modified successfully")
                 return redirect(url_for('web_ui.display'))
             else:
                 error = "An error has occured"
                 abort(500, error)
-    
-    return render_template('formModify.html', toudous = models.getToudous(), form = form)
+    return render_template('formModify.html', form = form)
 
 
 @web_ui.route('/create', methods= ['POST', 'GET'])
@@ -66,26 +66,28 @@ def create():
 @web_ui.route('/complete', methods= ['POST', 'GET'])
 def complete():
     error = None
-    if request.method == 'POST':
+    form = CompleteToudouForm()
+    form.id.choices = models.convert_to_tuple_list(models.getNotCompletedToudous())
+    if form.validate_on_submit():
         try:
-            id = request.form['id']
+            id = form.id.data
         except Exception as e:
             error = e
             abort(500, error)
         if id != "":
             try:
-                todo = models.complete_task(uuid.UUID(id))
+                todo = models.complete_task(id)
             except ValueError as e:
                 error = e
                 abort(500, error)
             if todo:
-                flash("Your toudou has been deleted successfully")
-                return redirect(url_for('web_ui.welcome'))
+                flash("Your toudou has been completed successfully")
+                return redirect(url_for('web_ui.display'))
             else:
                 error = "An error has occured"
                 abort(500, error)
     else:
-        return render_template("formComplete.html", toudous = models.getNotCompletedToudous())
+        return render_template("formComplete.html", form = form)
 
 @web_ui.route('/display', methods=['GET', 'POST'])
 def display():
@@ -133,7 +135,7 @@ def upload():
             abort(500, error)
         if file:
             try:
-                services.import_from_csv(io.StringIO(file.stream.read().decode("UTF8")))
+                services.import_from_csv(file.stream)
                 flash("Your file has been imported successfully")
                 return redirect(url_for('web_ui.display'))
             except ValueError as e:
