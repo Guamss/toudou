@@ -4,19 +4,22 @@ from toudou import config
 
 import uuid
 
-from flask import Blueprint, abort, render_template, request, url_for, redirect, flash, Response
+from flask import Blueprint, abort, render_template, request, send_file, url_for, redirect, flash, Response
 from toudou.views.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm, CompleteToudouForm
 
+from toudou.app import auth, get_user_roles
 import toudou.services as services
 import toudou.models as models
 
 web_ui = Blueprint("web_ui", __name__, url_prefix="/")
 
 @web_ui.route('/')
+@auth.login_required
 def welcome():
-    return render_template('welcome.html')
+    return render_template('welcome.html', user = auth.current_user())
 
 @web_ui.route('/modify', methods= ['POST', 'GET'])
+@auth.login_required(role="admin")
 def modify():
     error = None
     form = ModifyToudouForm()
@@ -43,6 +46,7 @@ def modify():
 
 
 @web_ui.route('/create', methods= ['POST', 'GET'])
+@auth.login_required(role="admin")
 def create():
     error = None
     form = CreateToudouForm()
@@ -64,6 +68,7 @@ def create():
     return render_template('formCreation.html', form = form)
     
 @web_ui.route('/complete', methods= ['POST', 'GET'])
+@auth.login_required(role="admin")
 def complete():
     error = None
     form = CompleteToudouForm()
@@ -90,10 +95,12 @@ def complete():
         return render_template("formComplete.html", form = form)
 
 @web_ui.route('/display', methods=['GET', 'POST'])
+@auth.login_required
 def display():
+    user = auth.current_user()
     error = None
     form = DeleteToudouForm()
-    if form.validate_on_submit():
+    if form.validate_on_submit() and get_user_roles(user) == ['admin']:
         try:
             id = form.toudou_ID.data
         except Exception as e:
@@ -117,13 +124,15 @@ def display():
     
 
 @web_ui.route('/download')
+@auth.login_required
 def download():
-    csv_data = services.get_string_csv()
-    response = Response(csv_data, content_type='text/csv')
-    response.headers["Content-Disposition"] = "attachment; filename=toudous.csv"
-    return response
+    csv = services.export_to_csv()
+    content_bytes = csv.getvalue().encode()
+    bytes_io = io.BytesIO(content_bytes)
+    return send_file(bytes_io, as_attachment=True, mimetype='application/octet-stream',download_name="toudous.csv")
 
 @web_ui.route('/upload', methods= ['POST', 'GET'])
+@auth.login_required(role="admin")
 def upload():
     error = None
     form = UploadForm()
@@ -135,7 +144,8 @@ def upload():
             abort(500, error)
         if file:
             try:
-                services.import_from_csv(file.stream)
+                with file.stream as f:
+                    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
                 flash("Your file has been imported successfully")
                 return redirect(url_for('web_ui.display'))
             except ValueError as e:

@@ -25,27 +25,19 @@ def export_to_csv() -> io.StringIO:
     return output
 
 
-def import_from_csv(csv_file: io.StringIO) -> None:
-    try:
-        csv_reader = csv.DictReader(
-            csv_file,
-            fieldnames=["task", "date", "completed"]
-        )
-        next(csv_reader)
-        for row in csv_reader:
+def import_from_csv(csv_file: io.TextIOWrapper) -> None:
+    csv_file.seek(0)
+    csv_reader = csv.DictReader(
+        csv_file,
+        fieldnames=["task", "date", "completed"]
+    )
+    for row in csv_reader:
+        if not (row['task'] == 'task' or row['date'] == 'date' or row['completed'] == 'completed'):
             models.create_todo(
                 task=row["task"],
                 due=datetime.fromisoformat(row["date"]) if row["date"] else None,
                 completed=row["completed"] == "True"
             )
-    except csv.Error as e:
-        raise Exception( str(e))
 
-def get_string_csv():
-    csv_data = export_to_csv()
-    csv_data.seek(0)
-    csv_data = csv_data.read()
 
-    return csv_data
- 
     

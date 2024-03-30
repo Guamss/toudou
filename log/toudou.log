@@ -4162,3 +4162,857 @@ FROM "TOUDOU"
 2024-03-28 17:52:35,612 [INFO] 127.0.0.1 - - [28/Mar/2024 17:52:35] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2024-03-28 17:52:35,613 [INFO] 127.0.0.1 - - [28/Mar/2024 17:52:35] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
 2024-03-28 17:52:35,632 [INFO] 127.0.0.1 - - [28/Mar/2024 17:52:35] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-28 21:18:08,517 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-28 21:18:08,519 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-28 21:18:08,521 [INFO]  * Restarting with stat
+2024-03-28 21:18:09,271 [WARNING]  * Debugger is active!
+2024-03-28 21:18:09,279 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:18:17,051 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:17] "GET / HTTP/1.1" 200 -
+2024-03-28 21:18:18,191 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:18] "GET /modify HTTP/1.1" 200 -
+2024-03-28 21:18:18,677 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:18] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:19,282 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:19] "GET /complete HTTP/1.1" 200 -
+2024-03-28 21:18:19,626 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:19] "GET /modify HTTP/1.1" 200 -
+2024-03-28 21:18:23,260 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:23] "[32mPOST /modify HTTP/1.1[0m" 302 -
+2024-03-28 21:18:23,267 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:23] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:25,386 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:25] "GET /create HTTP/1.1" 200 -
+2024-03-28 21:18:26,050 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:26] "GET /complete HTTP/1.1" 200 -
+2024-03-28 21:18:27,482 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:27] "[32mPOST /complete HTTP/1.1[0m" 302 -
+2024-03-28 21:18:27,488 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:27] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:29,891 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:29] "GET /complete HTTP/1.1" 200 -
+2024-03-28 21:18:32,857 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:32] "[32mPOST /complete HTTP/1.1[0m" 302 -
+2024-03-28 21:18:32,865 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:32] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:33,873 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:33] "GET /complete HTTP/1.1" 200 -
+2024-03-28 21:18:36,600 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:36] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:37,279 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:37] "GET /upload HTTP/1.1" 200 -
+2024-03-28 21:18:38,255 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:38] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:53,691 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:53] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:18:54,381 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:54] "GET /upload HTTP/1.1" 200 -
+2024-03-28 21:18:58,911 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:58] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-28 21:18:59,007 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-28 21:18:59,011 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-28 21:18:59,020 [INFO] 127.0.0.1 - - [28/Mar/2024 21:18:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-28 21:19:02,651 [INFO] 127.0.0.1 - - [28/Mar/2024 21:19:02] "GET /upload HTTP/1.1" 200 -
+2024-03-28 21:22:29,522 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-28 21:22:29,522 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-28 21:22:29,524 [INFO]  * Restarting with stat
+2024-03-28 21:22:30,054 [WARNING]  * Debugger is active!
+2024-03-28 21:22:30,059 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:26:39,142 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:26:39,228 [INFO]  * Restarting with stat
+2024-03-28 21:26:39,531 [WARNING]  * Debugger is active!
+2024-03-28 21:26:39,540 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:31:02,895 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-28 21:31:02,896 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-28 21:31:02,900 [INFO]  * Restarting with stat
+2024-03-28 21:31:03,445 [WARNING]  * Debugger is active!
+2024-03-28 21:31:03,454 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:31:09,198 [INFO] 127.0.0.1 - - [28/Mar/2024 21:31:09] "[33mGET /upload HTTP/1.1[0m" 404 -
+2024-03-28 21:31:10,217 [INFO] 127.0.0.1 - - [28/Mar/2024 21:31:10] "[33mGET /upload HTTP/1.1[0m" 404 -
+2024-03-28 21:31:13,079 [INFO] 127.0.0.1 - - [28/Mar/2024 21:31:13] "[33mGET / HTTP/1.1[0m" 404 -
+2024-03-28 21:31:23,980 [INFO] 127.0.0.1 - - [28/Mar/2024 21:31:23] "[33mGET / HTTP/1.1[0m" 404 -
+2024-03-28 21:32:41,636 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:32:41,666 [INFO]  * Restarting with stat
+2024-03-28 21:32:42,754 [WARNING]  * Debugger is active!
+2024-03-28 21:32:42,760 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:35:25,131 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:35:25,242 [INFO]  * Restarting with stat
+2024-03-28 21:35:26,141 [WARNING]  * Debugger is active!
+2024-03-28 21:35:26,147 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:36:23,330 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:36:23,419 [INFO]  * Restarting with stat
+2024-03-28 21:36:23,723 [WARNING]  * Debugger is active!
+2024-03-28 21:36:23,732 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:36:24,774 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:36:24,810 [INFO]  * Restarting with stat
+2024-03-28 21:36:25,625 [WARNING]  * Debugger is active!
+2024-03-28 21:36:25,631 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:36:35,882 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:36:35,988 [INFO]  * Restarting with stat
+2024-03-28 21:36:36,856 [WARNING]  * Debugger is active!
+2024-03-28 21:36:36,862 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:37:54,450 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:37:54,567 [INFO]  * Restarting with stat
+2024-03-28 21:37:55,455 [WARNING]  * Debugger is active!
+2024-03-28 21:37:55,461 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:38:09,807 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:38:09,892 [INFO]  * Restarting with stat
+2024-03-28 21:38:10,203 [WARNING]  * Debugger is active!
+2024-03-28 21:38:10,213 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:38:23,402 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:38:23,433 [INFO]  * Restarting with stat
+2024-03-28 21:38:23,733 [WARNING]  * Debugger is active!
+2024-03-28 21:38:23,741 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:38:32,885 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:38:32,909 [INFO]  * Restarting with stat
+2024-03-28 21:38:33,186 [WARNING]  * Debugger is active!
+2024-03-28 21:38:33,199 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:38:41,330 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:38:41,357 [INFO]  * Restarting with stat
+2024-03-28 21:38:41,910 [WARNING]  * Debugger is active!
+2024-03-28 21:38:41,923 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:38:51,059 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:38:51,083 [INFO]  * Restarting with stat
+2024-03-28 21:38:51,910 [WARNING]  * Debugger is active!
+2024-03-28 21:38:51,916 [INFO]  * Debugger PIN: 776-214-579
+2024-03-28 21:39:21,569 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:39:21,654 [INFO]  * Restarting with stat
+2024-03-28 21:39:22,466 [WARNING]  * Debugger is active!
+2024-03-28 21:39:22,471 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:39:37,810 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:39:37,904 [INFO]  * Restarting with stat
+2024-03-28 21:39:38,749 [WARNING]  * Debugger is active!
+2024-03-28 21:39:38,755 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:39:45,935 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:39:46,018 [INFO]  * Restarting with stat
+2024-03-28 21:39:46,768 [WARNING]  * Debugger is active!
+2024-03-28 21:39:46,774 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:39:55,397 [INFO] 127.0.0.1 - - [28/Mar/2024 21:39:55] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:39:58,783 [INFO] 127.0.0.1 - - [28/Mar/2024 21:39:58] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:40:02,282 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:02] "GET / HTTP/1.1" 200 -
+2024-03-28 21:40:02,323 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:40:04,581 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:04] "GET /complete HTTP/1.1" 200 -
+2024-03-28 21:40:05,163 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:05] "GET /modify HTTP/1.1" 200 -
+2024-03-28 21:40:05,611 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:05] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:40:06,040 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:06] "GET /upload HTTP/1.1" 200 -
+2024-03-28 21:40:06,715 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:06] "GET /create HTTP/1.1" 200 -
+2024-03-28 21:40:07,352 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:07] "GET / HTTP/1.1" 200 -
+2024-03-28 21:40:11,787 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:11] "GET / HTTP/1.1" 200 -
+2024-03-28 21:40:25,034 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:40:29,089 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:29] "GET / HTTP/1.1" 200 -
+2024-03-28 21:40:29,193 [INFO] 127.0.0.1 - - [28/Mar/2024 21:40:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:41:19,669 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:41:19,777 [INFO]  * Restarting with stat
+2024-03-28 21:41:20,652 [WARNING]  * Debugger is active!
+2024-03-28 21:41:20,658 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:43:06,316 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-03-28 21:43:06,427 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-28 21:43:06,428 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-28 21:43:06,447 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:06] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-28 21:43:37,018 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:37] "GET / HTTP/1.1" 200 -
+2024-03-28 21:43:46,624 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:46] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:43:49,721 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:49] "GET / HTTP/1.1" 200 -
+2024-03-28 21:43:49,776 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:43:51,393 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:51] "GET /create HTTP/1.1" 200 -
+2024-03-28 21:43:51,962 [INFO] 127.0.0.1 - - [28/Mar/2024 21:43:51] "GET / HTTP/1.1" 200 -
+2024-03-28 21:45:05,244 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-28 21:45:05,405 [INFO]  * Restarting with stat
+2024-03-28 21:45:06,451 [WARNING]  * Debugger is active!
+2024-03-28 21:45:06,458 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:48:16,147 [INFO] 127.0.0.1 - - [28/Mar/2024 21:48:16] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:50:14,689 [INFO] 127.0.0.1 - - [28/Mar/2024 21:50:14] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:50:14,742 [INFO] 127.0.0.1 - - [28/Mar/2024 21:50:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:50:29,042 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:50:29,148 [INFO]  * Restarting with stat
+2024-03-28 21:50:30,162 [WARNING]  * Debugger is active!
+2024-03-28 21:50:30,168 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:50:59,827 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:50:59,950 [INFO]  * Restarting with stat
+2024-03-28 21:51:00,751 [WARNING]  * Debugger is active!
+2024-03-28 21:51:00,757 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:07,945 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:08,034 [INFO]  * Restarting with stat
+2024-03-28 21:51:08,838 [WARNING]  * Debugger is active!
+2024-03-28 21:51:08,844 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:11,951 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:12,036 [INFO]  * Restarting with stat
+2024-03-28 21:51:12,821 [WARNING]  * Debugger is active!
+2024-03-28 21:51:12,827 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:29,208 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:29,304 [INFO]  * Restarting with stat
+2024-03-28 21:51:30,107 [WARNING]  * Debugger is active!
+2024-03-28 21:51:30,113 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:48,522 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:48,622 [INFO]  * Restarting with stat
+2024-03-28 21:51:49,420 [WARNING]  * Debugger is active!
+2024-03-28 21:51:49,426 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:54,575 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:54,667 [INFO]  * Restarting with stat
+2024-03-28 21:51:55,467 [WARNING]  * Debugger is active!
+2024-03-28 21:51:55,473 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:51:58,592 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-28 21:51:58,695 [INFO]  * Restarting with stat
+2024-03-28 21:51:59,497 [WARNING]  * Debugger is active!
+2024-03-28 21:51:59,505 [INFO]  * Debugger PIN: 440-112-358
+2024-03-28 21:55:27,685 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:27] "GET / HTTP/1.1" 200 -
+2024-03-28 21:55:39,079 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:39] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:55:40,684 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:40] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:55:41,220 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:41] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:55:41,240 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:55:47,795 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:47] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-28 21:55:52,348 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:52] "GET / HTTP/1.1" 200 -
+2024-03-28 21:55:52,364 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-28 21:55:54,809 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:54] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2024-03-28 21:55:54,893 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:54] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-28 21:55:54,894 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:54] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-28 21:55:54,911 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:54] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-28 21:55:54,915 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:54] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-28 21:55:59,071 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:59] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2024-03-28 21:55:59,091 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-28 21:55:59,092 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-28 21:55:59,101 [INFO] 127.0.0.1 - - [28/Mar/2024 21:55:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-28 21:56:06,827 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:06] "GET /display HTTP/1.1" 200 -
+2024-03-28 21:56:07,681 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:07] "[35m[1mGET /modify HTTP/1.1[0m" 500 -
+2024-03-28 21:56:07,693 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:07] "GET /modify?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-28 21:56:07,693 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:07] "GET /modify?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-28 21:56:07,702 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:07] "GET /modify?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-28 21:56:07,705 [INFO] 127.0.0.1 - - [28/Mar/2024 21:56:07] "[36mGET /modify?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 20:06:56,230 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 20:06:56,230 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-29 20:06:56,233 [INFO]  * Restarting with stat
+2024-03-29 20:06:56,988 [WARNING]  * Debugger is active!
+2024-03-29 20:06:56,995 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:06:57,058 [INFO] 127.0.0.1 - - [29/Mar/2024 20:06:57] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-29 20:06:59,834 [INFO] 127.0.0.1 - - [29/Mar/2024 20:06:59] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-29 20:07:05,217 [INFO] 127.0.0.1 - - [29/Mar/2024 20:07:05] "GET / HTTP/1.1" 200 -
+2024-03-29 20:07:07,556 [INFO] 127.0.0.1 - - [29/Mar/2024 20:07:07] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2024-03-29 20:07:07,657 [INFO] 127.0.0.1 - - [29/Mar/2024 20:07:07] "GET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-29 20:07:07,664 [INFO] 127.0.0.1 - - [29/Mar/2024 20:07:07] "GET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-29 20:07:07,781 [INFO] 127.0.0.1 - - [29/Mar/2024 20:07:07] "[36mGET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 20:16:27,319 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:16:27,426 [INFO]  * Restarting with stat
+2024-03-29 20:16:28,315 [WARNING]  * Debugger is active!
+2024-03-29 20:16:28,322 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:16:28,610 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:28] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2024-03-29 20:16:28,698 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:28] "[36mGET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 20:16:28,700 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:28] "[36mGET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 20:16:28,714 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:28] "[36mGET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 20:16:32,389 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:32] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2024-03-29 20:16:32,415 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:32] "[36mGET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 20:16:32,415 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:32] "[36mGET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 20:16:32,437 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:32] "[36mGET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 20:16:39,394 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 20:16:39,395 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-29 20:16:39,396 [INFO]  * Restarting with stat
+2024-03-29 20:16:40,154 [WARNING]  * Debugger is active!
+2024-03-29 20:16:40,160 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:16:44,818 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:44] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2024-03-29 20:16:44,883 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:44] "[36mGET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 20:16:44,892 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:44] "[36mGET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 20:16:44,900 [INFO] 127.0.0.1 - - [29/Mar/2024 20:16:44] "[36mGET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 20:20:25,752 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:20:25,847 [INFO]  * Restarting with stat
+2024-03-29 20:20:26,768 [WARNING]  * Debugger is active!
+2024-03-29 20:20:26,774 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:23:33,506 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:23:33,587 [INFO]  * Restarting with stat
+2024-03-29 20:23:34,447 [WARNING]  * Debugger is active!
+2024-03-29 20:23:34,453 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:24:37,737 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:24:37,818 [INFO]  * Restarting with stat
+2024-03-29 20:24:38,105 [WARNING]  * Debugger is active!
+2024-03-29 20:24:38,114 [INFO]  * Debugger PIN: 776-214-579
+2024-03-29 20:25:03,434 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:25:03,458 [INFO]  * Restarting with stat
+2024-03-29 20:25:04,224 [WARNING]  * Debugger is active!
+2024-03-29 20:25:04,230 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:25:31,363 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:31] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2024-03-29 20:25:31,449 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:31] "[36mGET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 20:25:31,451 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:31] "GET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-29 20:25:31,458 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:31] "GET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-29 20:25:37,193 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-03-29 20:25:37,210 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-29 20:25:37,211 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-29 20:25:37,222 [INFO] 127.0.0.1 - - [29/Mar/2024 20:25:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-29 20:26:14,681 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:26:14,765 [INFO]  * Restarting with stat
+2024-03-29 20:26:15,520 [WARNING]  * Debugger is active!
+2024-03-29 20:26:15,526 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:26:19,542 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:19] "GET / HTTP/1.1" 200 -
+2024-03-29 20:26:19,590 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:26:21,098 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:21] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-03-29 20:26:24,519 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:24] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-03-29 20:26:25,771 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:25] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-03-29 20:26:25,812 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:26:27,051 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:27] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:26:28,715 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:28] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-29 20:26:30,049 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:30] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:26:30,085 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:26:40,826 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:40] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-29 20:26:43,937 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:43] "GET / HTTP/1.1" 200 -
+2024-03-29 20:26:43,990 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:26:44,951 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:44] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:26:45,636 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:45] "GET /modify HTTP/1.1" 200 -
+2024-03-29 20:26:46,216 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:46] "GET /complete HTTP/1.1" 200 -
+2024-03-29 20:26:46,687 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:46] "GET /create HTTP/1.1" 200 -
+2024-03-29 20:26:47,365 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:47] "GET /upload HTTP/1.1" 200 -
+2024-03-29 20:26:49,508 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:49] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:26:50,535 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:50] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-29 20:26:50,674 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:50] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:26:53,123 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:53] "GET / HTTP/1.1" 200 -
+2024-03-29 20:26:54,252 [INFO] 127.0.0.1 - - [29/Mar/2024 20:26:54] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-03-29 20:29:22,314 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:29:22,413 [INFO]  * Restarting with stat
+2024-03-29 20:29:23,266 [WARNING]  * Debugger is active!
+2024-03-29 20:29:23,272 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:29:33,513 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:29:33,599 [INFO]  * Restarting with stat
+2024-03-29 20:29:34,388 [WARNING]  * Debugger is active!
+2024-03-29 20:29:34,394 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:30:41,763 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:30:41,848 [INFO]  * Restarting with stat
+2024-03-29 20:30:42,618 [WARNING]  * Debugger is active!
+2024-03-29 20:30:42,624 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:30:46,752 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:30:46,850 [INFO]  * Restarting with stat
+2024-03-29 20:30:47,612 [WARNING]  * Debugger is active!
+2024-03-29 20:30:47,618 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:30:57,589 [INFO] 127.0.0.1 - - [29/Mar/2024 20:30:57] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:30:57,646 [INFO] 127.0.0.1 - - [29/Mar/2024 20:30:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:30:59,069 [INFO] 127.0.0.1 - - [29/Mar/2024 20:30:59] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-03-29 20:31:01,890 [INFO] 127.0.0.1 - - [29/Mar/2024 20:31:01] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-29 20:31:02,018 [INFO] 127.0.0.1 - - [29/Mar/2024 20:31:02] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:31:21,341 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:31:21,429 [INFO]  * Restarting with stat
+2024-03-29 20:31:22,236 [WARNING]  * Debugger is active!
+2024-03-29 20:31:22,242 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:31:23,275 [INFO] 127.0.0.1 - - [29/Mar/2024 20:31:23] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:01,059 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:32:01,169 [INFO]  * Restarting with stat
+2024-03-29 20:32:01,954 [WARNING]  * Debugger is active!
+2024-03-29 20:32:01,960 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:32:03,141 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:03] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:04,305 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:04] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:05,373 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:05] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:05,932 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:05] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:06,396 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:06] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:08,807 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:08] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:08,829 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:32:09,783 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:09] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:14,001 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:14] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:15,051 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:15] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:15,580 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:15] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:26,499 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:32:26,609 [INFO]  * Restarting with stat
+2024-03-29 20:32:27,420 [WARNING]  * Debugger is active!
+2024-03-29 20:32:27,426 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:32:29,139 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:29] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:39,706 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:32:39,786 [INFO]  * Restarting with stat
+2024-03-29 20:32:40,611 [WARNING]  * Debugger is active!
+2024-03-29 20:32:40,617 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:32:41,752 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:41] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-29 20:32:41,892 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:41] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:45,713 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:45] "GET /create HTTP/1.1" 200 -
+2024-03-29 20:32:48,380 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:48] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-03-29 20:32:48,516 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:48] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:54,059 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:54] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:32:56,044 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:56] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:56,592 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:56] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:57,041 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:57] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:57,497 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:57] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:32:57,930 [INFO] 127.0.0.1 - - [29/Mar/2024 20:32:57] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:33:00,208 [INFO] 127.0.0.1 - - [29/Mar/2024 20:33:00] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-29 20:33:00,342 [INFO] 127.0.0.1 - - [29/Mar/2024 20:33:00] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:33:04,174 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:33:04,263 [INFO]  * Restarting with stat
+2024-03-29 20:33:05,077 [WARNING]  * Debugger is active!
+2024-03-29 20:33:05,085 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:33:46,290 [INFO] 127.0.0.1 - - [29/Mar/2024 20:33:46] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-03-29 20:34:29,998 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:29] "[31m[1mPOST /display HTTP/1.1[0m" 401 -
+2024-03-29 20:34:38,558 [INFO] The CSRF tokens do not match.
+2024-03-29 20:34:38,571 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:38] "POST /display HTTP/1.1" 200 -
+2024-03-29 20:34:38,638 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:34:40,683 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:40] "GET /upload HTTP/1.1" 200 -
+2024-03-29 20:34:41,332 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:41] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:34:42,683 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:42] "GET /modify HTTP/1.1" 200 -
+2024-03-29 20:34:43,105 [INFO] 127.0.0.1 - - [29/Mar/2024 20:34:43] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:38:17,238 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:38:17,321 [INFO]  * Restarting with stat
+2024-03-29 20:38:18,274 [WARNING]  * Debugger is active!
+2024-03-29 20:38:18,281 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:38:19,867 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:19] "GET /complete HTTP/1.1" 200 -
+2024-03-29 20:38:25,193 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:25] "[31m[1mGET /complete HTTP/1.1[0m" 401 -
+2024-03-29 20:38:28,286 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:28] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-03-29 20:38:28,323 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:38:33,401 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:33] "GET / HTTP/1.1" 200 -
+2024-03-29 20:38:34,789 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:34] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-29 20:38:36,924 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:36] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:38:39,354 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:39] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-29 20:38:48,919 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:38:49,018 [INFO]  * Restarting with stat
+2024-03-29 20:38:49,858 [WARNING]  * Debugger is active!
+2024-03-29 20:38:49,864 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:38:50,018 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:50] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:38:52,907 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:52] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:38:57,789 [INFO] 127.0.0.1 - - [29/Mar/2024 20:38:57] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:39:00,828 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:00] "[31m[1mGET /display HTTP/1.1[0m" 401 -
+2024-03-29 20:39:13,389 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:39:13,479 [INFO]  * Restarting with stat
+2024-03-29 20:39:14,313 [WARNING]  * Debugger is active!
+2024-03-29 20:39:14,319 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:39:17,716 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:17] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:39:19,889 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:19] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-29 20:39:24,560 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:39:24,668 [INFO]  * Restarting with stat
+2024-03-29 20:39:25,475 [WARNING]  * Debugger is active!
+2024-03-29 20:39:25,481 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:39:25,636 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:25] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:39:29,994 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:29] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:39:32,662 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:39:32,758 [INFO]  * Restarting with stat
+2024-03-29 20:39:33,566 [WARNING]  * Debugger is active!
+2024-03-29 20:39:33,572 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:39:33,619 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:33] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:39:36,268 [INFO] 127.0.0.1 - - [29/Mar/2024 20:39:36] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-29 20:40:07,285 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:40:07,365 [INFO]  * Restarting with stat
+2024-03-29 20:40:08,169 [WARNING]  * Debugger is active!
+2024-03-29 20:40:08,175 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:40:24,540 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:40:24,676 [INFO]  * Restarting with stat
+2024-03-29 20:40:25,527 [WARNING]  * Debugger is active!
+2024-03-29 20:40:25,533 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:40:26,831 [INFO] 127.0.0.1 - - [29/Mar/2024 20:40:26] "[31m[1mGET /modify HTTP/1.1[0m" 401 -
+2024-03-29 20:40:29,973 [INFO] 127.0.0.1 - - [29/Mar/2024 20:40:29] "[31m[1mGET /modify HTTP/1.1[0m" 401 -
+2024-03-29 20:40:37,829 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:40:37,964 [INFO]  * Restarting with stat
+2024-03-29 20:40:38,777 [WARNING]  * Debugger is active!
+2024-03-29 20:40:38,783 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:40:44,241 [INFO] 127.0.0.1 - - [29/Mar/2024 20:40:44] "[31m[1mGET /modify HTTP/1.1[0m" 401 -
+2024-03-29 20:40:50,105 [INFO] 127.0.0.1 - - [29/Mar/2024 20:40:50] "[31m[1mGET /modify HTTP/1.1[0m" 401 -
+2024-03-29 20:40:52,380 [INFO] 127.0.0.1 - - [29/Mar/2024 20:40:52] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-29 20:58:07,161 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:58:07,266 [INFO]  * Restarting with stat
+2024-03-29 20:58:08,075 [WARNING]  * Debugger is active!
+2024-03-29 20:58:08,081 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:58:17,307 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-29 20:58:17,390 [INFO]  * Restarting with stat
+2024-03-29 20:58:18,184 [WARNING]  * Debugger is active!
+2024-03-29 20:58:18,195 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:58:25,086 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:25] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2024-03-29 20:58:29,135 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:29] "[31m[1mGET /modify HTTP/1.1[0m" 401 -
+2024-03-29 20:58:29,168 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:58:33,977 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:33] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:58:34,010 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:58:36,206 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:36] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-03-29 20:58:39,785 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:39] "GET /upload HTTP/1.1" 200 -
+2024-03-29 20:58:39,850 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 20:58:42,875 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:42] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:58:46,371 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:46] "GET /create HTTP/1.1" 200 -
+2024-03-29 20:58:48,035 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:48] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-03-29 20:58:48,167 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:48] "GET /display HTTP/1.1" 200 -
+2024-03-29 20:58:51,552 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:51] "GET /download HTTP/1.1" 200 -
+2024-03-29 20:58:57,547 [INFO] 127.0.0.1 - - [29/Mar/2024 20:58:57] "GET /download HTTP/1.1" 200 -
+2024-03-29 20:59:13,397 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-29 20:59:13,498 [INFO]  * Restarting with stat
+2024-03-29 20:59:14,332 [WARNING]  * Debugger is active!
+2024-03-29 20:59:14,338 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 20:59:18,840 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:18] "GET /upload HTTP/1.1" 200 -
+2024-03-29 20:59:23,307 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:23] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 20:59:23,411 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:23] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-29 20:59:23,415 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:23] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-29 20:59:23,427 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:23] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-29 20:59:26,927 [INFO] 127.0.0.1 - - [29/Mar/2024 20:59:26] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:03:53,788 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:03:53,876 [INFO]  * Restarting with stat
+2024-03-29 21:03:54,741 [WARNING]  * Debugger is active!
+2024-03-29 21:03:54,748 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 21:03:57,280 [INFO] 127.0.0.1 - - [29/Mar/2024 21:03:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 21:03:57,366 [INFO] 127.0.0.1 - - [29/Mar/2024 21:03:57] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 21:03:57,370 [INFO] 127.0.0.1 - - [29/Mar/2024 21:03:57] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 21:03:57,381 [INFO] 127.0.0.1 - - [29/Mar/2024 21:03:57] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 21:03:59,631 [INFO] 127.0.0.1 - - [29/Mar/2024 21:03:59] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:04:01,376 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:01] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:04:02,280 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:02] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 21:04:02,303 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:02] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 21:04:02,303 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:02] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 21:04:02,324 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:02] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 21:04:52,927 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:04:53,023 [INFO]  * Restarting with stat
+2024-03-29 21:04:53,858 [WARNING]  * Debugger is active!
+2024-03-29 21:04:53,866 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 21:04:58,284 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:58] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:04:59,377 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:59] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 21:04:59,459 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 21:04:59,462 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 21:04:59,472 [INFO] 127.0.0.1 - - [29/Mar/2024 21:04:59] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 21:05:01,961 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:01] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:05:07,391 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:07] "GET /display HTTP/1.1" 200 -
+2024-03-29 21:05:07,990 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:07] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:05:10,789 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:10] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 21:05:10,813 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:10] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 21:05:10,814 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:10] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 21:05:10,825 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:10] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 21:05:12,461 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:12] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:05:13,155 [INFO] 127.0.0.1 - - [29/Mar/2024 21:05:13] "GET /display HTTP/1.1" 200 -
+2024-03-29 21:06:06,365 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:06:06,449 [INFO]  * Restarting with stat
+2024-03-29 21:06:07,214 [WARNING]  * Debugger is active!
+2024-03-29 21:06:07,221 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 21:06:52,126 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:06:52,211 [INFO]  * Restarting with stat
+2024-03-29 21:06:52,974 [WARNING]  * Debugger is active!
+2024-03-29 21:06:52,981 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 21:07:14,465 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:07:14,558 [INFO]  * Restarting with stat
+2024-03-29 21:07:15,435 [WARNING]  * Debugger is active!
+2024-03-29 21:07:15,441 [INFO]  * Debugger PIN: 440-112-358
+2024-03-29 21:07:16,686 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:16] "GET /upload HTTP/1.1" 200 -
+2024-03-29 21:07:16,732 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-29 21:07:19,920 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:19] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-29 21:07:20,006 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:20] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-29 21:07:20,006 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:20] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-29 21:07:20,017 [INFO] 127.0.0.1 - - [29/Mar/2024 21:07:20] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-29 21:12:42,880 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-29 21:12:42,965 [INFO]  * Restarting with stat
+2024-03-29 21:12:43,880 [WARNING]  * Debugger is active!
+2024-03-29 21:12:43,886 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:33:07,588 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-30 10:33:07,589 [INFO] [33mPress CTRL+C to quit[0m
+2024-03-30 10:33:07,591 [INFO]  * Restarting with stat
+2024-03-30 10:33:08,400 [WARNING]  * Debugger is active!
+2024-03-30 10:33:08,407 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:33:08,438 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:08] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-30 10:33:11,597 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:11] "GET / HTTP/1.1" 200 -
+2024-03-30 10:33:13,277 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:13] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:33:16,798 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-03-30 10:33:16,894 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:16] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-03-30 10:33:16,904 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:16] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-03-30 10:33:16,915 [INFO] 127.0.0.1 - - [30/Mar/2024 10:33:16] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-30 10:34:18,867 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-03-30 10:34:18,949 [INFO]  * Restarting with stat
+2024-03-30 10:34:19,759 [WARNING]  * Debugger is active!
+2024-03-30 10:34:19,765 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:34:39,343 [INFO] 127.0.0.1 - - [30/Mar/2024 10:34:39] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:34:40,222 [INFO] 127.0.0.1 - - [30/Mar/2024 10:34:40] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:34:43,041 [ERROR] 500 Internal Server Error: Invalid isoformat string: 'date'
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 37, in import_from_csv
+    due=datetime.fromisoformat(row["date"]) if row["date"] else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid isoformat string: 'date'
+2024-03-30 10:34:43,064 [INFO] 127.0.0.1 - - [30/Mar/2024 10:34:43] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:34:43,196 [INFO] 127.0.0.1 - - [30/Mar/2024 10:34:43] "GET / HTTP/1.1" 200 -
+2024-03-30 10:40:55,530 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:40:55,612 [INFO]  * Restarting with stat
+2024-03-30 10:40:56,446 [WARNING]  * Debugger is active!
+2024-03-30 10:40:56,452 [INFO]  * Debugger PIN: 776-214-579
+2024-03-30 10:41:12,827 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:41:12,929 [INFO]  * Restarting with stat
+2024-03-30 10:41:13,770 [WARNING]  * Debugger is active!
+2024-03-30 10:41:13,776 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:41:15,066 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:15] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:41:17,891 [ERROR] 500 Internal Server Error: Invalid date format: date
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 42, in import_from_csv
+    due_date = datetime.fromisoformat(date_str)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 46, in import_from_csv
+    due_date = datetime.strptime(date_str, "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 554, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'date' does not match format '%Y-%m-%d'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 49, in import_from_csv
+    raise ValueError("Invalid date format: {}".format(date_str))
+ValueError: Invalid date format: date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid date format: date
+2024-03-30 10:41:17,906 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:41:18,050 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:18] "GET / HTTP/1.1" 200 -
+2024-03-30 10:41:40,061 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:40] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:41:41,769 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:41] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-30 10:41:41,900 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:41] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:41:43,029 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:43] "GET /create HTTP/1.1" 200 -
+2024-03-30 10:41:55,903 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:55] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-03-30 10:41:56,039 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:56] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:41:58,657 [INFO] 127.0.0.1 - - [30/Mar/2024 10:41:58] "GET /download HTTP/1.1" 200 -
+2024-03-30 10:42:04,370 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:04] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:42:07,752 [ERROR] 500 Internal Server Error: Invalid date format: date
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 42, in import_from_csv
+    due_date = datetime.fromisoformat(date_str)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 46, in import_from_csv
+    due_date = datetime.strptime(date_str, "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 554, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'date' does not match format '%Y-%m-%d'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 49, in import_from_csv
+    raise ValueError("Invalid date format: {}".format(date_str))
+ValueError: Invalid date format: date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid date format: date
+2024-03-30 10:42:07,757 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:07] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:42:07,895 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:07] "GET / HTTP/1.1" 200 -
+2024-03-30 10:42:22,891 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:22] "GET / HTTP/1.1" 200 -
+2024-03-30 10:42:23,328 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:23] "GET /create HTTP/1.1" 200 -
+2024-03-30 10:42:24,233 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:24] "GET /modify HTTP/1.1" 200 -
+2024-03-30 10:42:25,049 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:25] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:42:36,148 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:36] "GET / HTTP/1.1" 200 -
+2024-03-30 10:42:37,316 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:37] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:42:40,567 [ERROR] 500 Internal Server Error: Invalid date format: date
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 42, in import_from_csv
+    due_date = datetime.fromisoformat(date_str)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 46, in import_from_csv
+    due_date = datetime.strptime(date_str, "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 554, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'date' does not match format '%Y-%m-%d'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 49, in import_from_csv
+    raise ValueError("Invalid date format: {}".format(date_str))
+ValueError: Invalid date format: date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid date format: date
+2024-03-30 10:42:40,573 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:40] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:42:40,705 [INFO] 127.0.0.1 - - [30/Mar/2024 10:42:40] "GET / HTTP/1.1" 200 -
+2024-03-30 10:43:28,538 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:43:28,648 [INFO]  * Restarting with stat
+2024-03-30 10:43:29,511 [WARNING]  * Debugger is active!
+2024-03-30 10:43:29,517 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:43:30,666 [INFO] 127.0.0.1 - - [30/Mar/2024 10:43:30] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:43:33,263 [ERROR] 500 Internal Server Error: Invalid isoformat string: 'date'
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 38, in import_from_csv
+    due=datetime.fromisoformat(row["date"]) if row["date"] else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid isoformat string: 'date'
+2024-03-30 10:43:33,269 [INFO] 127.0.0.1 - - [30/Mar/2024 10:43:33] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:43:33,411 [INFO] 127.0.0.1 - - [30/Mar/2024 10:43:33] "GET / HTTP/1.1" 200 -
+2024-03-30 10:44:03,220 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:44:03,309 [INFO]  * Restarting with stat
+2024-03-30 10:44:04,129 [WARNING]  * Debugger is active!
+2024-03-30 10:44:04,135 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:44:05,659 [INFO] 127.0.0.1 - - [30/Mar/2024 10:44:05] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:44:08,591 [ERROR] 500 Internal Server Error: Invalid isoformat string: 'date'
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 148, in upload
+    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\services.py", line 38, in import_from_csv
+    due=datetime.fromisoformat(row["date"]) if row["date"] else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\src\toudou\views\web.py", line 153, in upload
+    abort(500, error)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\flask\helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\guams\OneDrive\Bureau\dev\toudou\.venv\Lib\site-packages\werkzeug\exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid isoformat string: 'date'
+2024-03-30 10:44:08,596 [INFO] 127.0.0.1 - - [30/Mar/2024 10:44:08] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:44:08,733 [INFO] 127.0.0.1 - - [30/Mar/2024 10:44:08] "GET / HTTP/1.1" 200 -
+2024-03-30 10:47:48,606 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:47:48,698 [INFO]  * Restarting with stat
+2024-03-30 10:47:49,550 [WARNING]  * Debugger is active!
+2024-03-30 10:47:49,557 [INFO]  * Debugger PIN: 776-214-579
+2024-03-30 10:47:55,722 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\services.py', reloading
+2024-03-30 10:47:55,800 [INFO]  * Restarting with stat
+2024-03-30 10:47:56,672 [WARNING]  * Debugger is active!
+2024-03-30 10:47:56,678 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 10:47:57,864 [INFO] 127.0.0.1 - - [30/Mar/2024 10:47:57] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:48:00,856 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:00] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:48:00,993 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:00] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:48:04,896 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:04] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-03-30 10:48:05,032 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:05] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:48:06,054 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:06] "GET /upload HTTP/1.1" 200 -
+2024-03-30 10:48:08,867 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:08] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-03-30 10:48:08,996 [INFO] 127.0.0.1 - - [30/Mar/2024 10:48:08] "GET /display HTTP/1.1" 200 -
+2024-03-30 10:59:03,559 [INFO] 127.0.0.1 - - [30/Mar/2024 10:59:03] "GET / HTTP/1.1" 200 -
+2024-03-30 10:59:03,623 [INFO] 127.0.0.1 - - [30/Mar/2024 10:59:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-30 11:13:17,209 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-30 11:13:17,298 [INFO]  * Restarting with stat
+2024-03-30 11:13:18,470 [WARNING]  * Debugger is active!
+2024-03-30 11:13:18,477 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 11:13:23,863 [INFO] 127.0.0.1 - - [30/Mar/2024 11:13:23] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-03-30 11:13:28,499 [INFO] 127.0.0.1 - - [30/Mar/2024 11:13:28] "GET / HTTP/1.1" 200 -
+2024-03-30 11:13:28,576 [INFO] 127.0.0.1 - - [30/Mar/2024 11:13:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-30 11:13:29,958 [INFO] 127.0.0.1 - - [30/Mar/2024 11:13:29] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-03-30 11:16:39,431 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-30 11:16:39,515 [INFO]  * Restarting with stat
+2024-03-30 11:16:39,839 [WARNING]  * Debugger is active!
+2024-03-30 11:16:39,849 [INFO]  * Debugger PIN: 776-214-579
+2024-03-30 11:16:49,992 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-30 11:16:50,017 [INFO]  * Restarting with stat
+2024-03-30 11:16:50,841 [WARNING]  * Debugger is active!
+2024-03-30 11:16:50,847 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 11:17:09,239 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:09] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-03-30 11:17:10,843 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:10] "GET /display HTTP/1.1" 200 -
+2024-03-30 11:17:11,726 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:11] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-03-30 11:17:13,334 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:13] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:13,876 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:13] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:14,212 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:14] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:14,790 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:14] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:15,224 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:15] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:16,024 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:16] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:16,554 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:16] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:17:18,647 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:18] "GET /download HTTP/1.1" 200 -
+2024-03-30 11:17:23,802 [INFO] 127.0.0.1 - - [30/Mar/2024 11:17:23] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-30 11:18:43,108 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\app.py', reloading
+2024-03-30 11:18:43,195 [INFO]  * Restarting with stat
+2024-03-30 11:18:44,095 [WARNING]  * Debugger is active!
+2024-03-30 11:18:44,101 [INFO]  * Debugger PIN: 440-112-358
+2024-03-30 11:18:44,726 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:44] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-03-30 11:18:48,109 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:48] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-03-30 11:18:50,270 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:50] "GET /display HTTP/1.1" 200 -
+2024-03-30 11:18:52,509 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:52] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:52,816 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:52] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:53,201 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:53] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:53,578 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:53] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:54,128 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:54] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:54,551 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:54] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:54,979 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:54] "POST /display HTTP/1.1" 200 -
+2024-03-30 11:18:57,172 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:57] "GET / HTTP/1.1" 200 -
+2024-03-30 11:19:01,152 [INFO] 127.0.0.1 - - [30/Mar/2024 11:19:01] "GET /display HTTP/1.1" 200 -
