@@ -4,10 +4,10 @@ from toudou import config
 
 import uuid
 
-from flask import Blueprint, abort, render_template, request, send_file, url_for, redirect, flash, Response
+from flask import Blueprint, abort, render_template, send_file, url_for, redirect, flash
 from toudou.views.wtf import DeleteToudouForm, CreateToudouForm, ModifyToudouForm, UploadForm, CompleteToudouForm
 
-from toudou.app import auth, get_user_roles
+from toudou.views.app import auth, get_user_roles
 import toudou.services as services
 import toudou.models as models
 

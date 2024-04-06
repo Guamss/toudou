@@ -9,6 +9,7 @@ dependencies = [
     "flask>=3.0.2",
     "flask-wtf>=1.2.1",
     "flask-httpauth>=4.8.0",
+    "flask-pydantic-spec>=0.6.0",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -24,4 +25,4 @@ build-backend = "pdm.pep517.api"
 
 [tool.pdm.scripts]
 _.env_file = "envvar/dev.env"
-start = "flask --app toudou.app --debug run"
+start = "flask --app toudou.views.app --debug run"

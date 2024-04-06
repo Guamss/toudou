@@ -5016,3 +5016,791 @@ werkzeug.exceptions.InternalServerError: 500 Internal Server Error: Invalid isof
 2024-03-30 11:18:54,979 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:54] "POST /display HTTP/1.1" 200 -
 2024-03-30 11:18:57,172 [INFO] 127.0.0.1 - - [30/Mar/2024 11:18:57] "GET / HTTP/1.1" 200 -
 2024-03-30 11:19:01,152 [INFO] 127.0.0.1 - - [30/Mar/2024 11:19:01] "GET /display HTTP/1.1" 200 -
+2024-04-04 15:41:58,852 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 15:41:58,852 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 15:41:58,852 [INFO]  * Restarting with stat
+2024-04-04 15:41:59,140 [WARNING]  * Debugger is active!
+2024-04-04 15:41:59,140 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 15:42:04,316 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:04] "[31m[1mGET /display HTTP/1.1[0m" 401 -
+2024-04-04 15:42:07,620 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:07] "GET /display HTTP/1.1" 200 -
+2024-04-04 15:42:07,644 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 15:42:09,555 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:09] "GET /create HTTP/1.1" 200 -
+2024-04-04 15:42:10,058 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:10] "GET /complete HTTP/1.1" 200 -
+2024-04-04 15:42:10,548 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:10] "GET /modify HTTP/1.1" 200 -
+2024-04-04 15:42:11,026 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:11] "GET /display HTTP/1.1" 200 -
+2024-04-04 15:42:11,483 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:11] "GET /upload HTTP/1.1" 200 -
+2024-04-04 15:42:23,812 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:23] "[31m[1mGET /upload HTTP/1.1[0m" 401 -
+2024-04-04 15:42:26,941 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:26] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 15:42:26,977 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 15:42:31,346 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:31] "GET / HTTP/1.1" 200 -
+2024-04-04 15:42:32,292 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:32] "GET /display HTTP/1.1" 200 -
+2024-04-04 15:42:33,838 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:33] "POST /display HTTP/1.1" 200 -
+2024-04-04 15:42:34,262 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:34] "POST /display HTTP/1.1" 200 -
+2024-04-04 15:42:34,747 [INFO] 127.0.0.1 - - [04/Apr/2024 15:42:34] "POST /display HTTP/1.1" 200 -
+2024-04-04 15:59:48,957 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 15:59:48,957 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 15:59:48,958 [INFO]  * Restarting with stat
+2024-04-04 15:59:49,286 [WARNING]  * Debugger is active!
+2024-04-04 15:59:49,286 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 15:59:49,852 [INFO] 127.0.0.1 - - [04/Apr/2024 15:59:49] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-04 15:59:52,916 [INFO] 127.0.0.1 - - [04/Apr/2024 15:59:52] "GET / HTTP/1.1" 200 -
+2024-04-04 15:59:53,148 [INFO] 127.0.0.1 - - [04/Apr/2024 15:59:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 16:00:08,031 [INFO] 127.0.0.1 - - [04/Apr/2024 16:00:08] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:00:14,916 [INFO] 127.0.0.1 - - [04/Apr/2024 16:00:14] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:01:04,407 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/app.py', reloading
+2024-04-04 16:01:04,462 [INFO]  * Restarting with stat
+2024-04-04 16:01:04,768 [WARNING]  * Debugger is active!
+2024-04-04 16:01:04,768 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:01:10,313 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:01:10,313 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:01:10,314 [INFO]  * Restarting with stat
+2024-04-04 16:01:10,637 [WARNING]  * Debugger is active!
+2024-04-04 16:01:10,637 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:01:11,757 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:11] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:01:13,480 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:13] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:01:14,190 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:14] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:01:14,945 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:14] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:01:16,087 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:16] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 16:01:17,040 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:17] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:01:19,070 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:19] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:01:20,018 [INFO] 127.0.0.1 - - [04/Apr/2024 16:01:20] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:02:52,806 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/app.py', reloading
+2024-04-04 16:02:52,845 [INFO]  * Restarting with stat
+2024-04-04 16:02:53,138 [WARNING]  * Debugger is active!
+2024-04-04 16:02:53,138 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:03:03,158 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/app.py', reloading
+2024-04-04 16:03:03,200 [INFO]  * Restarting with stat
+2024-04-04 16:03:03,507 [WARNING]  * Debugger is active!
+2024-04-04 16:03:03,507 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:03:10,100 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:03:10,100 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:03:10,101 [INFO]  * Restarting with stat
+2024-04-04 16:03:10,407 [WARNING]  * Debugger is active!
+2024-04-04 16:03:10,408 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:03:12,590 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:12] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:03:19,957 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:19] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:03:21,173 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:21] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 16:03:22,288 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:22] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:03:33,024 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:33] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:03:34,547 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:34] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:03:35,597 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:35] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:03:36,904 [INFO] 127.0.0.1 - - [04/Apr/2024 16:03:36] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:04:14,516 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/app.py', reloading
+2024-04-04 16:04:14,555 [INFO]  * Restarting with stat
+2024-04-04 16:04:14,844 [WARNING]  * Debugger is active!
+2024-04-04 16:04:14,844 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:05:57,066 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:05:57,066 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:05:57,067 [INFO]  * Restarting with stat
+2024-04-04 16:05:57,355 [WARNING]  * Debugger is active!
+2024-04-04 16:05:57,355 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:05:59,822 [INFO] 127.0.0.1 - - [04/Apr/2024 16:05:59] "[35m[1mGET /display HTTP/1.1[0m" 500 -
+2024-04-04 16:05:59,843 [INFO] 127.0.0.1 - - [04/Apr/2024 16:05:59] "GET /display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:05:59,845 [INFO] 127.0.0.1 - - [04/Apr/2024 16:05:59] "GET /display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-04 16:05:59,855 [INFO] 127.0.0.1 - - [04/Apr/2024 16:05:59] "GET /display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:06:01,056 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:01] "[35m[1mGET /display HTTP/1.1[0m" 500 -
+2024-04-04 16:06:01,074 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:01] "GET /display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:06:01,074 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:01] "[36mGET /display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:06:01,088 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:01] "GET /display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:06:11,550 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:11] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:06:11,569 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:11] "GET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:06:11,569 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:11] "GET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-04 16:06:11,577 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:11] "GET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:06:16,009 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:16] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:06:16,027 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:16] "[36mGET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:06:16,028 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:16] "[36mGET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:06:16,042 [INFO] 127.0.0.1 - - [04/Apr/2024 16:06:16] "[36mGET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:06:28,406 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:06:28,456 [INFO]  * Restarting with stat
+2024-04-04 16:06:28,553 [WARNING]  * Debugger is active!
+2024-04-04 16:06:28,553 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 16:06:29,558 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:06:29,578 [INFO]  * Restarting with stat
+2024-04-04 16:06:29,878 [WARNING]  * Debugger is active!
+2024-04-04 16:06:29,879 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:06:30,884 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:06:30,932 [INFO]  * Restarting with stat
+2024-04-04 16:06:31,224 [WARNING]  * Debugger is active!
+2024-04-04 16:06:31,224 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:06:52,263 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:06:52,308 [INFO]  * Restarting with stat
+2024-04-04 16:06:52,611 [WARNING]  * Debugger is active!
+2024-04-04 16:06:52,612 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:07:24,118 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:07:24,118 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:07:24,118 [INFO]  * Restarting with stat
+2024-04-04 16:07:24,411 [WARNING]  * Debugger is active!
+2024-04-04 16:07:24,411 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:07:25,703 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:25] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:07:25,717 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:25] "GET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:07:25,719 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:25] "[36mGET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:07:25,729 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:25] "GET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:07:26,549 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:26] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:07:26,563 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:26] "[36mGET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:07:26,563 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:26] "[36mGET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:07:26,574 [INFO] 127.0.0.1 - - [04/Apr/2024 16:07:26] "[36mGET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:08:03,474 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:08:03,519 [INFO]  * Restarting with stat
+2024-04-04 16:08:03,617 [WARNING]  * Debugger is active!
+2024-04-04 16:08:03,617 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 16:08:06,624 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:08:06,642 [INFO]  * Restarting with stat
+2024-04-04 16:08:06,938 [WARNING]  * Debugger is active!
+2024-04-04 16:08:06,938 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:08:17,958 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:08:18,002 [INFO]  * Restarting with stat
+2024-04-04 16:08:18,309 [WARNING]  * Debugger is active!
+2024-04-04 16:08:18,309 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:08:22,273 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:08:22,273 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:08:22,273 [INFO]  * Restarting with stat
+2024-04-04 16:08:22,611 [WARNING]  * Debugger is active!
+2024-04-04 16:08:22,611 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:08:23,367 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:08:23,385 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[36mGET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:08:23,386 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "GET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:08:23,399 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "GET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:08:23,941 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[35m[1mGET /complete HTTP/1.1[0m" 500 -
+2024-04-04 16:08:23,954 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[36mGET /complete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:08:23,954 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[36mGET /complete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:08:23,968 [INFO] 127.0.0.1 - - [04/Apr/2024 16:08:23] "[36mGET /complete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:08:59,675 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/web.py', reloading
+2024-04-04 16:08:59,724 [INFO]  * Restarting with stat
+2024-04-04 16:09:00,034 [WARNING]  * Debugger is active!
+2024-04-04 16:09:00,035 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:09:04,046 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/web.py', reloading
+2024-04-04 16:09:04,095 [INFO]  * Restarting with stat
+2024-04-04 16:09:04,392 [WARNING]  * Debugger is active!
+2024-04-04 16:09:04,392 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:15:01,012 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 16:15:43,081 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:43] "[35m[1mGET /display HTTP/1.1[0m" 500 -
+2024-04-04 16:15:43,097 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:43] "[36mGET /display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:15:43,097 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:43] "GET /display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:15:43,109 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:43] "GET /display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:15:46,854 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:46] "[35m[1mGET /display HTTP/1.1[0m" 500 -
+2024-04-04 16:15:46,874 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:46] "GET /display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:15:46,875 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:46] "[36mGET /display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:15:46,889 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:46] "GET /display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:15:50,208 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:15:50,234 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:50] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:15:50,234 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:50] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-04 16:15:50,244 [INFO] 127.0.0.1 - - [04/Apr/2024 16:15:50] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:16:05,743 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:16:05,743 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:16:05,744 [INFO]  * Restarting with stat
+2024-04-04 16:16:06,033 [WARNING]  * Debugger is active!
+2024-04-04 16:16:06,033 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:16:07,371 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:16:07,383 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:07] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:16:07,385 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:16:07,393 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:16:08,023 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:16:08,034 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:16:08,035 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:16:08,044 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:16:08,773 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:16:08,782 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:16:08,783 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:16:08,794 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:16:39,697 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:16:39,697 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:16:39,698 [INFO]  * Restarting with stat
+2024-04-04 16:16:39,987 [WARNING]  * Debugger is active!
+2024-04-04 16:16:39,987 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:16:42,551 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:16:42,568 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:16:42,568 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:16:42,577 [INFO] 127.0.0.1 - - [04/Apr/2024 16:16:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:18:33,174 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:18:33,226 [INFO]  * Restarting with stat
+2024-04-04 16:18:33,326 [WARNING]  * Debugger is active!
+2024-04-04 16:18:33,326 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 16:18:40,338 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:18:40,357 [INFO]  * Restarting with stat
+2024-04-04 16:18:40,661 [WARNING]  * Debugger is active!
+2024-04-04 16:18:40,661 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:18:45,351 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:18:45,351 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:18:45,351 [INFO]  * Restarting with stat
+2024-04-04 16:18:45,666 [WARNING]  * Debugger is active!
+2024-04-04 16:18:45,666 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:18:46,730 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:18:46,747 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:46] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:18:46,748 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:46] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:18:46,756 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:18:47,601 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:18:47,617 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:18:47,617 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:18:47,628 [INFO] 127.0.0.1 - - [04/Apr/2024 16:18:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:19:25,871 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:19:25,885 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:19:25,885 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:25] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:19:25,897 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:25] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:19:26,615 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-04 16:19:26,632 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:26] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:19:26,632 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:26] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:19:26,647 [INFO] 127.0.0.1 - - [04/Apr/2024 16:19:26] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:21:58,927 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:21:58,927 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:21:58,927 [INFO]  * Restarting with stat
+2024-04-04 16:21:59,218 [WARNING]  * Debugger is active!
+2024-04-04 16:21:59,218 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:22:00,690 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:00] "GET / HTTP/1.1" 200 -
+2024-04-04 16:22:02,080 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:02] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:02,620 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:02] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:11,240 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:22:11,286 [INFO]  * Restarting with stat
+2024-04-04 16:22:11,587 [WARNING]  * Debugger is active!
+2024-04-04 16:22:11,587 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:22:15,708 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:22:15,708 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:22:15,709 [INFO]  * Restarting with stat
+2024-04-04 16:22:16,034 [WARNING]  * Debugger is active!
+2024-04-04 16:22:16,035 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:22:16,473 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:16] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:18,579 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:18] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:19,396 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:19] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 16:22:19,855 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:19] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 16:22:20,558 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:20] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:21,077 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:21] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:22:21,382 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:21] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:22:21,813 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:21] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:22:22,113 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:22] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:22:22,388 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:22] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:22:23,453 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:23] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:22:24,213 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:24] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:24,717 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:24] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:25,230 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:25] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:25,846 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:25] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:26,282 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:26] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:27,360 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:27] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-04 16:22:27,806 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:27] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:22:28,509 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:28] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-04 16:22:29,110 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:29] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-04 16:22:29,525 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:29] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 16:22:30,732 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:30] "POST /display HTTP/1.1" 200 -
+2024-04-04 16:22:31,202 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:31] "POST /display HTTP/1.1" 200 -
+2024-04-04 16:22:31,572 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:31] "POST /display HTTP/1.1" 200 -
+2024-04-04 16:22:32,951 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:32] "GET / HTTP/1.1" 200 -
+2024-04-04 16:22:38,556 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:38] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-04 16:22:45,947 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:45] "GET / HTTP/1.1" 200 -
+2024-04-04 16:22:46,046 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 16:22:47,863 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:47] "GET /complete HTTP/1.1" 200 -
+2024-04-04 16:22:48,566 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:48] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:22:51,455 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:51] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-04 16:22:51,527 [INFO] 127.0.0.1 - - [04/Apr/2024 16:22:51] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:25:11,904 [INFO] 127.0.0.1 - - [04/Apr/2024 16:25:11] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:25:13,011 [INFO] 127.0.0.1 - - [04/Apr/2024 16:25:13] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:25:13,643 [INFO] 127.0.0.1 - - [04/Apr/2024 16:25:13] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:25:17,131 [INFO] 127.0.0.1 - - [04/Apr/2024 16:25:17] "GET /complete HTTP/1.1" 200 -
+2024-04-04 16:25:17,807 [INFO] 127.0.0.1 - - [04/Apr/2024 16:25:17] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:33:02,851 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:33:02,851 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:33:02,852 [INFO]  * Restarting with stat
+2024-04-04 16:33:03,156 [WARNING]  * Debugger is active!
+2024-04-04 16:33:03,156 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:33:03,729 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:03] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:33:05,523 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:05] "GET / HTTP/1.1" 200 -
+2024-04-04 16:33:06,153 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:06] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:33:06,689 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:06] "GET /complete HTTP/1.1" 200 -
+2024-04-04 16:33:07,132 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:07] "GET /modify HTTP/1.1" 200 -
+2024-04-04 16:33:07,512 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:07] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:33:08,039 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:08] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:33:16,829 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-04-04 16:33:16,849 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:16] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:33:16,852 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:16] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-04 16:33:16,862 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:16] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:33:25,241 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:25] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:33:26,332 [INFO] 127.0.0.1 - - [04/Apr/2024 16:33:26] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:34:15,384 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:15] "GET /download HTTP/1.1" 200 -
+2024-04-04 16:34:18,117 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:18] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:34:22,373 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:22] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-04-04 16:34:22,391 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:22] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:34:22,391 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:22] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:34:22,402 [INFO] 127.0.0.1 - - [04/Apr/2024 16:34:22] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:41:30,302 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:41:30,302 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:41:30,303 [INFO]  * Restarting with stat
+2024-04-04 16:41:30,620 [WARNING]  * Debugger is active!
+2024-04-04 16:41:30,620 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:41:31,096 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:31] "GET / HTTP/1.1" 200 -
+2024-04-04 16:41:32,254 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:32] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:41:32,989 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:32] "GET /complete HTTP/1.1" 200 -
+2024-04-04 16:41:33,373 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:33] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:41:37,442 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:37] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-04 16:41:37,510 [INFO] 127.0.0.1 - - [04/Apr/2024 16:41:37] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:42:12,329 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:42:12,329 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:42:12,329 [INFO]  * Restarting with stat
+2024-04-04 16:42:12,649 [WARNING]  * Debugger is active!
+2024-04-04 16:42:12,649 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:42:13,216 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:13] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:42:16,634 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-04-04 16:42:16,656 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:16] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:42:16,658 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:16] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:42:16,667 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:16] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:42:24,338 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:24] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:42:56,542 [INFO] 127.0.0.1 - - [04/Apr/2024 16:42:56] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:43:22,105 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:22] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:43:22,137 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 16:43:25,983 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:25] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-04-04 16:43:26,000 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:26] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:43:26,001 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:26] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:43:26,012 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:26] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:43:27,411 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:27] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:43:28,090 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:28] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:43:29,174 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:29] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:43:29,689 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:29] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:43:29,823 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:29] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:43:29,960 [INFO] 127.0.0.1 - - [04/Apr/2024 16:43:29] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:00,082 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:45:00,082 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:45:00,082 [INFO]  * Restarting with stat
+2024-04-04 16:45:00,374 [WARNING]  * Debugger is active!
+2024-04-04 16:45:00,374 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:45:02,763 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:02] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:04,756 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:04] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:45:09,219 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:09] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:45:12,358 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:12] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-04-04 16:45:12,430 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:12] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:13,925 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:13] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:14,627 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:14] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:15,124 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:15,412 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:45:15,886 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "[35m[1mGET /modify HTTP/1.1[0m" 500 -
+2024-04-04 16:45:15,910 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "GET /modify?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:45:15,913 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "GET /modify?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-04 16:45:15,955 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:15] "GET /modify?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:45:41,841 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:45:41,841 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:45:41,841 [INFO]  * Restarting with stat
+2024-04-04 16:45:42,175 [WARNING]  * Debugger is active!
+2024-04-04 16:45:42,175 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:45:42,651 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:42] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:45:45,337 [ERROR] 500 Internal Server Error: An error has occured
+Traceback (most recent call last):
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/src/toudou/views/web.py", line 67, in create
+    abort(500, error)
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/werkzeug/exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: An error has occured
+2024-04-04 16:45:45,339 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:45] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-04 16:45:45,408 [INFO] 127.0.0.1 - - [04/Apr/2024 16:45:45] "GET / HTTP/1.1" 200 -
+2024-04-04 16:46:10,730 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:10] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:46:11,529 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:11] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:46:12,748 [ERROR] 500 Internal Server Error: An error has occured
+Traceback (most recent call last):
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guams/Desktop/dev/python/toudou/src/toudou/views/web.py", line 67, in create
+    abort(500, error)
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/flask/helpers.py", line 272, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/home/guams/Desktop/dev/python/toudou/.venv/lib/python3.12/site-packages/werkzeug/exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: An error has occured
+2024-04-04 16:46:12,749 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:12] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-04 16:46:12,822 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:12] "GET / HTTP/1.1" 200 -
+2024-04-04 16:46:18,478 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:46:18,478 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:46:18,478 [INFO]  * Restarting with stat
+2024-04-04 16:46:18,771 [WARNING]  * Debugger is active!
+2024-04-04 16:46:18,772 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:46:50,168 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:46:50,168 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:46:50,168 [INFO]  * Restarting with stat
+2024-04-04 16:46:50,483 [WARNING]  * Debugger is active!
+2024-04-04 16:46:50,483 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:46:52,106 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:52] "GET / HTTP/1.1" 200 -
+2024-04-04 16:46:53,923 [INFO] 127.0.0.1 - - [04/Apr/2024 16:46:53] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:47:50,104 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:47:50,104 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:47:50,104 [INFO]  * Restarting with stat
+2024-04-04 16:47:50,405 [WARNING]  * Debugger is active!
+2024-04-04 16:47:50,405 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:47:52,767 [INFO] 127.0.0.1 - - [04/Apr/2024 16:47:52] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:47:53,436 [INFO] 127.0.0.1 - - [04/Apr/2024 16:47:53] "[35m[1mGET /modify HTTP/1.1[0m" 500 -
+2024-04-04 16:47:53,464 [INFO] 127.0.0.1 - - [04/Apr/2024 16:47:53] "[36mGET /modify?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-04 16:47:53,465 [INFO] 127.0.0.1 - - [04/Apr/2024 16:47:53] "[36mGET /modify?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:47:53,481 [INFO] 127.0.0.1 - - [04/Apr/2024 16:47:53] "[36mGET /modify?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-04 16:50:06,621 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/models.py', reloading
+2024-04-04 16:50:06,666 [INFO]  * Restarting with stat
+2024-04-04 16:50:06,972 [WARNING]  * Debugger is active!
+2024-04-04 16:50:06,972 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:50:28,009 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/models.py', reloading
+2024-04-04 16:50:28,057 [INFO]  * Restarting with stat
+2024-04-04 16:50:28,367 [WARNING]  * Debugger is active!
+2024-04-04 16:50:28,367 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:50:35,381 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/models.py', reloading
+2024-04-04 16:50:35,440 [INFO]  * Restarting with stat
+2024-04-04 16:50:35,752 [WARNING]  * Debugger is active!
+2024-04-04 16:50:35,752 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:51:51,871 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/app.py', reloading
+2024-04-04 16:51:51,916 [INFO]  * Restarting with stat
+2024-04-04 16:51:52,224 [WARNING]  * Debugger is active!
+2024-04-04 16:51:52,224 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:51:57,909 [INFO] 127.0.0.1 - - [04/Apr/2024 16:51:57] "GET /modify HTTP/1.1" 200 -
+2024-04-04 16:51:59,053 [INFO] 127.0.0.1 - - [04/Apr/2024 16:51:59] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:51:59,682 [INFO] 127.0.0.1 - - [04/Apr/2024 16:51:59] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:52:00,706 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:00] "GET /create HTTP/1.1" 200 -
+2024-04-04 16:52:01,972 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:01] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-04 16:52:02,042 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:02] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:52:14,701 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:52:14,701 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:52:14,701 [INFO]  * Restarting with stat
+2024-04-04 16:52:15,023 [WARNING]  * Debugger is active!
+2024-04-04 16:52:15,024 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:52:17,323 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:17] "GET /display HTTP/1.1" 200 -
+2024-04-04 16:52:35,060 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/models.py', reloading
+2024-04-04 16:52:35,106 [INFO]  * Restarting with stat
+2024-04-04 16:52:35,412 [WARNING]  * Debugger is active!
+2024-04-04 16:52:35,413 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 16:52:43,549 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:43] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:52:46,330 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:46] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-04-04 16:52:46,353 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:46] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-04 16:52:46,355 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:46] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-04 16:52:46,366 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:46] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-04 16:52:48,752 [INFO] 127.0.0.1 - - [04/Apr/2024 16:52:48] "GET /upload HTTP/1.1" 200 -
+2024-04-04 16:57:37,466 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 16:57:37,466 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 16:57:37,466 [INFO]  * Restarting with stat
+2024-04-04 16:57:37,760 [WARNING]  * Debugger is active!
+2024-04-04 16:57:37,760 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:11:38,255 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 17:11:38,255 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 17:11:38,255 [INFO]  * Restarting with stat
+2024-04-04 17:11:38,562 [WARNING]  * Debugger is active!
+2024-04-04 17:11:38,562 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:12:03,901 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:03] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:12:04,135 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:04] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:12:11,841 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:11] "[33mGET /apidoc/ HTTP/1.1[0m" 404 -
+2024-04-04 17:12:13,638 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:13] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:12:13,752 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:13] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:12:31,676 [INFO] Validation Error
+2024-04-04 17:12:31,676 [INFO] 127.0.0.1 - - [04/Apr/2024 17:12:31] "[31m[1mPOST /api/api/user HTTP/1.1[0m" 422 -
+2024-04-04 17:13:01,240 [INFO] 127.0.0.1 - - [04/Apr/2024 17:13:01] "[35m[1mPOST /api/api/user HTTP/1.1[0m" 500 -
+2024-04-04 17:13:16,728 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:13:16,786 [INFO]  * Restarting with stat
+2024-04-04 17:13:17,123 [WARNING]  * Debugger is active!
+2024-04-04 17:13:17,123 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:13:20,551 [INFO] 127.0.0.1 - - [04/Apr/2024 17:13:20] "POST /api/api/user HTTP/1.1" 200 -
+2024-04-04 17:14:09,520 [INFO] 127.0.0.1 - - [04/Apr/2024 17:14:09] "POST /api/api/user HTTP/1.1" 200 -
+2024-04-04 17:16:35,461 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:16:35,511 [INFO]  * Restarting with stat
+2024-04-04 17:16:35,835 [WARNING]  * Debugger is active!
+2024-04-04 17:16:35,835 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:20:40,241 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:20:40,292 [INFO]  * Restarting with stat
+2024-04-04 17:20:40,622 [WARNING]  * Debugger is active!
+2024-04-04 17:20:40,622 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:20:43,073 [INFO] 127.0.0.1 - - [04/Apr/2024 17:20:43] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:20:43,179 [INFO] 127.0.0.1 - - [04/Apr/2024 17:20:43] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:21:09,674 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:21:09,732 [INFO]  * Restarting with stat
+2024-04-04 17:21:10,046 [WARNING]  * Debugger is active!
+2024-04-04 17:21:10,047 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:21:43,105 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:21:43,157 [INFO]  * Restarting with stat
+2024-04-04 17:21:43,489 [WARNING]  * Debugger is active!
+2024-04-04 17:21:43,490 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:21:45,750 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 17:21:45,751 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 17:21:45,751 [INFO]  * Restarting with stat
+2024-04-04 17:21:46,093 [WARNING]  * Debugger is active!
+2024-04-04 17:21:46,093 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:21:46,858 [INFO] 127.0.0.1 - - [04/Apr/2024 17:21:46] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:21:46,953 [INFO] 127.0.0.1 - - [04/Apr/2024 17:21:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 17:21:46,978 [INFO] 127.0.0.1 - - [04/Apr/2024 17:21:46] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:22:22,158 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:22:22,210 [INFO]  * Restarting with stat
+2024-04-04 17:22:22,525 [WARNING]  * Debugger is active!
+2024-04-04 17:22:22,525 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:22:23,782 [INFO] 127.0.0.1 - - [04/Apr/2024 17:22:23] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:22:23,856 [INFO] 127.0.0.1 - - [04/Apr/2024 17:22:23] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:22:23,858 [INFO] 127.0.0.1 - - [04/Apr/2024 17:22:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 17:36:52,009 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:36:52,061 [INFO]  * Restarting with stat
+2024-04-04 17:36:52,374 [WARNING]  * Debugger is active!
+2024-04-04 17:36:52,374 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:37:37,455 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:37:37,513 [INFO]  * Restarting with stat
+2024-04-04 17:37:37,840 [WARNING]  * Debugger is active!
+2024-04-04 17:37:37,840 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:38:14,906 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:38:14,957 [INFO]  * Restarting with stat
+2024-04-04 17:38:15,255 [WARNING]  * Debugger is active!
+2024-04-04 17:38:15,256 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:38:21,268 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:38:21,314 [INFO]  * Restarting with stat
+2024-04-04 17:38:21,606 [WARNING]  * Debugger is active!
+2024-04-04 17:38:21,606 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:38:37,635 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:38:37,685 [INFO]  * Restarting with stat
+2024-04-04 17:38:38,002 [WARNING]  * Debugger is active!
+2024-04-04 17:38:38,002 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:38:59,038 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:38:59,085 [INFO]  * Restarting with stat
+2024-04-04 17:38:59,382 [WARNING]  * Debugger is active!
+2024-04-04 17:38:59,382 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:39:05,397 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:39:05,441 [INFO]  * Restarting with stat
+2024-04-04 17:39:05,752 [WARNING]  * Debugger is active!
+2024-04-04 17:39:05,752 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:39:31,799 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:39:31,869 [INFO]  * Restarting with stat
+2024-04-04 17:39:32,178 [WARNING]  * Debugger is active!
+2024-04-04 17:39:32,178 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:39:33,187 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:39:33,251 [INFO]  * Restarting with stat
+2024-04-04 17:39:33,546 [WARNING]  * Debugger is active!
+2024-04-04 17:39:33,547 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:39:34,552 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:39:34,598 [INFO]  * Restarting with stat
+2024-04-04 17:39:34,905 [WARNING]  * Debugger is active!
+2024-04-04 17:39:34,906 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:40:02,952 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:40:02,996 [INFO]  * Restarting with stat
+2024-04-04 17:40:03,296 [WARNING]  * Debugger is active!
+2024-04-04 17:40:03,296 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:40:12,315 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:40:12,361 [INFO]  * Restarting with stat
+2024-04-04 17:40:12,674 [WARNING]  * Debugger is active!
+2024-04-04 17:40:12,675 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:40:15,684 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:40:15,735 [INFO]  * Restarting with stat
+2024-04-04 17:40:16,044 [WARNING]  * Debugger is active!
+2024-04-04 17:40:16,044 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:40:18,052 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:40:18,105 [INFO]  * Restarting with stat
+2024-04-04 17:40:18,432 [WARNING]  * Debugger is active!
+2024-04-04 17:40:18,432 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:40:19,438 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:40:19,490 [INFO]  * Restarting with stat
+2024-04-04 17:40:19,802 [WARNING]  * Debugger is active!
+2024-04-04 17:40:19,802 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:43:03,077 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:43:03,127 [INFO]  * Restarting with stat
+2024-04-04 17:43:03,435 [WARNING]  * Debugger is active!
+2024-04-04 17:43:03,435 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:47:43,914 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:47:43,967 [INFO]  * Restarting with stat
+2024-04-04 17:47:44,261 [WARNING]  * Debugger is active!
+2024-04-04 17:47:44,261 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:48:18,318 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:48:18,364 [INFO]  * Restarting with stat
+2024-04-04 17:48:18,700 [WARNING]  * Debugger is active!
+2024-04-04 17:48:18,701 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:48:42,746 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:48:42,802 [INFO]  * Restarting with stat
+2024-04-04 17:48:43,119 [WARNING]  * Debugger is active!
+2024-04-04 17:48:43,119 [INFO]  * Debugger PIN: 101-312-484
+2024-04-04 17:49:04,154 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:49:04,199 [INFO]  * Restarting with stat
+2024-04-04 17:49:04,516 [WARNING]  * Debugger is active!
+2024-04-04 17:49:04,516 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:49:32,566 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:49:32,619 [INFO]  * Restarting with stat
+2024-04-04 17:49:32,936 [WARNING]  * Debugger is active!
+2024-04-04 17:49:32,936 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:49:47,966 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:49:48,017 [INFO]  * Restarting with stat
+2024-04-04 17:49:48,341 [WARNING]  * Debugger is active!
+2024-04-04 17:49:48,341 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:49:56,362 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:49:56,412 [INFO]  * Restarting with stat
+2024-04-04 17:49:56,739 [WARNING]  * Debugger is active!
+2024-04-04 17:49:56,739 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:49:59,748 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:49:59,805 [INFO]  * Restarting with stat
+2024-04-04 17:50:00,131 [WARNING]  * Debugger is active!
+2024-04-04 17:50:00,131 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:50:04,141 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:50:04,193 [INFO]  * Restarting with stat
+2024-04-04 17:50:04,509 [WARNING]  * Debugger is active!
+2024-04-04 17:50:04,509 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:50:05,515 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:50:05,570 [INFO]  * Restarting with stat
+2024-04-04 17:50:05,885 [WARNING]  * Debugger is active!
+2024-04-04 17:50:05,885 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:50:06,891 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:50:06,941 [INFO]  * Restarting with stat
+2024-04-04 17:50:07,252 [WARNING]  * Debugger is active!
+2024-04-04 17:50:07,252 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:50:22,281 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:50:22,330 [INFO]  * Restarting with stat
+2024-04-04 17:51:57,358 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-04 17:51:57,358 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-04 17:51:57,359 [INFO]  * Restarting with stat
+2024-04-04 17:51:57,671 [WARNING]  * Debugger is active!
+2024-04-04 17:51:57,671 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:52:03,109 [INFO] 127.0.0.1 - - [04/Apr/2024 17:52:03] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:52:03,186 [INFO] 127.0.0.1 - - [04/Apr/2024 17:52:03] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:52:08,987 [INFO] 127.0.0.1 - - [04/Apr/2024 17:52:08] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-04 17:52:27,724 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:52:27,776 [INFO]  * Restarting with stat
+2024-04-04 17:52:28,093 [WARNING]  * Debugger is active!
+2024-04-04 17:52:28,093 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:52:30,100 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:52:30,154 [INFO]  * Restarting with stat
+2024-04-04 17:52:30,463 [WARNING]  * Debugger is active!
+2024-04-04 17:52:30,463 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:54:38,685 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:54:38,733 [INFO]  * Restarting with stat
+2024-04-04 17:54:39,041 [WARNING]  * Debugger is active!
+2024-04-04 17:54:39,041 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:54:54,070 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:54:54,120 [INFO]  * Restarting with stat
+2024-04-04 17:54:54,458 [WARNING]  * Debugger is active!
+2024-04-04 17:54:54,458 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:55:04,479 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:55:04,535 [INFO]  * Restarting with stat
+2024-04-04 17:55:04,860 [WARNING]  * Debugger is active!
+2024-04-04 17:55:04,860 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:55:05,867 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:55:05,925 [INFO]  * Restarting with stat
+2024-04-04 17:55:06,273 [WARNING]  * Debugger is active!
+2024-04-04 17:55:06,274 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:55:08,725 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:08] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:55:08,807 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:08] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:55:08,809 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-04 17:55:11,663 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:11] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-04 17:55:22,304 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-04 17:55:22,361 [INFO]  * Restarting with stat
+2024-04-04 17:55:22,716 [WARNING]  * Debugger is active!
+2024-04-04 17:55:22,716 [INFO]  * Debugger PIN: 134-205-557
+2024-04-04 17:55:23,263 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:23] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-04 17:55:23,341 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:23] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-04 17:55:25,820 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:25] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-04 17:55:34,556 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:34] "GET / HTTP/1.1" 200 -
+2024-04-04 17:55:35,783 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:35] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-04 17:55:37,544 [INFO] 127.0.0.1 - - [04/Apr/2024 17:55:37] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-06 14:02:11,521 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-06 14:02:11,521 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-06 14:02:11,521 [INFO]  * Restarting with stat
+2024-04-06 14:02:11,825 [WARNING]  * Debugger is active!
+2024-04-06 14:02:11,825 [INFO]  * Debugger PIN: 134-205-557
+2024-04-06 14:02:20,742 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-06 14:02:24,486 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:24] "GET / HTTP/1.1" 200 -
+2024-04-06 14:02:33,607 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:33] "[33mGET /apidoc/ HTTP/1.1[0m" 404 -
+2024-04-06 14:02:37,528 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:37] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-06 14:02:37,617 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:37] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-06 14:02:45,380 [INFO] 127.0.0.1 - - [06/Apr/2024 14:02:45] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:03:43,078 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:43] "GET / HTTP/1.1" 200 -
+2024-04-06 14:03:44,589 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:44] "GET /display HTTP/1.1" 200 -
+2024-04-06 14:03:46,543 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:46] "GET /create HTTP/1.1" 200 -
+2024-04-06 14:03:53,248 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:53] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-06 14:03:53,316 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:53] "GET /display HTTP/1.1" 200 -
+2024-04-06 14:03:57,734 [INFO] 127.0.0.1 - - [06/Apr/2024 14:03:57] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:04:02,335 [INFO] 127.0.0.1 - - [06/Apr/2024 14:04:02] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-06 14:04:02,414 [INFO] 127.0.0.1 - - [06/Apr/2024 14:04:02] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-06 14:04:04,696 [INFO] 127.0.0.1 - - [06/Apr/2024 14:04:04] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:04:56,101 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:04:56,152 [INFO]  * Restarting with stat
+2024-04-06 14:04:56,475 [WARNING]  * Debugger is active!
+2024-04-06 14:04:56,475 [INFO]  * Debugger PIN: 134-205-557
+2024-04-06 14:04:59,783 [INFO] 127.0.0.1 - - [06/Apr/2024 14:04:59] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:06:21,656 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-06 14:06:21,657 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-06 14:06:21,657 [INFO]  * Restarting with stat
+2024-04-06 14:06:21,960 [WARNING]  * Debugger is active!
+2024-04-06 14:06:21,960 [INFO]  * Debugger PIN: 134-205-557
+2024-04-06 14:06:25,503 [INFO] 127.0.0.1 - - [06/Apr/2024 14:06:25] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-06 14:06:25,584 [INFO] 127.0.0.1 - - [06/Apr/2024 14:06:25] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-06 14:06:28,945 [INFO] 127.0.0.1 - - [06/Apr/2024 14:06:28] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:06:54,018 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:06:54,070 [INFO]  * Restarting with stat
+2024-04-06 14:06:54,388 [WARNING]  * Debugger is active!
+2024-04-06 14:06:54,388 [INFO]  * Debugger PIN: 134-205-557
+2024-04-06 14:06:58,237 [INFO] 127.0.0.1 - - [06/Apr/2024 14:06:58] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:11:08,582 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-06 14:11:08,582 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-06 14:11:08,582 [INFO]  * Restarting with stat
+2024-04-06 14:11:08,893 [WARNING]  * Debugger is active!
+2024-04-06 14:11:08,893 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:11:21,918 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:11:21,974 [INFO]  * Restarting with stat
+2024-04-06 14:11:22,284 [WARNING]  * Debugger is active!
+2024-04-06 14:11:22,285 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:11:27,297 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:11:27,357 [INFO]  * Restarting with stat
+2024-04-06 14:11:27,670 [WARNING]  * Debugger is active!
+2024-04-06 14:11:27,670 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:11:37,885 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:37] "[31m[1mGET /display HTTP/1.1[0m" 401 -
+2024-04-06 14:11:40,882 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:40] "[31m[1mGET /display HTTP/1.1[0m" 401 -
+2024-04-06 14:11:44,833 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:44] "GET /display HTTP/1.1" 200 -
+2024-04-06 14:11:47,092 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:47] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-06 14:11:47,163 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:47] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-06 14:11:49,461 [INFO] 127.0.0.1 - - [06/Apr/2024 14:11:49] "GET /api/get_todos HTTP/1.1" 200 -
+2024-04-06 14:12:04,734 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:12:04,780 [INFO]  * Restarting with stat
+2024-04-06 14:12:05,086 [WARNING]  * Debugger is active!
+2024-04-06 14:12:05,087 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:12:28,129 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:12:28,180 [INFO]  * Restarting with stat
+2024-04-06 14:12:28,494 [WARNING]  * Debugger is active!
+2024-04-06 14:12:28,494 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:13:06,561 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:13:06,610 [INFO]  * Restarting with stat
+2024-04-06 14:13:06,915 [WARNING]  * Debugger is active!
+2024-04-06 14:13:06,915 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:13:24,948 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:13:24,997 [INFO]  * Restarting with stat
+2024-04-06 14:13:25,296 [WARNING]  * Debugger is active!
+2024-04-06 14:13:25,297 [INFO]  * Debugger PIN: 113-118-281
+2024-04-06 14:14:02,356 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:14:02,406 [INFO]  * Restarting with stat
+2024-04-06 14:14:02,738 [WARNING]  * Debugger is active!
+2024-04-06 14:14:02,739 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:14:10,756 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-06 14:14:10,808 [INFO]  * Restarting with stat
+2024-04-06 14:14:11,120 [WARNING]  * Debugger is active!
+2024-04-06 14:14:11,120 [INFO]  * Debugger PIN: 485-166-773
+2024-04-06 14:14:13,944 [INFO] 127.0.0.1 - - [06/Apr/2024 14:14:13] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-06 14:14:14,031 [INFO] 127.0.0.1 - - [06/Apr/2024 14:14:14] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-06 14:14:16,393 [INFO] 127.0.0.1 - - [06/Apr/2024 14:14:16] "GET /api/get_todos HTTP/1.1" 200 -
