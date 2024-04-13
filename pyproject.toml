@@ -19,7 +19,6 @@ license = { text = "MIT" }
 [project.scripts]
 toudou = "toudou.views.click:cli"
 
-
 [build-system]
 requires = ["pdm-pep517"]
 build-backend = "pdm.pep517.api"
