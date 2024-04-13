@@ -1,7 +1,10 @@
-from pydantic import Field, ValidationError
+import io
+from pydantic import Field, ValidationError, validator
 from flask_httpauth import HTTPTokenAuth
+from spectree import SecurityScheme, SpecTree
+from toudou import services
 import toudou.models as models
-from flask import Blueprint, request
+from flask import Blueprint, request, send_file
 from flask_pydantic_spec import FlaskPydanticSpec, Request
 from pydantic.v1 import BaseModel, constr
 from flask import jsonify
@@ -11,18 +14,36 @@ import uuid
 api_spec = FlaskPydanticSpec('flask')
 auth = HTTPTokenAuth(scheme='Bearer')
 api = Blueprint("api", __name__, url_prefix="/api")
+spec = SpecTree("flask", annotations=True)
+spec.register(api)
 
-tokens = {
-    "secret-token-1": "john",
-    "secret-token-2": "susan"
-}
-
+spec = SpecTree(
+    "flask",
+    security_schemes=[
+        SecurityScheme(
+            name="bearer_token",
+            data={"type": "http", "scheme": "bearer"}
+        )
+    ],
+    security=[{"bearer_token": []}]
+)
+    
 #TODO import
-#TODO export
 
 class CreateToudouApi(BaseModel):
     task: constr(min_length=2, max_length=100)
     due: datetime.date | None = None
+"""    @validator('date', pre=True, always=True)
+    def parse_date(cls, value):
+        if value is not None:
+            if isinstance(value, str):
+                try:
+                    return datetime.strptime(value, FORMAT).date()
+                except ValueError:
+                    raise ValueError("Format de date invalide. Utilisez le format {}".format(FORMAT))
+            elif not isinstance(value, date):
+                raise ValueError("La valeur de date doit être une chaîne ou un objet date valide.")
+        return value"""
 
 class ModifyToudouApi(BaseModel):
     id: uuid.UUID
@@ -32,6 +53,13 @@ class ModifyToudouApi(BaseModel):
 
 class GetToudouApi(BaseModel):
     id: uuid.UUID
+
+@api.route('download_toudous', methods=['GET'])
+def download_toudous_api():
+    csv = services.export_to_csv()
+    content_bytes = csv.getvalue().encode()
+    bytes_io = io.BytesIO(content_bytes)
+    return send_file(bytes_io, as_attachment=True, mimetype='application/octet-stream', download_name="toudous.csv")
 
 @api.route('/get_toudous', methods=['GET'])
 def get_todos_api():
@@ -64,8 +92,8 @@ def get_toudou_api():
     except ValidationError as e:
         return {'error' : e.errors()}
 
-@auth.verify_token
 @api.route('/create_toudou', methods=['POST'])
+@auth.login_required
 @api_spec.validate(body=Request(CreateToudouApi))
 def create_toudou_api():
     try:
