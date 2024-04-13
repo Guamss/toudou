@@ -129,7 +129,7 @@ def download():
     csv = services.export_to_csv()
     content_bytes = csv.getvalue().encode()
     bytes_io = io.BytesIO(content_bytes)
-    return send_file(bytes_io, as_attachment=True, mimetype='application/octet-stream',download_name="toudous.csv")
+    return send_file(bytes_io, as_attachment=True, mimetype='application/octet-stream', download_name="toudous.csv")
 
 @web_ui.route('/upload', methods= ['POST', 'GET'])
 @auth.login_required(role="admin")

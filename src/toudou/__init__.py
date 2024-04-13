@@ -5,6 +5,9 @@ TODO_FOLDER = "database"
 DATABASE = "toudou.db"
 TABLE_NAME = "TOUDOU"
 
+if not os.path.exists('log'):
+        os.makedirs('log')
+
 logging.basicConfig(
     level=logging.INFO, 
     format="%(asctime)s [%(levelname)s] %(message)s", 

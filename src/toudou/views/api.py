@@ -1,23 +1,32 @@
 from pydantic import Field, ValidationError
+from flask_httpauth import HTTPTokenAuth
 import toudou.models as models
 from flask import Blueprint, request
 from flask_pydantic_spec import FlaskPydanticSpec, Request
-from pydantic import BaseModel, constr
+from pydantic.v1 import BaseModel, constr
 from flask import jsonify
 import datetime
 import uuid
 
 api_spec = FlaskPydanticSpec('flask')
+auth = HTTPTokenAuth(scheme='Bearer')
 api = Blueprint("api", __name__, url_prefix="/api")
 
+tokens = {
+    "secret-token-1": "john",
+    "secret-token-2": "susan"
+}
+
+#TODO import
+#TODO export
+
 class CreateToudouApi(BaseModel):
-    task: str
+    task: constr(min_length=2, max_length=100)
     due: datetime.date | None = None
-    completed : bool = Field(default=False)
 
 class ModifyToudouApi(BaseModel):
     id: uuid.UUID
-    new_task: str
+    new_task: constr(min_length=2, max_length=100)
     new_due: datetime.date | None = None
     new_completed : bool = Field(default=False)
 
@@ -55,7 +64,7 @@ def get_toudou_api():
     except ValidationError as e:
         return {'error' : e.errors()}
 
-
+@auth.verify_token
 @api.route('/create_toudou', methods=['POST'])
 @api_spec.validate(body=Request(CreateToudouApi))
 def create_toudou_api():
@@ -63,9 +72,8 @@ def create_toudou_api():
         data = CreateToudouApi(**request.json)
         task = data.task
         due = data.due
-        completed = data.completed
-        models.create_todo(task=task, due=due, completed=completed)
-        return {'task': task, 'due': due, 'completed': completed}
+        models.create_todo(task=task, due=due, completed=False)
+        return {'task': task, 'due': due}
     except ValidationError as e:
         return {'error': e.errors()}
     

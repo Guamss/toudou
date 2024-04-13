@@ -7832,3 +7832,709 @@ FROM "TOUDOU"
 2024-04-12 12:28:29,506 [INFO] 127.0.0.1 - - [12/Apr/2024 12:28:29] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
 2024-04-12 12:28:57,858 [INFO] Validation Error
 2024-04-12 12:28:57,858 [INFO] 127.0.0.1 - - [12/Apr/2024 12:28:57] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-13 17:23:26,856 [INFO] BEGIN (implicit)
+2024-04-13 17:23:26,856 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:23:26,857 [INFO] [raw sql] ()
+2024-04-13 17:23:26,858 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:23:26,858 [INFO] [raw sql] ()
+2024-04-13 17:23:26,858 [INFO] ROLLBACK
+2024-04-13 17:23:26,858 [INFO] BEGIN (implicit)
+2024-04-13 17:23:26,859 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:23:26,859 [INFO] [raw sql] ()
+2024-04-13 17:23:26,860 [INFO] COMMIT
+2024-04-13 17:23:26,945 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-13 17:23:26,945 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-13 17:23:26,947 [INFO]  * Restarting with stat
+2024-04-13 17:23:27,718 [INFO] BEGIN (implicit)
+2024-04-13 17:23:27,719 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:23:27,719 [INFO] [raw sql] ()
+2024-04-13 17:23:27,720 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:23:27,720 [INFO] [raw sql] ()
+2024-04-13 17:23:27,721 [INFO] ROLLBACK
+2024-04-13 17:23:27,721 [INFO] BEGIN (implicit)
+2024-04-13 17:23:27,722 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:23:27,722 [INFO] [raw sql] ()
+2024-04-13 17:23:27,722 [INFO] COMMIT
+2024-04-13 17:23:27,795 [WARNING]  * Debugger is active!
+2024-04-13 17:23:27,801 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:23:27,833 [INFO] 127.0.0.1 - - [13/Apr/2024 17:23:27] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 17:23:28,009 [INFO] 127.0.0.1 - - [13/Apr/2024 17:23:28] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 17:23:28,792 [INFO] BEGIN (implicit)
+2024-04-13 17:23:28,793 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:23:28,793 [INFO] [generated in 0.00133s] ()
+2024-04-13 17:23:28,794 [INFO] ROLLBACK
+2024-04-13 17:23:28,805 [INFO] 127.0.0.1 - - [13/Apr/2024 17:23:28] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:24:14,799 [INFO] BEGIN (implicit)
+2024-04-13 17:24:14,799 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:24:14,800 [INFO] [cached since 46.01s ago] ()
+2024-04-13 17:24:14,800 [INFO] ROLLBACK
+2024-04-13 17:24:14,801 [INFO] 127.0.0.1 - - [13/Apr/2024 17:24:14] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-13 17:24:22,732 [INFO] BEGIN (implicit)
+2024-04-13 17:24:22,732 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU" 
+WHERE "TOUDOU".id = ?
+2024-04-13 17:24:22,733 [INFO] [generated in 0.00129s] ('eaf7ae282d124321ba638d2ac649c437',)
+2024-04-13 17:24:22,734 [INFO] ROLLBACK
+2024-04-13 17:24:22,735 [INFO] 127.0.0.1 - - [13/Apr/2024 17:24:22] "POST /api/get_toudou HTTP/1.1" 200 -
+2024-04-13 17:24:47,040 [INFO] BEGIN (implicit)
+2024-04-13 17:24:47,041 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU" 
+WHERE "TOUDOU".id = ?
+2024-04-13 17:24:47,041 [INFO] [cached since 24.31s ago] ('6b7ca3d8c2cc4477ae655ccdfb04829b',)
+2024-04-13 17:24:47,042 [INFO] ROLLBACK
+2024-04-13 17:24:47,042 [INFO] 127.0.0.1 - - [13/Apr/2024 17:24:47] "POST /api/get_toudou HTTP/1.1" 200 -
+2024-04-13 17:25:03,688 [INFO] BEGIN (implicit)
+2024-04-13 17:25:03,689 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 17:25:03,690 [INFO] [generated in 0.00042s] ('6b7ca3d8c2cc4477ae655ccdfb04829b',)
+2024-04-13 17:25:03,692 [INFO] COMMIT
+2024-04-13 17:25:03,702 [INFO] 127.0.0.1 - - [13/Apr/2024 17:25:03] "POST /api/delete_toudou HTTP/1.1" 200 -
+2024-04-13 17:25:08,347 [INFO] BEGIN (implicit)
+2024-04-13 17:25:08,348 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:25:08,348 [INFO] [cached since 99.56s ago] ()
+2024-04-13 17:25:08,349 [INFO] ROLLBACK
+2024-04-13 17:25:08,350 [INFO] 127.0.0.1 - - [13/Apr/2024 17:25:08] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:26:02,275 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:26:02,366 [INFO]  * Restarting with stat
+2024-04-13 17:26:03,217 [INFO] BEGIN (implicit)
+2024-04-13 17:26:03,218 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:26:03,218 [INFO] [raw sql] ()
+2024-04-13 17:26:03,219 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:26:03,219 [INFO] [raw sql] ()
+2024-04-13 17:26:03,220 [INFO] ROLLBACK
+2024-04-13 17:26:03,220 [INFO] BEGIN (implicit)
+2024-04-13 17:26:03,220 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:26:03,220 [INFO] [raw sql] ()
+2024-04-13 17:26:03,221 [INFO] COMMIT
+2024-04-13 17:26:03,290 [WARNING]  * Debugger is active!
+2024-04-13 17:26:03,296 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:26:16,646 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:26:16,741 [INFO]  * Restarting with stat
+2024-04-13 17:26:17,568 [INFO] BEGIN (implicit)
+2024-04-13 17:26:17,568 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:26:17,569 [INFO] [raw sql] ()
+2024-04-13 17:26:17,570 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:26:17,570 [INFO] [raw sql] ()
+2024-04-13 17:26:17,571 [INFO] ROLLBACK
+2024-04-13 17:26:17,571 [INFO] BEGIN (implicit)
+2024-04-13 17:26:17,572 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:26:17,572 [INFO] [raw sql] ()
+2024-04-13 17:26:17,573 [INFO] COMMIT
+2024-04-13 17:26:17,659 [WARNING]  * Debugger is active!
+2024-04-13 17:26:17,666 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:26:19,774 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:26:19,869 [INFO]  * Restarting with stat
+2024-04-13 17:26:20,697 [INFO] BEGIN (implicit)
+2024-04-13 17:26:20,697 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:26:20,697 [INFO] [raw sql] ()
+2024-04-13 17:26:20,698 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:26:20,698 [INFO] [raw sql] ()
+2024-04-13 17:26:20,699 [INFO] ROLLBACK
+2024-04-13 17:26:20,699 [INFO] BEGIN (implicit)
+2024-04-13 17:26:20,699 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:26:20,700 [INFO] [raw sql] ()
+2024-04-13 17:26:20,700 [INFO] COMMIT
+2024-04-13 17:26:20,769 [WARNING]  * Debugger is active!
+2024-04-13 17:26:20,775 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:26:26,959 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:26:27,044 [INFO]  * Restarting with stat
+2024-04-13 17:26:27,796 [INFO] BEGIN (implicit)
+2024-04-13 17:26:27,796 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:26:27,796 [INFO] [raw sql] ()
+2024-04-13 17:26:27,797 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:26:27,798 [INFO] [raw sql] ()
+2024-04-13 17:26:27,798 [INFO] ROLLBACK
+2024-04-13 17:26:27,798 [INFO] BEGIN (implicit)
+2024-04-13 17:26:27,799 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:26:27,799 [INFO] [raw sql] ()
+2024-04-13 17:26:27,799 [INFO] COMMIT
+2024-04-13 17:26:27,868 [WARNING]  * Debugger is active!
+2024-04-13 17:26:27,874 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:26:32,951 [INFO] 127.0.0.1 - - [13/Apr/2024 17:26:32] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 17:26:33,100 [INFO] 127.0.0.1 - - [13/Apr/2024 17:26:33] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 17:26:42,176 [INFO] BEGIN (implicit)
+2024-04-13 17:26:42,178 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-13 17:26:42,178 [INFO] [generated in 0.00051s] ('b0a0bfc987c147639b845de210c1acbe', 'string123', '2024-04-13 00:00:00.000000', 0)
+2024-04-13 17:26:42,180 [INFO] COMMIT
+2024-04-13 17:26:42,190 [INFO] 127.0.0.1 - - [13/Apr/2024 17:26:42] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-13 17:26:52,662 [INFO] BEGIN (implicit)
+2024-04-13 17:26:52,663 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:26:52,663 [INFO] [generated in 0.00134s] ()
+2024-04-13 17:26:52,664 [INFO] ROLLBACK
+2024-04-13 17:26:52,674 [INFO] 127.0.0.1 - - [13/Apr/2024 17:26:52] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:27:08,572 [INFO] BEGIN (implicit)
+2024-04-13 17:27:08,573 [INFO] UPDATE "TOUDOU" SET completed=? WHERE "TOUDOU".id = ?
+2024-04-13 17:27:08,573 [INFO] [generated in 0.00044s] (1, 'b0a0bfc987c147639b845de210c1acbe')
+2024-04-13 17:27:08,575 [INFO] COMMIT
+2024-04-13 17:27:08,586 [INFO] 127.0.0.1 - - [13/Apr/2024 17:27:08] "POST /api/complete_toudou HTTP/1.1" 200 -
+2024-04-13 17:27:10,044 [INFO] BEGIN (implicit)
+2024-04-13 17:27:10,045 [INFO] UPDATE "TOUDOU" SET completed=? WHERE "TOUDOU".id = ?
+2024-04-13 17:27:10,045 [INFO] [cached since 1.472s ago] (1, 'b0a0bfc987c147639b845de210c1acbe')
+2024-04-13 17:27:10,046 [INFO] COMMIT
+2024-04-13 17:27:10,047 [INFO] 127.0.0.1 - - [13/Apr/2024 17:27:10] "POST /api/complete_toudou HTTP/1.1" 200 -
+2024-04-13 17:27:12,986 [INFO] BEGIN (implicit)
+2024-04-13 17:27:12,987 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:27:12,987 [INFO] [cached since 20.33s ago] ()
+2024-04-13 17:27:12,988 [INFO] ROLLBACK
+2024-04-13 17:27:12,990 [INFO] 127.0.0.1 - - [13/Apr/2024 17:27:12] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:28:02,543 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:02] "GET / HTTP/1.1" 200 -
+2024-04-13 17:28:24,814 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:24] "GET /create HTTP/1.1" 200 -
+2024-04-13 17:28:25,659 [INFO] BEGIN (implicit)
+2024-04-13 17:28:25,659 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU" 
+WHERE "TOUDOU".completed = 0
+2024-04-13 17:28:25,660 [INFO] [generated in 0.00105s] ()
+2024-04-13 17:28:25,660 [INFO] ROLLBACK
+2024-04-13 17:28:25,669 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:25] "GET /complete HTTP/1.1" 200 -
+2024-04-13 17:28:26,272 [INFO] BEGIN (implicit)
+2024-04-13 17:28:26,273 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:28:26,273 [INFO] [cached since 93.61s ago] ()
+2024-04-13 17:28:26,274 [INFO] ROLLBACK
+2024-04-13 17:28:26,285 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:26] "GET /modify HTTP/1.1" 200 -
+2024-04-13 17:28:40,725 [INFO] BEGIN (implicit)
+2024-04-13 17:28:40,725 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:28:40,726 [INFO] [cached since 108.1s ago] ()
+2024-04-13 17:28:40,726 [INFO] ROLLBACK
+2024-04-13 17:28:40,728 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:40] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:28:47,296 [INFO] BEGIN (implicit)
+2024-04-13 17:28:47,296 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU" 
+WHERE "TOUDOU".id = ?
+2024-04-13 17:28:47,297 [INFO] [generated in 0.00132s] ('b0a0bfc987c147639b845de210c1acbe',)
+2024-04-13 17:28:47,298 [INFO] ROLLBACK
+2024-04-13 17:28:47,298 [INFO] BEGIN (implicit)
+2024-04-13 17:28:47,299 [INFO] UPDATE "TOUDOU" SET task=?, date=?, completed=? WHERE "TOUDOU".id = ?
+2024-04-13 17:28:47,299 [INFO] [generated in 0.00042s] ('string1232321123', '2024-04-13 00:00:00.000000', 1, 'b0a0bfc987c147639b845de210c1acbe')
+2024-04-13 17:28:47,301 [INFO] COMMIT
+2024-04-13 17:28:47,314 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:47] "POST /api/modify_toudou HTTP/1.1" 200 -
+2024-04-13 17:28:51,556 [INFO] BEGIN (implicit)
+2024-04-13 17:28:51,556 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:28:51,557 [INFO] [cached since 118.9s ago] ()
+2024-04-13 17:28:51,557 [INFO] ROLLBACK
+2024-04-13 17:28:51,558 [INFO] 127.0.0.1 - - [13/Apr/2024 17:28:51] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:29:10,811 [INFO] 127.0.0.1 - - [13/Apr/2024 17:29:10] "GET /upload HTTP/1.1" 200 -
+2024-04-13 17:29:12,563 [INFO] BEGIN (implicit)
+2024-04-13 17:29:12,564 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 17:29:12,564 [INFO] [cached since 139.9s ago] ()
+2024-04-13 17:29:12,565 [INFO] ROLLBACK
+2024-04-13 17:29:12,566 [INFO] 127.0.0.1 - - [13/Apr/2024 17:29:12] "GET /display HTTP/1.1" 200 -
+2024-04-13 17:30:03,760 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\web.py', reloading
+2024-04-13 17:30:03,872 [INFO]  * Restarting with stat
+2024-04-13 17:30:04,728 [INFO] BEGIN (implicit)
+2024-04-13 17:30:04,728 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:30:04,729 [INFO] [raw sql] ()
+2024-04-13 17:30:04,729 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:30:04,730 [INFO] [raw sql] ()
+2024-04-13 17:30:04,730 [INFO] ROLLBACK
+2024-04-13 17:30:04,731 [INFO] BEGIN (implicit)
+2024-04-13 17:30:04,731 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:30:04,731 [INFO] [raw sql] ()
+2024-04-13 17:30:04,732 [INFO] COMMIT
+2024-04-13 17:30:04,810 [WARNING]  * Debugger is active!
+2024-04-13 17:30:04,818 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:30:23,279 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:30:23,392 [INFO]  * Restarting with stat
+2024-04-13 17:30:24,211 [INFO] BEGIN (implicit)
+2024-04-13 17:30:24,212 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:30:24,212 [INFO] [raw sql] ()
+2024-04-13 17:30:24,213 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:30:24,213 [INFO] [raw sql] ()
+2024-04-13 17:30:24,214 [INFO] ROLLBACK
+2024-04-13 17:30:24,214 [INFO] BEGIN (implicit)
+2024-04-13 17:30:24,215 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:30:24,215 [INFO] [raw sql] ()
+2024-04-13 17:30:24,216 [INFO] COMMIT
+2024-04-13 17:30:24,298 [WARNING]  * Debugger is active!
+2024-04-13 17:30:24,304 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:30:30,517 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:30:30,607 [INFO]  * Restarting with stat
+2024-04-13 17:30:31,453 [INFO] BEGIN (implicit)
+2024-04-13 17:30:31,454 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:30:31,454 [INFO] [raw sql] ()
+2024-04-13 17:30:31,455 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:30:31,456 [INFO] [raw sql] ()
+2024-04-13 17:30:31,456 [INFO] ROLLBACK
+2024-04-13 17:30:31,456 [INFO] BEGIN (implicit)
+2024-04-13 17:30:31,457 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:30:31,457 [INFO] [raw sql] ()
+2024-04-13 17:30:31,458 [INFO] COMMIT
+2024-04-13 17:30:31,530 [WARNING]  * Debugger is active!
+2024-04-13 17:30:31,536 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 17:31:19,662 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 17:31:19,753 [INFO]  * Restarting with stat
+2024-04-13 17:31:20,539 [INFO] BEGIN (implicit)
+2024-04-13 17:31:20,540 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 17:31:20,540 [INFO] [raw sql] ()
+2024-04-13 17:31:20,541 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 17:31:20,541 [INFO] [raw sql] ()
+2024-04-13 17:31:20,542 [INFO] ROLLBACK
+2024-04-13 17:31:20,542 [INFO] BEGIN (implicit)
+2024-04-13 17:31:20,542 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 17:31:20,543 [INFO] [raw sql] ()
+2024-04-13 17:31:20,543 [INFO] COMMIT
+2024-04-13 17:31:20,607 [WARNING]  * Debugger is active!
+2024-04-13 17:31:20,613 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:14:13,247 [INFO] BEGIN (implicit)
+2024-04-13 22:14:13,248 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:14:13,248 [INFO] [raw sql] ()
+2024-04-13 22:14:13,249 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:14:13,249 [INFO] [raw sql] ()
+2024-04-13 22:14:13,250 [INFO] ROLLBACK
+2024-04-13 22:14:13,250 [INFO] BEGIN (implicit)
+2024-04-13 22:14:13,251 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:14:13,251 [INFO] [raw sql] ()
+2024-04-13 22:14:13,252 [INFO] COMMIT
+2024-04-13 22:14:13,380 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-13 22:14:13,381 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-13 22:14:13,383 [INFO]  * Restarting with stat
+2024-04-13 22:14:14,214 [INFO] BEGIN (implicit)
+2024-04-13 22:14:14,214 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:14:14,215 [INFO] [raw sql] ()
+2024-04-13 22:14:14,216 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:14:14,216 [INFO] [raw sql] ()
+2024-04-13 22:14:14,217 [INFO] ROLLBACK
+2024-04-13 22:14:14,217 [INFO] BEGIN (implicit)
+2024-04-13 22:14:14,218 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:14:14,218 [INFO] [raw sql] ()
+2024-04-13 22:14:14,218 [INFO] COMMIT
+2024-04-13 22:14:14,286 [WARNING]  * Debugger is active!
+2024-04-13 22:14:14,292 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:14:27,206 [INFO] Validation Error
+2024-04-13 22:14:27,207 [INFO] 127.0.0.1 - - [13/Apr/2024 22:14:27] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 422 -
+2024-04-13 22:14:35,089 [INFO] BEGIN (implicit)
+2024-04-13 22:14:35,091 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-13 22:14:35,092 [INFO] [generated in 0.00046s] ('c71c1bcf40d6498693fae23509f9b789', 'sgtr', '2024-04-13 00:00:00.000000', 0)
+2024-04-13 22:14:35,094 [INFO] COMMIT
+2024-04-13 22:14:35,106 [INFO] 127.0.0.1 - - [13/Apr/2024 22:14:35] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-13 22:14:37,882 [INFO] BEGIN (implicit)
+2024-04-13 22:14:37,883 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:14:37,883 [INFO] [generated in 0.00120s] ()
+2024-04-13 22:14:37,884 [INFO] ROLLBACK
+2024-04-13 22:14:37,924 [INFO] 127.0.0.1 - - [13/Apr/2024 22:14:37] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:19:01,987 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:19:02,089 [INFO]  * Restarting with stat
+2024-04-13 22:19:02,910 [INFO] BEGIN (implicit)
+2024-04-13 22:19:02,911 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:19:02,911 [INFO] [raw sql] ()
+2024-04-13 22:19:02,912 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:19:02,912 [INFO] [raw sql] ()
+2024-04-13 22:19:02,912 [INFO] ROLLBACK
+2024-04-13 22:19:02,913 [INFO] BEGIN (implicit)
+2024-04-13 22:19:02,913 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:19:02,914 [INFO] [raw sql] ()
+2024-04-13 22:19:02,914 [INFO] COMMIT
+2024-04-13 22:19:02,986 [WARNING]  * Debugger is active!
+2024-04-13 22:19:02,992 [INFO]  * Debugger PIN: 776-214-579
+2024-04-13 22:19:07,349 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:07] "[35m[1mGET /apidoc/swagger HTTP/1.1[0m" 500 -
+2024-04-13 22:19:07,442 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:07] "GET /apidoc/swagger?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-13 22:19:07,454 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:07] "GET /apidoc/swagger?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-13 22:19:07,470 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:07] "GET /apidoc/swagger?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-13 22:19:18,391 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:19:18,486 [INFO]  * Restarting with stat
+2024-04-13 22:19:19,288 [INFO] BEGIN (implicit)
+2024-04-13 22:19:19,289 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:19:19,289 [INFO] [raw sql] ()
+2024-04-13 22:19:19,290 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:19:19,290 [INFO] [raw sql] ()
+2024-04-13 22:19:19,290 [INFO] ROLLBACK
+2024-04-13 22:19:19,291 [INFO] BEGIN (implicit)
+2024-04-13 22:19:19,291 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:19:19,291 [INFO] [raw sql] ()
+2024-04-13 22:19:19,292 [INFO] COMMIT
+2024-04-13 22:19:19,364 [WARNING]  * Debugger is active!
+2024-04-13 22:19:19,370 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:19:22,830 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:22] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:19:22,982 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:22] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:19:22,985 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-13 22:19:34,974 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:34] "[35m[1mPOST /api/create_toudou HTTP/1.1[0m" 500 -
+2024-04-13 22:19:50,119 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:19:50,235 [INFO]  * Restarting with stat
+2024-04-13 22:19:51,000 [INFO] BEGIN (implicit)
+2024-04-13 22:19:51,000 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:19:51,001 [INFO] [raw sql] ()
+2024-04-13 22:19:51,002 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:19:51,002 [INFO] [raw sql] ()
+2024-04-13 22:19:51,003 [INFO] ROLLBACK
+2024-04-13 22:19:51,003 [INFO] BEGIN (implicit)
+2024-04-13 22:19:51,004 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:19:51,004 [INFO] [raw sql] ()
+2024-04-13 22:19:51,004 [INFO] COMMIT
+2024-04-13 22:19:51,082 [WARNING]  * Debugger is active!
+2024-04-13 22:19:51,088 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:19:57,705 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:57] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:19:57,811 [INFO] 127.0.0.1 - - [13/Apr/2024 22:19:57] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:20:01,839 [INFO] BEGIN (implicit)
+2024-04-13 22:20:01,841 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-13 22:20:01,841 [INFO] [generated in 0.00049s] ('e07eba60302b4a96bfbaba8155f029f9', 'string', '2024-04-13 00:00:00.000000', 0)
+2024-04-13 22:20:01,842 [INFO] COMMIT
+2024-04-13 22:20:01,852 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:01] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-13 22:20:29,438 [INFO] BEGIN (implicit)
+2024-04-13 22:20:29,438 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:29,439 [INFO] [generated in 0.00111s] ()
+2024-04-13 22:20:29,439 [INFO] ROLLBACK
+2024-04-13 22:20:29,449 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:29] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:32,705 [INFO] BEGIN (implicit)
+2024-04-13 22:20:32,706 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:32,706 [INFO] [generated in 0.00044s] ('e07eba60302b4a96bfbaba8155f029f9',)
+2024-04-13 22:20:32,709 [INFO] COMMIT
+2024-04-13 22:20:32,719 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:32] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:32,847 [INFO] BEGIN (implicit)
+2024-04-13 22:20:32,848 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:32,848 [INFO] [cached since 3.41s ago] ()
+2024-04-13 22:20:32,849 [INFO] ROLLBACK
+2024-04-13 22:20:32,850 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:32] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:33,869 [INFO] BEGIN (implicit)
+2024-04-13 22:20:33,870 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:33,870 [INFO] [cached since 1.165s ago] ('b0a0bfc987c147639b845de210c1acbe',)
+2024-04-13 22:20:33,872 [INFO] COMMIT
+2024-04-13 22:20:33,881 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:33] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:34,024 [INFO] BEGIN (implicit)
+2024-04-13 22:20:34,024 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:34,025 [INFO] [cached since 4.587s ago] ()
+2024-04-13 22:20:34,025 [INFO] ROLLBACK
+2024-04-13 22:20:34,027 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:34] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:34,665 [INFO] BEGIN (implicit)
+2024-04-13 22:20:34,666 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:34,666 [INFO] [cached since 1.96s ago] ('c71c1bcf40d6498693fae23509f9b789',)
+2024-04-13 22:20:34,668 [INFO] COMMIT
+2024-04-13 22:20:34,678 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:34] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:34,808 [INFO] BEGIN (implicit)
+2024-04-13 22:20:34,808 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:34,809 [INFO] [cached since 5.37s ago] ()
+2024-04-13 22:20:34,809 [INFO] ROLLBACK
+2024-04-13 22:20:34,811 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:34] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:35,660 [INFO] BEGIN (implicit)
+2024-04-13 22:20:35,661 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:35,661 [INFO] [cached since 2.955s ago] ('fef22c87e2c44ad5bf00356f8fe217a3',)
+2024-04-13 22:20:35,663 [INFO] COMMIT
+2024-04-13 22:20:35,673 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:35] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:35,808 [INFO] BEGIN (implicit)
+2024-04-13 22:20:35,809 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:35,809 [INFO] [cached since 6.371s ago] ()
+2024-04-13 22:20:35,810 [INFO] ROLLBACK
+2024-04-13 22:20:35,811 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:35] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:36,612 [INFO] BEGIN (implicit)
+2024-04-13 22:20:36,613 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:36,613 [INFO] [cached since 3.907s ago] ('5c971b13d3f8457cb614867fddb3c9c0',)
+2024-04-13 22:20:36,615 [INFO] COMMIT
+2024-04-13 22:20:36,625 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:36] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:36,764 [INFO] BEGIN (implicit)
+2024-04-13 22:20:36,765 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:36,765 [INFO] [cached since 7.328s ago] ()
+2024-04-13 22:20:36,766 [INFO] ROLLBACK
+2024-04-13 22:20:36,768 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:36] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:37,483 [INFO] BEGIN (implicit)
+2024-04-13 22:20:37,483 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:37,484 [INFO] [cached since 4.778s ago] ('eaf7ae282d124321ba638d2ac649c437',)
+2024-04-13 22:20:37,485 [INFO] COMMIT
+2024-04-13 22:20:37,496 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:37] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:37,626 [INFO] BEGIN (implicit)
+2024-04-13 22:20:37,627 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:37,627 [INFO] [cached since 8.189s ago] ()
+2024-04-13 22:20:37,628 [INFO] ROLLBACK
+2024-04-13 22:20:37,629 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:37] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:38,196 [INFO] BEGIN (implicit)
+2024-04-13 22:20:38,196 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:38,197 [INFO] [cached since 5.491s ago] ('c1334cfae9f743048303172de96f7464',)
+2024-04-13 22:20:38,198 [INFO] COMMIT
+2024-04-13 22:20:38,208 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:38] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:38,341 [INFO] BEGIN (implicit)
+2024-04-13 22:20:38,341 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:38,343 [INFO] [cached since 8.904s ago] ()
+2024-04-13 22:20:38,343 [INFO] ROLLBACK
+2024-04-13 22:20:38,344 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:38] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:39,082 [INFO] BEGIN (implicit)
+2024-04-13 22:20:39,083 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:39,083 [INFO] [cached since 6.378s ago] ('be0f626db1fc4671ad45e5194bcbf488',)
+2024-04-13 22:20:39,085 [INFO] COMMIT
+2024-04-13 22:20:39,095 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:39] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:39,229 [INFO] BEGIN (implicit)
+2024-04-13 22:20:39,230 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:39,230 [INFO] [cached since 9.792s ago] ()
+2024-04-13 22:20:39,231 [INFO] ROLLBACK
+2024-04-13 22:20:39,232 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:39] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:39,804 [INFO] BEGIN (implicit)
+2024-04-13 22:20:39,804 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:20:39,804 [INFO] [cached since 7.099s ago] ('986b1195a1d642e792a21ab4ddaa1d43',)
+2024-04-13 22:20:39,806 [INFO] COMMIT
+2024-04-13 22:20:39,815 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:39] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:20:39,943 [INFO] BEGIN (implicit)
+2024-04-13 22:20:39,943 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:39,944 [INFO] [cached since 10.51s ago] ()
+2024-04-13 22:20:39,944 [INFO] ROLLBACK
+2024-04-13 22:20:39,946 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:39] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:20:42,121 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:42] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:20:42,222 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:42] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:20:49,540 [INFO] BEGIN (implicit)
+2024-04-13 22:20:49,540 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:20:49,541 [INFO] [cached since 20.1s ago] ()
+2024-04-13 22:20:49,541 [INFO] ROLLBACK
+2024-04-13 22:20:49,542 [INFO] 127.0.0.1 - - [13/Apr/2024 22:20:49] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-13 22:21:19,138 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:21:19,263 [INFO]  * Restarting with stat
+2024-04-13 22:21:20,106 [INFO] BEGIN (implicit)
+2024-04-13 22:21:20,106 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:21:20,107 [INFO] [raw sql] ()
+2024-04-13 22:21:20,108 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:21:20,109 [INFO] [raw sql] ()
+2024-04-13 22:21:20,109 [INFO] ROLLBACK
+2024-04-13 22:21:20,110 [INFO] BEGIN (implicit)
+2024-04-13 22:21:20,110 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:21:20,110 [INFO] [raw sql] ()
+2024-04-13 22:21:20,111 [INFO] COMMIT
+2024-04-13 22:21:20,202 [WARNING]  * Debugger is active!
+2024-04-13 22:21:20,209 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:21:22,430 [INFO] 127.0.0.1 - - [13/Apr/2024 22:21:22] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:21:22,539 [INFO] 127.0.0.1 - - [13/Apr/2024 22:21:22] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:21:27,714 [INFO] Validation Error
+2024-04-13 22:21:27,715 [INFO] 127.0.0.1 - - [13/Apr/2024 22:21:27] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 422 -
+2024-04-13 22:22:02,230 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:22:02,351 [INFO]  * Restarting with stat
+2024-04-13 22:22:03,186 [INFO] BEGIN (implicit)
+2024-04-13 22:22:03,186 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:22:03,187 [INFO] [raw sql] ()
+2024-04-13 22:22:03,188 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:22:03,188 [INFO] [raw sql] ()
+2024-04-13 22:22:03,189 [INFO] ROLLBACK
+2024-04-13 22:22:03,189 [INFO] BEGIN (implicit)
+2024-04-13 22:22:03,189 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:22:03,190 [INFO] [raw sql] ()
+2024-04-13 22:22:03,190 [INFO] COMMIT
+2024-04-13 22:22:03,274 [WARNING]  * Debugger is active!
+2024-04-13 22:22:03,280 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:22:03,390 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:03] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:22:03,501 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:03] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:22:06,549 [INFO] BEGIN (implicit)
+2024-04-13 22:22:06,551 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-13 22:22:06,551 [INFO] [generated in 0.00046s] ('2dbbb026665f40faa2dd0c9592a0b772', 'string', '2024-04-13 00:00:00.000000', 0)
+2024-04-13 22:22:06,553 [INFO] COMMIT
+2024-04-13 22:22:06,564 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:06] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-13 22:22:13,909 [INFO] BEGIN (implicit)
+2024-04-13 22:22:13,910 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:22:13,910 [INFO] [generated in 0.00123s] ()
+2024-04-13 22:22:13,911 [INFO] ROLLBACK
+2024-04-13 22:22:13,920 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:13] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:22:23,464 [INFO] Validation Error
+2024-04-13 22:22:23,464 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:23] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 422 -
+2024-04-13 22:22:56,548 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:22:56,677 [INFO]  * Restarting with stat
+2024-04-13 22:22:57,571 [INFO] BEGIN (implicit)
+2024-04-13 22:22:57,571 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:22:57,572 [INFO] [raw sql] ()
+2024-04-13 22:22:57,573 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:22:57,573 [INFO] [raw sql] ()
+2024-04-13 22:22:57,574 [INFO] ROLLBACK
+2024-04-13 22:22:57,574 [INFO] BEGIN (implicit)
+2024-04-13 22:22:57,575 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:22:57,575 [INFO] [raw sql] ()
+2024-04-13 22:22:57,576 [INFO] COMMIT
+2024-04-13 22:22:57,661 [WARNING]  * Debugger is active!
+2024-04-13 22:22:57,667 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:22:58,870 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:58] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:22:58,981 [INFO] 127.0.0.1 - - [13/Apr/2024 22:22:58] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:23:01,465 [INFO] 127.0.0.1 - - [13/Apr/2024 22:23:01] "[35m[1mPOST /api/create_toudou HTTP/1.1[0m" 500 -
+2024-04-13 22:23:08,975 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:23:09,089 [INFO]  * Restarting with stat
+2024-04-13 22:23:09,933 [INFO] BEGIN (implicit)
+2024-04-13 22:23:09,934 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:23:09,934 [INFO] [raw sql] ()
+2024-04-13 22:23:09,935 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:23:09,935 [INFO] [raw sql] ()
+2024-04-13 22:23:09,935 [INFO] ROLLBACK
+2024-04-13 22:23:09,936 [INFO] BEGIN (implicit)
+2024-04-13 22:23:09,936 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:23:09,936 [INFO] [raw sql] ()
+2024-04-13 22:23:09,937 [INFO] COMMIT
+2024-04-13 22:23:10,013 [WARNING]  * Debugger is active!
+2024-04-13 22:23:10,019 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:23:10,816 [INFO] Validation Error
+2024-04-13 22:23:10,816 [INFO] 127.0.0.1 - - [13/Apr/2024 22:23:10] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 422 -
+2024-04-13 22:23:17,246 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:23:17,357 [INFO]  * Restarting with stat
+2024-04-13 22:23:18,116 [INFO] BEGIN (implicit)
+2024-04-13 22:23:18,116 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:23:18,117 [INFO] [raw sql] ()
+2024-04-13 22:23:18,117 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:23:18,118 [INFO] [raw sql] ()
+2024-04-13 22:23:18,118 [INFO] ROLLBACK
+2024-04-13 22:23:18,119 [INFO] BEGIN (implicit)
+2024-04-13 22:23:18,119 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:23:18,119 [INFO] [raw sql] ()
+2024-04-13 22:23:18,120 [INFO] COMMIT
+2024-04-13 22:23:18,194 [WARNING]  * Debugger is active!
+2024-04-13 22:23:18,200 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:23:26,443 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:23:26,534 [INFO]  * Restarting with stat
+2024-04-13 22:23:27,340 [INFO] BEGIN (implicit)
+2024-04-13 22:23:27,341 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:23:27,341 [INFO] [raw sql] ()
+2024-04-13 22:23:27,342 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:23:27,342 [INFO] [raw sql] ()
+2024-04-13 22:23:27,343 [INFO] ROLLBACK
+2024-04-13 22:23:27,343 [INFO] BEGIN (implicit)
+2024-04-13 22:23:27,343 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:23:27,344 [INFO] [raw sql] ()
+2024-04-13 22:23:27,344 [INFO] COMMIT
+2024-04-13 22:23:27,363 [WARNING]  * Debugger is active!
+2024-04-13 22:23:27,369 [INFO]  * Debugger PIN: 776-214-579
+2024-04-13 22:23:46,797 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:23:46,887 [INFO]  * Restarting with stat
+2024-04-13 22:23:47,647 [INFO] BEGIN (implicit)
+2024-04-13 22:23:47,647 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:23:47,648 [INFO] [raw sql] ()
+2024-04-13 22:23:47,648 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:23:47,649 [INFO] [raw sql] ()
+2024-04-13 22:23:47,649 [INFO] ROLLBACK
+2024-04-13 22:23:47,649 [INFO] BEGIN (implicit)
+2024-04-13 22:23:47,650 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:23:47,650 [INFO] [raw sql] ()
+2024-04-13 22:23:47,651 [INFO] COMMIT
+2024-04-13 22:23:47,720 [WARNING]  * Debugger is active!
+2024-04-13 22:23:47,726 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:25:26,992 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:25:27,084 [INFO]  * Restarting with stat
+2024-04-13 22:25:27,927 [INFO] BEGIN (implicit)
+2024-04-13 22:25:27,928 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:25:27,928 [INFO] [raw sql] ()
+2024-04-13 22:25:27,929 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:25:27,929 [INFO] [raw sql] ()
+2024-04-13 22:25:27,930 [INFO] ROLLBACK
+2024-04-13 22:25:27,930 [INFO] BEGIN (implicit)
+2024-04-13 22:25:27,930 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:25:27,931 [INFO] [raw sql] ()
+2024-04-13 22:25:27,931 [INFO] COMMIT
+2024-04-13 22:25:28,006 [WARNING]  * Debugger is active!
+2024-04-13 22:25:28,012 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:27:14,393 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:27:14,485 [INFO]  * Restarting with stat
+2024-04-13 22:27:15,309 [INFO] BEGIN (implicit)
+2024-04-13 22:27:15,310 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:27:15,310 [INFO] [raw sql] ()
+2024-04-13 22:27:15,311 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:27:15,311 [INFO] [raw sql] ()
+2024-04-13 22:27:15,312 [INFO] ROLLBACK
+2024-04-13 22:27:15,312 [INFO] BEGIN (implicit)
+2024-04-13 22:27:15,312 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:27:15,313 [INFO] [raw sql] ()
+2024-04-13 22:27:15,313 [INFO] COMMIT
+2024-04-13 22:27:15,389 [WARNING]  * Debugger is active!
+2024-04-13 22:27:15,395 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:27:25,012 [INFO] 127.0.0.1 - - [13/Apr/2024 22:27:25] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:27:25,125 [INFO] 127.0.0.1 - - [13/Apr/2024 22:27:25] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:29:53,025 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:29:53,119 [INFO]  * Restarting with stat
+2024-04-13 22:29:53,960 [INFO] BEGIN (implicit)
+2024-04-13 22:29:53,960 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:29:53,961 [INFO] [raw sql] ()
+2024-04-13 22:29:53,962 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:29:53,962 [INFO] [raw sql] ()
+2024-04-13 22:29:53,962 [INFO] ROLLBACK
+2024-04-13 22:29:53,963 [INFO] BEGIN (implicit)
+2024-04-13 22:29:53,963 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:29:53,963 [INFO] [raw sql] ()
+2024-04-13 22:29:53,964 [INFO] COMMIT
+2024-04-13 22:29:54,040 [WARNING]  * Debugger is active!
+2024-04-13 22:29:54,046 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:30:14,555 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:30:14,678 [INFO]  * Restarting with stat
+2024-04-13 22:30:15,473 [INFO] BEGIN (implicit)
+2024-04-13 22:30:15,474 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:30:15,474 [INFO] [raw sql] ()
+2024-04-13 22:30:15,475 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:30:15,475 [INFO] [raw sql] ()
+2024-04-13 22:30:15,475 [INFO] ROLLBACK
+2024-04-13 22:30:15,476 [INFO] BEGIN (implicit)
+2024-04-13 22:30:15,476 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:30:15,476 [INFO] [raw sql] ()
+2024-04-13 22:30:15,477 [INFO] COMMIT
+2024-04-13 22:30:15,550 [WARNING]  * Debugger is active!
+2024-04-13 22:30:15,555 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:31:50,794 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:31:50,891 [INFO]  * Restarting with stat
+2024-04-13 22:31:51,696 [INFO] BEGIN (implicit)
+2024-04-13 22:31:51,696 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:31:51,697 [INFO] [raw sql] ()
+2024-04-13 22:31:51,698 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:31:51,698 [INFO] [raw sql] ()
+2024-04-13 22:31:51,699 [INFO] ROLLBACK
+2024-04-13 22:31:51,699 [INFO] BEGIN (implicit)
+2024-04-13 22:31:51,699 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:31:51,700 [INFO] [raw sql] ()
+2024-04-13 22:31:51,700 [INFO] COMMIT
+2024-04-13 22:31:51,775 [WARNING]  * Debugger is active!
+2024-04-13 22:31:51,781 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:32:21,510 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-13 22:32:21,642 [INFO]  * Restarting with stat
+2024-04-13 22:32:22,531 [INFO] BEGIN (implicit)
+2024-04-13 22:32:22,532 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-13 22:32:22,532 [INFO] [raw sql] ()
+2024-04-13 22:32:22,533 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-13 22:32:22,533 [INFO] [raw sql] ()
+2024-04-13 22:32:22,534 [INFO] ROLLBACK
+2024-04-13 22:32:22,534 [INFO] BEGIN (implicit)
+2024-04-13 22:32:22,534 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-13 22:32:22,535 [INFO] [raw sql] ()
+2024-04-13 22:32:22,535 [INFO] COMMIT
+2024-04-13 22:32:22,612 [WARNING]  * Debugger is active!
+2024-04-13 22:32:22,618 [INFO]  * Debugger PIN: 440-112-358
+2024-04-13 22:32:27,992 [INFO] 127.0.0.1 - - [13/Apr/2024 22:32:27] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:32:28,135 [INFO] 127.0.0.1 - - [13/Apr/2024 22:32:28] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:32:30,978 [INFO] BEGIN (implicit)
+2024-04-13 22:32:30,980 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-13 22:32:30,980 [INFO] [generated in 0.00050s] ('6b5a86122c784900bbd6e609579ce048', 'string', '2024-04-13 00:00:00.000000', 0)
+2024-04-13 22:32:30,982 [INFO] COMMIT
+2024-04-13 22:32:30,994 [INFO] 127.0.0.1 - - [13/Apr/2024 22:32:30] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-13 22:32:34,602 [INFO] 127.0.0.1 - - [13/Apr/2024 22:32:34] "GET /apidoc/swagger HTTP/1.1" 200 -
+2024-04-13 22:32:34,695 [INFO] 127.0.0.1 - - [13/Apr/2024 22:32:34] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-13 22:33:11,454 [INFO] BEGIN (implicit)
+2024-04-13 22:33:11,454 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:33:11,454 [INFO] [generated in 0.00102s] ()
+2024-04-13 22:33:11,455 [INFO] ROLLBACK
+2024-04-13 22:33:11,465 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:11] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:33:18,897 [INFO] BEGIN (implicit)
+2024-04-13 22:33:18,898 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:33:18,899 [INFO] [generated in 0.00040s] ('2dbbb026665f40faa2dd0c9592a0b772',)
+2024-04-13 22:33:18,900 [INFO] COMMIT
+2024-04-13 22:33:18,910 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:18] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:33:19,050 [INFO] BEGIN (implicit)
+2024-04-13 22:33:19,050 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:33:19,051 [INFO] [cached since 7.598s ago] ()
+2024-04-13 22:33:19,052 [INFO] ROLLBACK
+2024-04-13 22:33:19,053 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:19] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:33:19,897 [INFO] BEGIN (implicit)
+2024-04-13 22:33:19,898 [INFO] DELETE FROM "TOUDOU" WHERE "TOUDOU".id = ?
+2024-04-13 22:33:19,898 [INFO] [cached since 1s ago] ('6b5a86122c784900bbd6e609579ce048',)
+2024-04-13 22:33:19,899 [INFO] COMMIT
+2024-04-13 22:33:19,909 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:19] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-13 22:33:20,049 [INFO] BEGIN (implicit)
+2024-04-13 22:33:20,050 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-13 22:33:20,050 [INFO] [cached since 8.597s ago] ()
+2024-04-13 22:33:20,051 [INFO] ROLLBACK
+2024-04-13 22:33:20,052 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:20] "GET /display HTTP/1.1" 200 -
+2024-04-13 22:33:20,096 [INFO] 127.0.0.1 - - [13/Apr/2024 22:33:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

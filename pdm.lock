@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:f37651e398c8db592ad50e4a5a1d9388c051993397a8fe008ba841cde267bdca"
+content_hash = "sha256:36bf1a72ac6d735f720d5f4807525079ac1c95d6e954047d9dd794ef32f1c4c6"
 
 [[package]]
 name = "blinker"
@@ -246,6 +246,20 @@ files = [
     {file = "pydantic-1.10.15-cp311-cp311-win_amd64.whl", hash = "sha256:0d142fa1b8f2f0ae11ddd5e3e317dcac060b951d605fda26ca9b234b92214986"},
     {file = "pydantic-1.10.15-py3-none-any.whl", hash = "sha256:28e552a060ba2740d0d2aabe35162652c1459a0b9069fe0db7f4ee0e18e74d58"},
     {file = "pydantic-1.10.15.tar.gz", hash = "sha256:ca832e124eda231a60a041da4f013e3ff24949d94a01154b137fc2f2a43c3ffb"},
+]
+
+[[package]]
+name = "spectree"
+version = "1.2.9"
+requires_python = ">=3.8"
+summary = "generate OpenAPI document and validate request&response with Python annotations."
+groups = ["default"]
+dependencies = [
+    "pydantic<3,>=1.2",
+]
+files = [
+    {file = "spectree-1.2.9-py3-none-any.whl", hash = "sha256:0a85114540ddf938be524ac060e0297ce2d753e96979c41ee7c1a3a68561a460"},
+    {file = "spectree-1.2.9.tar.gz", hash = "sha256:8f7a29a0cfc32d6c1ca48723e72547579c1175fa8a3eab7c6a814b30de3e48dc"},
 ]
 
 [[package]]

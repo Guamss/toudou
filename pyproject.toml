@@ -10,13 +10,14 @@ dependencies = [
     "flask-wtf>=1.2.1",
     "flask-httpauth>=4.8.0",
     "flask-pydantic-spec>=0.6.0",
+    "spectree>=1.2.9",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
 
 
 [project.scripts]
-toudou = "toudou.views:cli"
+toudou = "toudou.views.click:cli"
 
 
 [build-system]
