@@ -163,7 +163,7 @@ def create_todo(task: str, due: datetime, completed: bool):
         bool: True if the task has been successfully created, False otherwise.
     """
     try:
-        ins = toudouTable.insert().values(task=task, date=due, completed=completed)
+        ins = toudouTable.insert().values(id=uuid.uuid4(), task=task, date=due, completed=completed)
         with engine.begin() as conn:
             result = conn.execute(ins)
         return result.rowcount == 1
