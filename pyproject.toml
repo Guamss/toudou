@@ -28,4 +28,4 @@ _.env_file = "envvar/dev.env"
 start = "flask --app toudou.views.app --debug run"
 
 [tool.pdm.build]
-includes = ["envvar/*"]
+source-includes = ["envvar/"]
