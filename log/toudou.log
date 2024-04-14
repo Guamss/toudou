@@ -11175,3 +11175,388 @@ FROM "TOUDOU"
 2024-04-14 01:59:50,661 [INFO] COMMIT
 2024-04-14 01:59:50,779 [WARNING]  * Debugger is active!
 2024-04-14 01:59:50,787 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:40:47,118 [INFO] BEGIN (implicit)
+2024-04-14 09:40:47,118 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:40:47,119 [INFO] [raw sql] ()
+2024-04-14 09:40:47,119 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:40:47,120 [INFO] [raw sql] ()
+2024-04-14 09:40:47,120 [INFO] ROLLBACK
+2024-04-14 09:40:47,120 [INFO] BEGIN (implicit)
+2024-04-14 09:40:47,121 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:40:47,121 [INFO] [raw sql] ()
+2024-04-14 09:40:47,121 [INFO] COMMIT
+2024-04-14 09:40:47,252 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 09:40:47,253 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 09:40:47,256 [INFO]  * Restarting with stat
+2024-04-14 09:40:48,093 [INFO] BEGIN (implicit)
+2024-04-14 09:40:48,094 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:40:48,094 [INFO] [raw sql] ()
+2024-04-14 09:40:48,095 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:40:48,095 [INFO] [raw sql] ()
+2024-04-14 09:40:48,096 [INFO] ROLLBACK
+2024-04-14 09:40:48,096 [INFO] BEGIN (implicit)
+2024-04-14 09:40:48,097 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:40:48,097 [INFO] [raw sql] ()
+2024-04-14 09:40:48,097 [INFO] COMMIT
+2024-04-14 09:40:48,202 [WARNING]  * Debugger is active!
+2024-04-14 09:40:48,209 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:41:02,578 [INFO] BEGIN (implicit)
+2024-04-14 09:41:02,578 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:41:02,579 [INFO] [raw sql] ()
+2024-04-14 09:41:02,579 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:41:02,579 [INFO] [raw sql] ()
+2024-04-14 09:41:02,580 [INFO] ROLLBACK
+2024-04-14 09:41:02,580 [INFO] BEGIN (implicit)
+2024-04-14 09:41:02,581 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:41:02,581 [INFO] [raw sql] ()
+2024-04-14 09:41:02,584 [INFO] COMMIT
+2024-04-14 09:41:02,706 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 09:41:02,707 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 09:41:02,709 [INFO]  * Restarting with stat
+2024-04-14 09:41:03,605 [INFO] BEGIN (implicit)
+2024-04-14 09:41:03,605 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:41:03,606 [INFO] [raw sql] ()
+2024-04-14 09:41:03,606 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:41:03,607 [INFO] [raw sql] ()
+2024-04-14 09:41:03,607 [INFO] ROLLBACK
+2024-04-14 09:41:03,608 [INFO] BEGIN (implicit)
+2024-04-14 09:41:03,608 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:41:03,608 [INFO] [raw sql] ()
+2024-04-14 09:41:03,609 [INFO] COMMIT
+2024-04-14 09:41:03,715 [WARNING]  * Debugger is active!
+2024-04-14 09:41:03,725 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:41:09,469 [INFO] BEGIN (implicit)
+2024-04-14 09:41:09,469 [INFO] SELECT "TOUDOU".id, "TOUDOU".task, "TOUDOU".date, "TOUDOU".completed 
+FROM "TOUDOU"
+2024-04-14 09:41:09,470 [INFO] [generated in 0.00128s] ()
+2024-04-14 09:41:09,471 [INFO] ROLLBACK
+2024-04-14 09:41:09,507 [INFO] 127.0.0.1 - - [14/Apr/2024 09:41:09] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-14 09:41:13,493 [INFO] 127.0.0.1 - - [14/Apr/2024 09:41:13] "GET / HTTP/1.1" 200 -
+2024-04-14 09:41:21,058 [INFO] 127.0.0.1 - - [14/Apr/2024 09:41:21] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 09:41:21,290 [INFO] 127.0.0.1 - - [14/Apr/2024 09:41:21] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 09:41:47,425 [INFO] 127.0.0.1 - - [14/Apr/2024 09:41:47] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:42:00,549 [INFO] BEGIN (implicit)
+2024-04-14 09:42:00,551 [INFO] UPDATE "TOUDOU" SET completed=? WHERE "TOUDOU".id = ?
+2024-04-14 09:42:00,551 [INFO] [generated in 0.00042s] (1, '3fa85f6457174562b3fc2c963f66afa6')
+2024-04-14 09:42:00,553 [INFO] COMMIT
+2024-04-14 09:42:00,553 [INFO] 127.0.0.1 - - [14/Apr/2024 09:42:00] "POST /api/complete_toudou HTTP/1.1" 200 -
+2024-04-14 09:42:11,944 [INFO] 127.0.0.1 - - [14/Apr/2024 09:42:11] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:42:15,851 [INFO] 127.0.0.1 - - [14/Apr/2024 09:42:15] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:43:02,926 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:43:03,044 [INFO]  * Restarting with stat
+2024-04-14 09:43:04,018 [INFO] BEGIN (implicit)
+2024-04-14 09:43:04,018 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:43:04,019 [INFO] [raw sql] ()
+2024-04-14 09:43:04,019 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:43:04,020 [INFO] [raw sql] ()
+2024-04-14 09:43:04,020 [INFO] ROLLBACK
+2024-04-14 09:43:04,021 [INFO] BEGIN (implicit)
+2024-04-14 09:43:04,021 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:43:04,021 [INFO] [raw sql] ()
+2024-04-14 09:43:04,023 [INFO] COMMIT
+2024-04-14 09:43:04,137 [WARNING]  * Debugger is active!
+2024-04-14 09:43:04,147 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:43:07,226 [INFO] 127.0.0.1 - - [14/Apr/2024 09:43:07] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:43:31,958 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:43:32,072 [INFO]  * Restarting with stat
+2024-04-14 09:43:32,919 [INFO] BEGIN (implicit)
+2024-04-14 09:43:32,919 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:43:32,920 [INFO] [raw sql] ()
+2024-04-14 09:43:32,920 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:43:32,921 [INFO] [raw sql] ()
+2024-04-14 09:43:32,921 [INFO] ROLLBACK
+2024-04-14 09:43:32,921 [INFO] BEGIN (implicit)
+2024-04-14 09:43:32,922 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:43:32,922 [INFO] [raw sql] ()
+2024-04-14 09:43:32,923 [INFO] COMMIT
+2024-04-14 09:43:33,023 [WARNING]  * Debugger is active!
+2024-04-14 09:43:33,031 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:44:11,227 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:11] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:44:26,645 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:26] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 09:44:26,829 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:26] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 09:44:32,935 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:32] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:44:41,478 [INFO] BEGIN (implicit)
+2024-04-14 09:44:41,481 [INFO] INSERT INTO "TOUDOU" (id, task, date, completed) VALUES (?, ?, ?, ?)
+2024-04-14 09:44:41,482 [INFO] [generated in 0.00080s] ('625999250c604b21a84fda612deb1abc', 'string', '2024-04-14 00:00:00.000000', 0)
+2024-04-14 09:44:41,487 [INFO] COMMIT
+2024-04-14 09:44:41,498 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:41] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-14 09:44:54,312 [INFO] 127.0.0.1 - - [14/Apr/2024 09:44:54] "[31m[1mGET /api/download_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:45:19,949 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:45:20,077 [INFO]  * Restarting with stat
+2024-04-14 09:45:21,004 [INFO] BEGIN (implicit)
+2024-04-14 09:45:21,004 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:45:21,005 [INFO] [raw sql] ()
+2024-04-14 09:45:21,006 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:45:21,006 [INFO] [raw sql] ()
+2024-04-14 09:45:21,006 [INFO] ROLLBACK
+2024-04-14 09:45:21,007 [INFO] BEGIN (implicit)
+2024-04-14 09:45:21,007 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:45:21,007 [INFO] [raw sql] ()
+2024-04-14 09:45:21,008 [INFO] COMMIT
+2024-04-14 09:45:21,118 [WARNING]  * Debugger is active!
+2024-04-14 09:45:21,124 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:45:27,359 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:45:27,482 [INFO]  * Restarting with stat
+2024-04-14 09:45:28,377 [INFO] BEGIN (implicit)
+2024-04-14 09:45:28,377 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:45:28,377 [INFO] [raw sql] ()
+2024-04-14 09:45:28,378 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:45:28,378 [INFO] [raw sql] ()
+2024-04-14 09:45:28,379 [INFO] ROLLBACK
+2024-04-14 09:45:28,379 [INFO] BEGIN (implicit)
+2024-04-14 09:45:28,380 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:45:28,380 [INFO] [raw sql] ()
+2024-04-14 09:45:28,381 [INFO] COMMIT
+2024-04-14 09:45:28,485 [WARNING]  * Debugger is active!
+2024-04-14 09:45:28,493 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:46:08,598 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:46:08,727 [INFO]  * Restarting with stat
+2024-04-14 09:46:09,614 [INFO] BEGIN (implicit)
+2024-04-14 09:46:09,614 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:46:09,615 [INFO] [raw sql] ()
+2024-04-14 09:46:09,615 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:46:09,616 [INFO] [raw sql] ()
+2024-04-14 09:46:09,616 [INFO] ROLLBACK
+2024-04-14 09:46:09,617 [INFO] BEGIN (implicit)
+2024-04-14 09:46:09,617 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:46:09,617 [INFO] [raw sql] ()
+2024-04-14 09:46:09,618 [INFO] COMMIT
+2024-04-14 09:46:09,733 [WARNING]  * Debugger is active!
+2024-04-14 09:46:09,741 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:46:26,262 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:46:26,400 [INFO]  * Restarting with stat
+2024-04-14 09:46:27,339 [INFO] BEGIN (implicit)
+2024-04-14 09:46:27,340 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:46:27,340 [INFO] [raw sql] ()
+2024-04-14 09:46:27,341 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:46:27,342 [INFO] [raw sql] ()
+2024-04-14 09:46:27,342 [INFO] ROLLBACK
+2024-04-14 09:46:27,343 [INFO] BEGIN (implicit)
+2024-04-14 09:46:27,343 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:46:27,343 [INFO] [raw sql] ()
+2024-04-14 09:46:27,344 [INFO] COMMIT
+2024-04-14 09:46:27,457 [WARNING]  * Debugger is active!
+2024-04-14 09:46:27,464 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:46:35,758 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:46:35,885 [INFO]  * Restarting with stat
+2024-04-14 09:46:36,826 [INFO] BEGIN (implicit)
+2024-04-14 09:46:36,827 [INFO] PRAGMA main.table_info("toudou.db")
+2024-04-14 09:46:36,827 [INFO] [raw sql] ()
+2024-04-14 09:46:36,828 [INFO] PRAGMA temp.table_info("toudou.db")
+2024-04-14 09:46:36,828 [INFO] [raw sql] ()
+2024-04-14 09:46:36,829 [INFO] ROLLBACK
+2024-04-14 09:46:36,829 [INFO] BEGIN (implicit)
+2024-04-14 09:46:36,830 [INFO] PRAGMA main.table_info("TOUDOU")
+2024-04-14 09:46:36,830 [INFO] [raw sql] ()
+2024-04-14 09:46:36,830 [INFO] COMMIT
+2024-04-14 09:46:36,953 [WARNING]  * Debugger is active!
+2024-04-14 09:46:36,960 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:46:50,726 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 09:46:50,727 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 09:46:50,729 [INFO]  * Restarting with stat
+2024-04-14 09:46:51,677 [WARNING]  * Debugger is active!
+2024-04-14 09:46:51,683 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:47:12,731 [INFO] 127.0.0.1 - - [14/Apr/2024 09:47:12] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 09:47:12,865 [INFO] 127.0.0.1 - - [14/Apr/2024 09:47:12] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 09:47:24,751 [INFO] 127.0.0.1 - - [14/Apr/2024 09:47:24] "POST /api/create_toudou HTTP/1.1" 200 -
+2024-04-14 09:47:36,631 [INFO] 127.0.0.1 - - [14/Apr/2024 09:47:36] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:48:11,826 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:48:11,957 [INFO]  * Restarting with stat
+2024-04-14 09:48:13,202 [WARNING]  * Debugger is active!
+2024-04-14 09:48:13,209 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:48:14,183 [INFO] 127.0.0.1 - - [14/Apr/2024 09:48:14] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 09:50:07,518 [INFO] 127.0.0.1 - - [14/Apr/2024 09:50:07] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:50:38,798 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 09:50:38,908 [INFO]  * Restarting with stat
+2024-04-14 09:50:39,863 [WARNING]  * Debugger is active!
+2024-04-14 09:50:39,871 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 09:50:40,344 [INFO] 127.0.0.1 - - [14/Apr/2024 09:50:40] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:52:46,633 [INFO] 127.0.0.1 - - [14/Apr/2024 09:52:46] "POST /api/complete_toudou HTTP/1.1" 200 -
+2024-04-14 09:53:25,421 [INFO] 127.0.0.1 - - [14/Apr/2024 09:53:25] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:53:26,001 [INFO] 127.0.0.1 - - [14/Apr/2024 09:53:26] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:59:52,614 [INFO] 127.0.0.1 - - [14/Apr/2024 09:59:52] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 09:59:53,723 [INFO] 127.0.0.1 - - [14/Apr/2024 09:59:53] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:00:12,201 [INFO] 127.0.0.1 - - [14/Apr/2024 10:00:12] "[31m[1mGET /api/download_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:00:39,531 [INFO] 127.0.0.1 - - [14/Apr/2024 10:00:39] "[35m[1mPOST /api/modify_toudou HTTP/1.1[0m" 500 -
+2024-04-14 10:01:27,600 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:01:27,600 [INFO] 127.0.0.1 - - [14/Apr/2024 10:01:27] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:01:47,975 [INFO] 127.0.0.1 - - [14/Apr/2024 10:01:47] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:03:16,834 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:03:16,929 [INFO]  * Restarting with stat
+2024-04-14 10:03:17,855 [WARNING]  * Debugger is active!
+2024-04-14 10:03:17,862 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:03:30,723 [INFO] 127.0.0.1 - - [14/Apr/2024 10:03:30] "POST /api/delete_toudou HTTP/1.1" 200 -
+2024-04-14 10:04:05,059 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:04:05,181 [INFO]  * Restarting with stat
+2024-04-14 10:04:06,083 [WARNING]  * Debugger is active!
+2024-04-14 10:04:06,089 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:04:15,359 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:04:15,464 [INFO]  * Restarting with stat
+2024-04-14 10:04:16,360 [WARNING]  * Debugger is active!
+2024-04-14 10:04:16,367 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:04:21,559 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:04:21,657 [INFO]  * Restarting with stat
+2024-04-14 10:04:22,528 [WARNING]  * Debugger is active!
+2024-04-14 10:04:22,535 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:04:27,717 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:04:27,813 [INFO]  * Restarting with stat
+2024-04-14 10:04:28,664 [WARNING]  * Debugger is active!
+2024-04-14 10:04:28,670 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:05:01,453 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:01] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 10:05:01,608 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:01] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 10:05:17,927 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:05:18,025 [INFO]  * Restarting with stat
+2024-04-14 10:05:19,000 [WARNING]  * Debugger is active!
+2024-04-14 10:05:19,007 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:05:19,043 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:19] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 10:05:19,159 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:19] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 10:05:23,477 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:23] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:05:36,713 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:36] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:05:44,874 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:44] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:05:49,228 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:49] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:05:52,333 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:52] "[31m[1mGET /api/download_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:05:56,217 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:56] "[31m[1mPOST /api/delete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:05:59,745 [INFO] 127.0.0.1 - - [14/Apr/2024 10:05:59] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:06:06,192 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:06:06,298 [INFO]  * Restarting with stat
+2024-04-14 10:06:07,162 [WARNING]  * Debugger is active!
+2024-04-14 10:06:07,169 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:06:12,782 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:12] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:06:20,310 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:20] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:06:21,851 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:21] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:06:22,097 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:22] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:06:34,637 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:34] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 10:06:34,742 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:34] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 10:06:42,528 [INFO] 127.0.0.1 - - [14/Apr/2024 10:06:42] "[35m[1mPOST /api/modify_toudou HTTP/1.1[0m" 500 -
+2024-04-14 10:07:40,326 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 10:07:40,326 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 10:07:40,328 [INFO]  * Restarting with stat
+2024-04-14 10:07:41,261 [WARNING]  * Debugger is active!
+2024-04-14 10:07:41,269 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:07:41,308 [INFO] 127.0.0.1 - - [14/Apr/2024 10:07:41] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 10:07:41,458 [INFO] 127.0.0.1 - - [14/Apr/2024 10:07:41] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 10:07:47,386 [INFO] 127.0.0.1 - - [14/Apr/2024 10:07:47] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:07:53,200 [INFO] 127.0.0.1 - - [14/Apr/2024 10:07:53] "POST /api/complete_toudou HTTP/1.1" 200 -
+2024-04-14 10:08:01,703 [INFO] 127.0.0.1 - - [14/Apr/2024 10:08:01] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-14 10:09:14,992 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 10:09:14,993 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 10:09:14,994 [INFO]  * Restarting with stat
+2024-04-14 10:09:16,037 [WARNING]  * Debugger is active!
+2024-04-14 10:09:16,045 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:09:16,096 [INFO] 127.0.0.1 - - [14/Apr/2024 10:09:16] "POST /api/delete_toudou HTTP/1.1" 200 -
+2024-04-14 10:09:24,793 [INFO] 127.0.0.1 - - [14/Apr/2024 10:09:24] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-14 10:09:35,113 [INFO] 127.0.0.1 - - [14/Apr/2024 10:09:35] "POST /api/get_toudou HTTP/1.1" 200 -
+2024-04-14 10:09:53,670 [INFO] 127.0.0.1 - - [14/Apr/2024 10:09:53] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:00,726 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:00] "POST /api/get_toudou HTTP/1.1" 200 -
+2024-04-14 10:10:05,322 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:05] "GET /api/download_toudous HTTP/1.1" 200 -
+2024-04-14 10:10:06,471 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:06] "GET /api/download_toudous HTTP/1.1" 200 -
+2024-04-14 10:10:10,887 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:10] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-14 10:10:17,482 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:17] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:23,430 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:23] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:28,315 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:28] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:32,956 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:32] "[31m[1mPOST /api/delete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:44,255 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:44] "[31m[1mPOST /api/complete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:47,324 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:47] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:51,399 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:51] "[31m[1mPOST /api/delete_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:10:56,451 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:56] "[31m[1mGET /api/download_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:10:59,906 [INFO] 127.0.0.1 - - [14/Apr/2024 10:10:59] "[31m[1mPOST /api/get_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:11:04,081 [INFO] 127.0.0.1 - - [14/Apr/2024 10:11:04] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 401 -
+2024-04-14 10:11:06,563 [INFO] 127.0.0.1 - - [14/Apr/2024 10:11:06] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-14 10:11:34,595 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:11:34,707 [INFO]  * Restarting with stat
+2024-04-14 10:11:35,663 [WARNING]  * Debugger is active!
+2024-04-14 10:11:35,669 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:11:36,744 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:11:36,838 [INFO]  * Restarting with stat
+2024-04-14 10:11:37,720 [WARNING]  * Debugger is active!
+2024-04-14 10:11:37,727 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:11:54,213 [INFO] 127.0.0.1 - - [14/Apr/2024 10:11:54] "[35m[1mPOST /api/modify_toudou HTTP/1.1[0m" 500 -
+2024-04-14 10:13:53,679 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:13:53,680 [INFO] 127.0.0.1 - - [14/Apr/2024 10:13:53] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:14:02,956 [INFO] 127.0.0.1 - - [14/Apr/2024 10:14:02] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-14 10:14:11,171 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:14:11,172 [INFO] 127.0.0.1 - - [14/Apr/2024 10:14:11] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:14:33,855 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:14:33,856 [INFO] 127.0.0.1 - - [14/Apr/2024 10:14:33] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:14:59,437 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:14:59,543 [INFO]  * Restarting with stat
+2024-04-14 10:15:00,508 [WARNING]  * Debugger is active!
+2024-04-14 10:15:00,516 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:15:02,199 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:15:02,199 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:02] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:15:04,846 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:15:04,847 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:04] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:15:07,177 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:07] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-14 10:15:07,316 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:07] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-14 10:15:25,197 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:25] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-14 10:15:41,010 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:15:41,011 [INFO] 127.0.0.1 - - [14/Apr/2024 10:15:41] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:16:13,003 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:16:13,004 [INFO] 127.0.0.1 - - [14/Apr/2024 10:16:13] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:16:36,493 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:16:36,493 [INFO] 127.0.0.1 - - [14/Apr/2024 10:16:36] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:17:02,474 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:17:02,568 [INFO]  * Restarting with stat
+2024-04-14 10:17:03,529 [WARNING]  * Debugger is active!
+2024-04-14 10:17:03,535 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:17:06,552 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:17:06,552 [INFO] 127.0.0.1 - - [14/Apr/2024 10:17:06] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:18:16,339 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:18:16,449 [INFO]  * Restarting with stat
+2024-04-14 10:18:17,521 [WARNING]  * Debugger is active!
+2024-04-14 10:18:17,531 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:18:22,214 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:18:22,215 [INFO] 127.0.0.1 - - [14/Apr/2024 10:18:22] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:18:33,974 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:18:34,089 [INFO]  * Restarting with stat
+2024-04-14 10:18:35,017 [WARNING]  * Debugger is active!
+2024-04-14 10:18:35,024 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:18:38,287 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:18:38,287 [INFO] 127.0.0.1 - - [14/Apr/2024 10:18:38] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:18:46,968 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 10:18:46,968 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-14 10:18:46,969 [INFO]  * Restarting with stat
+2024-04-14 10:18:47,952 [WARNING]  * Debugger is active!
+2024-04-14 10:18:47,959 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:18:49,063 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:18:49,063 [INFO] 127.0.0.1 - - [14/Apr/2024 10:18:49] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:19:03,364 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:19:03,475 [INFO]  * Restarting with stat
+2024-04-14 10:19:04,335 [WARNING]  * Debugger is active!
+2024-04-14 10:19:04,341 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:19:40,257 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:19:40,357 [INFO]  * Restarting with stat
+2024-04-14 10:19:41,229 [WARNING]  * Debugger is active!
+2024-04-14 10:19:41,236 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:19:49,489 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:19:49,595 [INFO]  * Restarting with stat
+2024-04-14 10:19:50,706 [WARNING]  * Debugger is active!
+2024-04-14 10:19:50,713 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:19:51,541 [ERROR] 422 Request Validation Error: GetToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:19:51,542 [INFO] 127.0.0.1 - - [14/Apr/2024 10:19:51] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:19:57,933 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:19:58,040 [INFO]  * Restarting with stat
+2024-04-14 10:19:58,972 [WARNING]  * Debugger is active!
+2024-04-14 10:19:58,980 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:20:24,656 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-14 10:20:24,780 [INFO]  * Restarting with stat
+2024-04-14 10:20:25,697 [WARNING]  * Debugger is active!
+2024-04-14 10:20:25,723 [INFO]  * Debugger PIN: 440-112-358
+2024-04-14 10:20:27,566 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}, {'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:20:27,567 [INFO] 127.0.0.1 - - [14/Apr/2024 10:20:27] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:21:33,934 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}, {'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:21:33,935 [INFO] 127.0.0.1 - - [14/Apr/2024 10:21:33] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:21:37,290 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:21:37,290 [INFO] 127.0.0.1 - - [14/Apr/2024 10:21:37] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:21:52,931 [INFO] 127.0.0.1 - - [14/Apr/2024 10:21:52] "POST /api/modify_toudou HTTP/1.1" 200 -
+2024-04-14 10:22:12,923 [INFO] 127.0.0.1 - - [14/Apr/2024 10:22:12] "POST /api/modify_toudou HTTP/1.1" 200 -
+2024-04-14 10:22:20,959 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('id',), 'msg': 'field required', 'type': 'value_error.missing'}, {'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:22:20,959 [INFO] 127.0.0.1 - - [14/Apr/2024 10:22:20] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-14 10:22:27,414 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-14 10:22:27,415 [INFO] 127.0.0.1 - - [14/Apr/2024 10:22:27] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -

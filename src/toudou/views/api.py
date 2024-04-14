@@ -5,9 +5,8 @@ from spectree import SecurityScheme, SpecTree
 from toudou import services
 import toudou.models as models
 from flask import Blueprint, request, send_file
-from flask_pydantic_spec import FlaskPydanticSpec, Request
 from pydantic.v1 import BaseModel, constr
-from flask import jsonify, g, abort
+from flask import jsonify, abort
 import datetime
 import uuid
 
@@ -24,9 +23,8 @@ tokens_dict = {
               }
 
 def verify_token(token, right):
-    print(tokens_dict.keys())
-    if token in tokens_dict.keys() and right in tokens_dict[token]:
-        return True
+    if token in tokens_dict.keys():
+        return right in tokens_dict[token]
     return False
 
 #TODO import
@@ -37,7 +35,6 @@ class CreateToudouApi(BaseModel):
 
     @validator('due', pre=True, always=True)
     def parse_date(cls, value):
-        print(type(value))
         if value:
             if isinstance(value, str):
                 try:
@@ -54,11 +51,23 @@ class ModifyToudouApi(BaseModel):
     new_due: datetime.date | None = None
     new_completed : bool = Field(default=False)
 
+    @validator('new_due', pre=True, always=True)
+    def parse_date(cls, value):
+        if value:
+            if isinstance(value, str):
+                try:
+                    return datetime.datetime.strptime(value, "%Y-%m-%d").date()
+                except ValueError:
+                    raise ValueError("The date format is not suitable. Please use this format {}".format("%Y-%m-%d"))
+            elif not isinstance(value, datetime.date):
+                raise ValueError("The date value must be a valid string")
+        return value
+
 class GetToudouApi(BaseModel):
     id: uuid.UUID
 
 @api.route('download_toudous', methods=['GET'])
-@api_spec.validate(tags=["api"])
+@api_spec.validate(tags=["api"], security=[{"bearer_token": []}])
 def download_toudous_api():
     token = request.headers.get('Authorization')
     token = token.replace("Bearer ", "")
@@ -71,7 +80,7 @@ def download_toudous_api():
 
 
 @api.route('/get_toudous', methods=['GET'])
-@api_spec.validate(tags=["api"])
+@api_spec.validate(tags=["api"], security=[{"bearer_token": []}])
 def get_toudous_api():
     token = request.headers.get('Authorization')
     token = token.replace("Bearer ", "")
@@ -91,7 +100,7 @@ def get_toudous_api():
 
 
 @api.route('/get_toudou', methods=['POST'])
-@api_spec.validate(tags=["api"],json=GetToudouApi)
+@api_spec.validate(tags=["api"],json=GetToudouApi, security=[{"bearer_token": []}])
 def get_toudou_api():
     token = request.headers.get('Authorization')
     token = token.replace("Bearer ", "")
@@ -158,7 +167,7 @@ def complete_toudou_api():
         return {'error': e.errors()}
     
 @api.route('/modify_toudou', methods=['POST'])
-@api_spec.validate(tags=["api"],json=GetToudouApi, security=[{"bearer_token": []}])
+@api_spec.validate(tags=["api"],json=ModifyToudouApi, security=[{"bearer_token": []}])
 def modify_toudou_api():
     token = request.headers.get('Authorization')
     token = token.replace("Bearer ", "")
