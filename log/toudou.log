@@ -11560,3 +11560,17 @@ FROM "TOUDOU"
 2024-04-14 10:22:20,959 [INFO] 127.0.0.1 - - [14/Apr/2024 10:22:20] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
 2024-04-14 10:22:27,414 [ERROR] 422 Request Validation Error: ModifyToudouApi - [{'loc': ('new_task',), 'msg': 'field required', 'type': 'value_error.missing'}]
 2024-04-14 10:22:27,415 [INFO] 127.0.0.1 - - [14/Apr/2024 10:22:27] "[31m[1mPOST /api/modify_toudou HTTP/1.1[0m" 422 -
+2024-04-17 20:01:33,335 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-17 20:01:33,336 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-17 20:01:33,351 [INFO]  * Restarting with stat
+2024-04-17 20:01:34,264 [WARNING]  * Debugger is active!
+2024-04-17 20:01:34,270 [INFO]  * Debugger PIN: 440-112-358
+2024-04-17 20:01:38,350 [INFO] 127.0.0.1 - - [17/Apr/2024 20:01:38] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:01:38,498 [INFO] 127.0.0.1 - - [17/Apr/2024 20:01:38] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:01:43,686 [INFO] 127.0.0.1 - - [17/Apr/2024 20:01:43] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-17 20:02:05,879 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:05] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-17 20:02:08,758 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:08] "GET / HTTP/1.1" 200 -
+2024-04-17 20:02:14,454 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:14] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:02:14,781 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:14] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:02:29,831 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:29] "POST /api/import_toudous HTTP/1.1" 200 -

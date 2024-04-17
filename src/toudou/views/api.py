@@ -4,6 +4,8 @@ from flask_httpauth import HTTPTokenAuth
 from spectree import SecurityScheme, SpecTree
 from toudou import services
 import toudou.models as models
+from os import path
+from pathlib import Path
 from flask import Blueprint, request, send_file
 from pydantic.v1 import BaseModel, constr
 from flask import jsonify, abort
@@ -28,6 +30,9 @@ def verify_token(token, right):
     return False
 
 #TODO import
+
+class ImportToudouApi(BaseModel):
+    path_to_file: str
 
 class CreateToudouApi(BaseModel):
     task: constr(min_length=2, max_length=100)
@@ -65,6 +70,27 @@ class ModifyToudouApi(BaseModel):
 
 class GetToudouApi(BaseModel):
     id: uuid.UUID
+
+@api.route('import_toudous', methods=['POST'])
+@api_spec.validate(tags=["api"], json=ImportToudouApi, security=[{"bearer_token": []}])
+def import_toudou_api():
+    token = request.headers.get('Authorization')
+    token = token.replace("Bearer ", "")
+    if not token or not verify_token(token, 'write'):
+        abort(401, description="Unauthorized")
+    data = ImportToudouApi(**request.json)
+    try:
+        file = data.path_to_file
+        if path.isfile(file) and Path(file).suffix == ".csv":
+            with file.stream as f:
+                    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+                    return {'imported' : True}
+        else:
+            return {'imported' : False}
+
+    except ValidationError as e:
+        return {'error' : e.errors()}
+    
 
 @api.route('download_toudous', methods=['GET'])
 @api_spec.validate(tags=["api"], security=[{"bearer_token": []}])
