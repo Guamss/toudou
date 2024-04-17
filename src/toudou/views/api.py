@@ -32,7 +32,7 @@ def verify_token(token, right):
 #TODO import
 
 class ImportToudouApi(BaseModel):
-    path_to_file: str
+    absolute_path_to_file: str
 
 class CreateToudouApi(BaseModel):
     task: constr(min_length=2, max_length=100)
@@ -80,13 +80,13 @@ def import_toudou_api():
         abort(401, description="Unauthorized")
     data = ImportToudouApi(**request.json)
     try:
-        file = data.path_to_file
-        if path.isfile(file) and Path(file).suffix == ".csv":
-            with file.stream as f:
-                    services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
-                    return {'imported' : True}
+        file_path = data.absolute_path_to_file
+        if path.isfile(file_path) and Path(file_path).suffix == ".csv":
+            with open(file_path, 'rb') as f:
+                services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+                return {'imported': True}
         else:
-            return {'imported' : False}
+            return {'imported': False}
 
     except ValidationError as e:
         return {'error' : e.errors()}

@@ -11574,3 +11574,173 @@ FROM "TOUDOU"
 2024-04-17 20:02:14,454 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:14] "GET /apidoc/swagger/ HTTP/1.1" 200 -
 2024-04-17 20:02:14,781 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:14] "GET /apidoc/openapi.json HTTP/1.1" 200 -
 2024-04-17 20:02:29,831 [INFO] 127.0.0.1 - - [17/Apr/2024 20:02:29] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:03:20,714 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-17 20:03:20,714 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-17 20:03:20,714 [INFO]  * Restarting with stat
+2024-04-17 20:03:21,051 [WARNING]  * Debugger is active!
+2024-04-17 20:03:21,051 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:03:32,164 [INFO] 127.0.0.1 - - [17/Apr/2024 20:03:32] "[32mGET /apidoc/swagger HTTP/1.1[0m" 308 -
+2024-04-17 20:03:32,172 [INFO] 127.0.0.1 - - [17/Apr/2024 20:03:32] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:03:32,335 [INFO] 127.0.0.1 - - [17/Apr/2024 20:03:32] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:03:38,351 [INFO] 127.0.0.1 - - [17/Apr/2024 20:03:38] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:03:50,820 [INFO] 127.0.0.1 - - [17/Apr/2024 20:03:50] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:04:15,040 [INFO] 127.0.0.1 - - [17/Apr/2024 20:04:15] "GET /api/download_toudous HTTP/1.1" 200 -
+2024-04-17 20:05:02,142 [INFO] 127.0.0.1 - - [17/Apr/2024 20:05:02] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:07:49,513 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:07:49,579 [INFO]  * Restarting with stat
+2024-04-17 20:07:49,930 [WARNING]  * Debugger is active!
+2024-04-17 20:07:49,930 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:07:50,936 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:07:51,006 [INFO]  * Restarting with stat
+2024-04-17 20:07:51,348 [WARNING]  * Debugger is active!
+2024-04-17 20:07:51,349 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:09:30,532 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:09:30,584 [INFO]  * Restarting with stat
+2024-04-17 20:09:30,927 [WARNING]  * Debugger is active!
+2024-04-17 20:09:30,928 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:09:54,974 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:09:55,031 [INFO]  * Restarting with stat
+2024-04-17 20:09:55,378 [WARNING]  * Debugger is active!
+2024-04-17 20:09:55,378 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:10:01,393 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:10:01,453 [INFO]  * Restarting with stat
+2024-04-17 20:10:01,790 [WARNING]  * Debugger is active!
+2024-04-17 20:10:01,790 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:10:08,806 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:10:08,871 [INFO]  * Restarting with stat
+2024-04-17 20:10:09,202 [WARNING]  * Debugger is active!
+2024-04-17 20:10:09,202 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:10:53,284 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:10:53,337 [INFO]  * Restarting with stat
+2024-04-17 20:10:53,686 [WARNING]  * Debugger is active!
+2024-04-17 20:10:53,686 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:11:10,719 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:11:10,781 [INFO]  * Restarting with stat
+2024-04-17 20:11:11,086 [WARNING]  * Debugger is active!
+2024-04-17 20:11:11,087 [INFO]  * Debugger PIN: 101-312-484
+2024-04-17 20:11:17,100 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:11:17,147 [INFO]  * Restarting with stat
+2024-04-17 20:11:17,486 [WARNING]  * Debugger is active!
+2024-04-17 20:11:17,487 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:12:01,568 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:12:01,636 [INFO]  * Restarting with stat
+2024-04-17 20:12:01,996 [WARNING]  * Debugger is active!
+2024-04-17 20:12:01,996 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:12:10,014 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:12:10,071 [INFO]  * Restarting with stat
+2024-04-17 20:12:10,420 [WARNING]  * Debugger is active!
+2024-04-17 20:12:10,421 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:12:14,810 [INFO] 127.0.0.1 - - [17/Apr/2024 20:12:14] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:12:14,950 [INFO] 127.0.0.1 - - [17/Apr/2024 20:12:14] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:12:22,222 [INFO] 127.0.0.1 - - [17/Apr/2024 20:12:22] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:12:50,081 [INFO] 127.0.0.1 - - [17/Apr/2024 20:12:50] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:13:24,563 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:13:24,615 [INFO]  * Restarting with stat
+2024-04-17 20:13:24,957 [WARNING]  * Debugger is active!
+2024-04-17 20:13:24,957 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:13:41,989 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:13:42,049 [INFO]  * Restarting with stat
+2024-04-17 20:13:42,399 [WARNING]  * Debugger is active!
+2024-04-17 20:13:42,399 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:14:19,468 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:14:19,518 [INFO]  * Restarting with stat
+2024-04-17 20:14:19,855 [WARNING]  * Debugger is active!
+2024-04-17 20:14:19,856 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:14:20,451 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:20] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:14:20,602 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:20] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:14:27,673 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:27] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:14:31,159 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:31] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:14:31,248 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:31] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:14:35,407 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:35] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:14:38,893 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:14:38,950 [INFO]  * Restarting with stat
+2024-04-17 20:14:39,274 [WARNING]  * Debugger is active!
+2024-04-17 20:14:39,275 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:14:40,280 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:14:40,350 [INFO]  * Restarting with stat
+2024-04-17 20:14:40,731 [WARNING]  * Debugger is active!
+2024-04-17 20:14:40,731 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:14:46,288 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:46] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:14:46,385 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:46] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:14:50,078 [INFO] 127.0.0.1 - - [17/Apr/2024 20:14:50] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:15:04,413 [INFO] 127.0.0.1 - - [17/Apr/2024 20:15:04] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:15:33,173 [INFO] 127.0.0.1 - - [17/Apr/2024 20:15:33] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:16:07,891 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:16:07,948 [INFO]  * Restarting with stat
+2024-04-17 20:16:08,333 [WARNING]  * Debugger is active!
+2024-04-17 20:16:08,334 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:16:14,491 [INFO] 127.0.0.1 - - [17/Apr/2024 20:16:14] "[35m[1mPOST /api/import_toudous HTTP/1.1[0m" 500 -
+2024-04-17 20:16:55,421 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:16:55,479 [INFO]  * Restarting with stat
+2024-04-17 20:16:55,832 [WARNING]  * Debugger is active!
+2024-04-17 20:16:55,833 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:17:01,611 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:01] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:17:08,495 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:08] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-17 20:17:12,010 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:12] "GET / HTTP/1.1" 200 -
+2024-04-17 20:17:13,766 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:13] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:15,889 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:15] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:17:15,956 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:15] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:17,477 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:17] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:17:17,552 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:17] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:18,371 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:18] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:17:18,442 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:18] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:19,003 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:19] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:17:19,080 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:19] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:19,963 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:19] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:17:20,034 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:20] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:22,404 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:22] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:17:24,215 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:24] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:17:35,501 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:35] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:17:35,602 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:35] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:17:39,205 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:39] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-17 20:17:47,543 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:47] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-17 20:17:58,819 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:58] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:17:58,906 [INFO] 127.0.0.1 - - [17/Apr/2024 20:17:58] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:18:02,302 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:02] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-17 20:18:12,941 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:12] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:18:28,295 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:28] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-17 20:18:32,322 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:32] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:34,358 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:34] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:34,428 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:34] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:35,261 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:35] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:35,329 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:35] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:35,728 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:35] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:35,802 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:35] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:36,174 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:36] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:36,241 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:36] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:36,611 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:36] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:36,684 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:36] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:37,617 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:37] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-17 20:18:37,683 [INFO] 127.0.0.1 - - [17/Apr/2024 20:18:37] "GET /display HTTP/1.1" 200 -
+2024-04-17 20:18:52,047 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:18:52,107 [INFO]  * Restarting with stat
+2024-04-17 20:18:52,450 [WARNING]  * Debugger is active!
+2024-04-17 20:18:52,450 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:18:56,461 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:18:56,518 [INFO]  * Restarting with stat
+2024-04-17 20:18:56,863 [WARNING]  * Debugger is active!
+2024-04-17 20:18:56,863 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:18:57,870 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:18:57,931 [INFO]  * Restarting with stat
+2024-04-17 20:18:58,319 [WARNING]  * Debugger is active!
+2024-04-17 20:18:58,320 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:19:12,352 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:19:12,408 [INFO]  * Restarting with stat
+2024-04-17 20:19:12,771 [WARNING]  * Debugger is active!
+2024-04-17 20:19:12,771 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:19:23,796 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:19:23,858 [INFO]  * Restarting with stat
+2024-04-17 20:19:24,187 [WARNING]  * Debugger is active!
+2024-04-17 20:19:24,187 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:19:31,202 [INFO]  * Detected change in '/home/guams/Desktop/dev/python/toudou/src/toudou/views/api.py', reloading
+2024-04-17 20:19:31,258 [INFO]  * Restarting with stat
+2024-04-17 20:19:31,612 [WARNING]  * Debugger is active!
+2024-04-17 20:19:31,612 [INFO]  * Debugger PIN: 134-205-557
+2024-04-17 20:19:37,176 [INFO] 127.0.0.1 - - [17/Apr/2024 20:19:37] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-17 20:19:37,274 [INFO] 127.0.0.1 - - [17/Apr/2024 20:19:37] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-17 20:20:07,557 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-17 20:20:07,558 [INFO] 127.0.0.1 - - [17/Apr/2024 20:20:07] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-17 20:20:22,503 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-17 20:20:22,503 [INFO] 127.0.0.1 - - [17/Apr/2024 20:20:22] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-17 20:20:26,975 [INFO] 127.0.0.1 - - [17/Apr/2024 20:20:26] "POST /api/import_toudous HTTP/1.1" 200 -
