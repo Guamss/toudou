@@ -29,11 +29,16 @@ def verify_token(token, right):
         return right in tokens_dict[token]
     return False
 
-#TODO import
-
 class ImportToudouApi(BaseModel):
     absolute_path_to_file: str
 
+    @validator('absolute_path_to_file', pre=True, always=True)
+    def is_file_csv(cls, value):
+        if path.isfile(value) and Path(value).suffix == ".csv":
+            return value
+        else:
+            raise ValueError("The specified file does not exist or is not a .csv file")
+        
 class CreateToudouApi(BaseModel):
     task: constr(min_length=2, max_length=100)
     due: datetime.date | None = None
@@ -81,13 +86,9 @@ def import_toudou_api():
     data = ImportToudouApi(**request.json)
     try:
         file_path = data.absolute_path_to_file
-        if path.isfile(file_path) and Path(file_path).suffix == ".csv":
-            with open(file_path, 'rb') as f:
-                services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
-                return {'imported': True}
-        else:
-            return {'imported': False}
-
+        with open(file_path, 'rb') as f:
+            services.import_from_csv(io.TextIOWrapper(f, encoding='utf-8'))
+            return {'imported': True}
     except ValidationError as e:
         return {'error' : e.errors()}
     

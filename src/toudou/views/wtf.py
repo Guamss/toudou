@@ -5,8 +5,6 @@ from flask_wtf.file import FileField, FileAllowed
 
 from uuid import UUID
 
-from toudou.models import getNotCompletedToudous, convert_to_tuple_list
-
 class DeleteToudouForm(FlaskForm):
     toudou_ID = HiddenField()
     submit = SubmitField("X")

@@ -11812,3 +11812,222 @@ FROM "TOUDOU"
 2024-04-17 21:18:58,897 [INFO] 127.0.0.1 - - [17/Apr/2024 21:18:58] "POST /api/create_toudou HTTP/1.1" 200 -
 2024-04-17 21:22:01,383 [INFO] 127.0.0.1 - - [17/Apr/2024 21:22:01] "POST /api/create_toudou HTTP/1.1" 200 -
 2024-04-17 21:23:42,191 [INFO] 127.0.0.1 - - [17/Apr/2024 21:23:42] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-18 21:38:43,750 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-18 21:38:43,751 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-18 21:38:43,754 [INFO]  * Restarting with stat
+2024-04-18 21:38:44,883 [WARNING]  * Debugger is active!
+2024-04-18 21:38:44,890 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 21:38:46,524 [INFO] 127.0.0.1 - - [18/Apr/2024 21:38:46] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-18 21:38:51,026 [INFO] 127.0.0.1 - - [18/Apr/2024 21:38:51] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-18 21:38:54,262 [INFO] 127.0.0.1 - - [18/Apr/2024 21:38:54] "GET / HTTP/1.1" 200 -
+2024-04-18 21:39:06,396 [INFO] 127.0.0.1 - - [18/Apr/2024 21:39:06] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-18 21:39:06,583 [INFO] 127.0.0.1 - - [18/Apr/2024 21:39:06] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-18 21:39:53,019 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:39:53,020 [INFO] 127.0.0.1 - - [18/Apr/2024 21:39:53] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:40:23,525 [INFO] 127.0.0.1 - - [18/Apr/2024 21:40:23] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-18 21:40:31,864 [INFO] 127.0.0.1 - - [18/Apr/2024 21:40:31] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-18 21:40:35,740 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:40:35,740 [INFO] 127.0.0.1 - - [18/Apr/2024 21:40:35] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:40:48,660 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:40:48,660 [INFO] 127.0.0.1 - - [18/Apr/2024 21:40:48] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:40:58,689 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'field required', 'type': 'value_error.missing'}]
+2024-04-18 21:40:58,690 [INFO] 127.0.0.1 - - [18/Apr/2024 21:40:58] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:41:14,594 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:41:14,595 [INFO] 127.0.0.1 - - [18/Apr/2024 21:41:14] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:41:23,668 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 21:41:23,777 [INFO]  * Restarting with stat
+2024-04-18 21:41:24,729 [WARNING]  * Debugger is active!
+2024-04-18 21:41:24,737 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 21:41:25,819 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 21:41:25,919 [INFO]  * Restarting with stat
+2024-04-18 21:41:26,759 [WARNING]  * Debugger is active!
+2024-04-18 21:41:26,765 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 21:41:33,981 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 21:41:34,087 [INFO]  * Restarting with stat
+2024-04-18 21:41:34,949 [WARNING]  * Debugger is active!
+2024-04-18 21:41:34,956 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 21:42:40,488 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:42:40,489 [INFO] 127.0.0.1 - - [18/Apr/2024 21:42:40] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:42:45,896 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:42:45,897 [INFO] 127.0.0.1 - - [18/Apr/2024 21:42:45] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:43:12,338 [INFO] 127.0.0.1 - - [18/Apr/2024 21:43:12] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-18 21:43:12,450 [INFO] 127.0.0.1 - - [18/Apr/2024 21:43:12] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-18 21:43:20,801 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:43:20,802 [INFO] 127.0.0.1 - - [18/Apr/2024 21:43:20] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:43:26,206 [INFO] 127.0.0.1 - - [18/Apr/2024 21:43:26] "[31m[1mPOST /api/create_toudou HTTP/1.1[0m" 401 -
+2024-04-18 21:43:54,392 [INFO] 127.0.0.1 - - [18/Apr/2024 21:43:54] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-18 21:44:00,080 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 21:44:00,080 [INFO] 127.0.0.1 - - [18/Apr/2024 21:44:00] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 21:44:04,265 [INFO] 127.0.0.1 - - [18/Apr/2024 21:44:04] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-18 21:44:18,809 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 21:44:18,906 [INFO]  * Restarting with stat
+2024-04-18 21:44:19,783 [WARNING]  * Debugger is active!
+2024-04-18 21:44:19,790 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 21:45:50,585 [INFO] 127.0.0.1 - - [18/Apr/2024 21:45:50] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 401 -
+2024-04-18 21:45:59,152 [INFO] 127.0.0.1 - - [18/Apr/2024 21:45:59] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-18 21:47:41,548 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:41] "GET / HTTP/1.1" 200 -
+2024-04-18 21:47:42,978 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:42] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:45,008 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:45] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:45,140 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:45] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:45,911 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:45] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:46,047 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:46] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:46,743 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:46] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:46,878 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:46] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:47,279 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:47] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:47,413 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:47] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:47,836 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:47] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:47,972 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:47] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:48,860 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:48] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:48,997 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:48] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:49,860 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:49] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:49,992 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:49] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:50,521 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:50] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:50,669 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:50] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:51,070 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:51] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:51,206 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:51] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:51,663 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:51] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:51,795 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:51] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:52,248 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:52] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:52,384 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:52] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:52,874 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:52] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:53,007 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:53] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:54,025 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:54] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:54,157 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:54] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:54,676 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:54] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:54,811 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:54] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:55,218 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:55] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:55,347 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:55] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:56,671 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:56] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:56,802 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:56] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:57,753 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:57] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:57,885 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:57] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:58,371 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:58] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:58,508 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:58] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:58,941 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:58] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:59,072 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:59] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:47:59,510 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:59] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:47:59,638 [INFO] 127.0.0.1 - - [18/Apr/2024 21:47:59] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:00,092 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:00] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:00,225 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:00] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:00,622 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:00] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:00,758 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:00] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:02,812 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:02] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:02,955 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:02] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:05,144 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:05] "POST /api/import_toudous HTTP/1.1" 200 -
+2024-04-18 21:48:07,866 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:07] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:09,583 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:09] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:09,715 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:09] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:10,624 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:10] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:10,754 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:10] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:11,236 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:11] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:11,366 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:11] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:11,742 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:11] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:11,875 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:11] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:12,259 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:12] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:12,387 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:12] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:13,355 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:13] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:13,489 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:13] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:48:13,899 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:13] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 21:48:14,029 [INFO] 127.0.0.1 - - [18/Apr/2024 21:48:14] "GET /display HTTP/1.1" 200 -
+2024-04-18 21:54:34,059 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-18 21:54:34,060 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-18 21:54:34,061 [INFO]  * Restarting with stat
+2024-04-18 21:54:34,892 [WARNING]  * Debugger is active!
+2024-04-18 21:54:34,900 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 22:01:09,607 [INFO] 127.0.0.1 - - [18/Apr/2024 22:01:09] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-18 22:01:09,751 [INFO] 127.0.0.1 - - [18/Apr/2024 22:01:09] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-18 22:01:13,416 [INFO] 127.0.0.1 - - [18/Apr/2024 22:01:13] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-18 22:01:33,811 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 22:01:33,919 [INFO]  * Restarting with stat
+2024-04-18 22:01:34,937 [WARNING]  * Debugger is active!
+2024-04-18 22:01:34,945 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 22:01:36,693 [INFO] 127.0.0.1 - - [18/Apr/2024 22:01:36] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-18 22:01:55,488 [INFO] 127.0.0.1 - - [18/Apr/2024 22:01:55] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-18 22:02:01,620 [INFO]  * Detected change in 'C:\\Users\\guams\\OneDrive\\Bureau\\dev\\toudou\\src\\toudou\\views\\api.py', reloading
+2024-04-18 22:02:01,723 [INFO]  * Restarting with stat
+2024-04-18 22:02:02,595 [WARNING]  * Debugger is active!
+2024-04-18 22:02:02,601 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 22:02:07,478 [INFO] 127.0.0.1 - - [18/Apr/2024 22:02:07] "GET /api/get_toudous HTTP/1.1" 200 -
+2024-04-18 22:02:08,022 [INFO] 127.0.0.1 - - [18/Apr/2024 22:02:08] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2024-04-18 22:02:08,155 [INFO] 127.0.0.1 - - [18/Apr/2024 22:02:08] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2024-04-18 22:02:11,554 [INFO] 127.0.0.1 - - [18/Apr/2024 22:02:11] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-18 22:02:36,713 [INFO] 127.0.0.1 - - [18/Apr/2024 22:02:36] "[31m[1mGET /api/get_toudous HTTP/1.1[0m" 401 -
+2024-04-18 22:36:45,028 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-18 22:36:45,029 [INFO] [33mPress CTRL+C to quit[0m
+2024-04-18 22:36:45,031 [INFO]  * Restarting with stat
+2024-04-18 22:36:45,966 [WARNING]  * Debugger is active!
+2024-04-18 22:36:45,974 [INFO]  * Debugger PIN: 440-112-358
+2024-04-18 22:36:52,605 [INFO] 127.0.0.1 - - [18/Apr/2024 22:36:52] "GET /create HTTP/1.1" 200 -
+2024-04-18 22:36:54,427 [INFO] 127.0.0.1 - - [18/Apr/2024 22:36:54] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-18 22:36:54,583 [INFO] 127.0.0.1 - - [18/Apr/2024 22:36:54] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:36:55,843 [INFO] 127.0.0.1 - - [18/Apr/2024 22:36:55] "GET /create HTTP/1.1" 200 -
+2024-04-18 22:37:04,070 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:04] "[32mPOST /create HTTP/1.1[0m" 302 -
+2024-04-18 22:37:04,214 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:04] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:05,054 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:05] "GET /complete HTTP/1.1" 200 -
+2024-04-18 22:37:06,491 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:06] "[32mPOST /complete HTTP/1.1[0m" 302 -
+2024-04-18 22:37:06,630 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:06] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:07,473 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:07] "GET /modify HTTP/1.1" 200 -
+2024-04-18 22:37:09,969 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:09] "[32mPOST /modify HTTP/1.1[0m" 302 -
+2024-04-18 22:37:10,106 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:10] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:11,168 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:11] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:11,707 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:11] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:37:14,941 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:14] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-04-18 22:37:15,107 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:15] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:18,440 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:18] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:18,576 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:18] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:19,328 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:19] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:19,461 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:19] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:19,826 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:19] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:19,974 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:19] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:20,405 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:20] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:20,540 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:20] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:20,974 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:20] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:21,109 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:21] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:21,958 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:21] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:22,087 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:22] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:22,567 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:22] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:22,699 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:22] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:23,228 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:23] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:23,392 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:23] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:37:23,834 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:23] "[32mPOST /display HTTP/1.1[0m" 302 -
+2024-04-18 22:37:23,962 [INFO] 127.0.0.1 - - [18/Apr/2024 22:37:23] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:42:06,206 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:06] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:06,812 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:06] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:42:07,923 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:07] "GET /modify HTTP/1.1" 200 -
+2024-04-18 22:42:09,389 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:09] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:42:12,806 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:12] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:14,803 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:14] "GET / HTTP/1.1" 200 -
+2024-04-18 22:42:18,822 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:18] "GET /create HTTP/1.1" 200 -
+2024-04-18 22:42:20,115 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:20] "GET /complete HTTP/1.1" 200 -
+2024-04-18 22:42:20,884 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:20] "GET /modify HTTP/1.1" 200 -
+2024-04-18 22:42:22,372 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:22] "GET /display HTTP/1.1" 200 -
+2024-04-18 22:42:23,407 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:23] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:28,017 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:28] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:30,026 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:30] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:30,081 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-18 22:42:31,029 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:31] "GET /upload HTTP/1.1" 200 -
+2024-04-18 22:42:31,067 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-18 22:42:37,087 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:37] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2024-04-18 22:42:41,524 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:41] "GET / HTTP/1.1" 200 -
+2024-04-18 22:42:41,592 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-18 22:42:42,820 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:42] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-18 22:42:43,484 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:43] "[31m[1mGET /complete HTTP/1.1[0m" 403 -
+2024-04-18 22:42:43,929 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:43] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-18 22:42:44,476 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:44] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-18 22:42:44,868 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:44] "[31m[1mGET /create HTTP/1.1[0m" 403 -
+2024-04-18 22:42:45,379 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:45] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-18 22:42:45,961 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:45] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-18 22:42:46,461 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:46] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-18 22:42:47,060 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:47] "[31m[1mGET /upload HTTP/1.1[0m" 403 -
+2024-04-18 22:42:47,861 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:47] "GET / HTTP/1.1" 200 -
+2024-04-18 22:42:48,874 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:48] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-18 22:42:49,359 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:49] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-18 22:42:49,965 [INFO] 127.0.0.1 - - [18/Apr/2024 22:42:49] "[31m[1mGET /modify HTTP/1.1[0m" 403 -
+2024-04-18 22:43:25,083 [ERROR] 422 Request Validation Error: ImportToudouApi - [{'loc': ('absolute_path_to_file',), 'msg': 'The specified file does not exist or is not a .csv file', 'type': 'value_error'}]
+2024-04-18 22:43:25,084 [INFO] 127.0.0.1 - - [18/Apr/2024 22:43:25] "[31m[1mPOST /api/import_toudous HTTP/1.1[0m" 422 -
+2024-04-18 22:43:31,452 [INFO] 127.0.0.1 - - [18/Apr/2024 22:43:31] "POST /api/get_toudou HTTP/1.1" 200 -
+2024-04-18 22:45:02,356 [INFO] 127.0.0.1 - - [18/Apr/2024 22:45:02] "GET /complete HTTP/1.1" 200 -
+2024-04-18 22:45:02,997 [INFO] 127.0.0.1 - - [18/Apr/2024 22:45:02] "GET /create HTTP/1.1" 200 -
